@@ -232,19 +232,59 @@ Customer sees beautiful, organized page
 - **Descriptions**: 150-160 characters with keywords
 - **Slugs**: Short, descriptive, no special characters
 
-## Common Questions Answered
+## Frequently Asked Questions
 
-### "Why do some fields seem duplicate?"
-Webflow needs structure, but Shopify provides the live data. Think of Webflow fields as placeholders that get filled with real Shopify data.
+<details>
+<summary><strong>Why do some fields seem duplicate?</strong></summary>
 
-### "Where do I update product info?"
-Always in Shopify. Webflow is just for page structure and design.
+Webflow needs structure, but Shopify provides the live data. Think of Webflow fields as placeholders that get filled with real Shopify data. This allows us to have beautiful page designs while ensuring product information is always accurate and up-to-date.
+</details>
 
-### "What if Shopify ID is missing?"
-The product won't display correctly. This field is critical for the connection.
+<details>
+<summary><strong>Where do I update product info?</strong></summary>
 
-### "Can I add products directly in Webflow?"
-You can create the page, but without a Shopify ID, no product data will show.
+Always in Shopify. Webflow is just for page structure and design. Any changes to prices, descriptions, inventory, or product images should be made in your Shopify admin panel. These changes will automatically appear on your website through the Smootify connection.
+</details>
+
+<details>
+<summary><strong>What if Shopify ID is missing?</strong></summary>
+
+The product won't display correctly. This field is critical for the connection between Webflow and Shopify. Without it, Smootify cannot pull the product data, and customers will see an empty or broken product page. Always ensure each product in Webflow has its corresponding Shopify ID.
+</details>
+
+<details>
+<summary><strong>Can I add products directly in Webflow?</strong></summary>
+
+You can create the page structure in Webflow, but without a Shopify ID, no product data will show. The proper workflow is: 
+1. Create the product in Shopify first
+2. Get the Shopify product ID
+3. Create the CMS item in Webflow with that ID
+4. The product data will automatically populate from Shopify
+</details>
+
+<details>
+<summary><strong>How long does it take for changes to appear?</strong></summary>
+
+Changes made in Shopify appear instantly on your website. When a customer visits a product page, Smootify fetches the latest data in real-time. There's no delay or sync time - updates are immediate.
+</details>
+
+<details>
+<summary><strong>What happens if Shopify is down?</strong></summary>
+
+If Shopify experiences downtime, product data won't load, but your website structure remains intact. Customers can still browse the site, but product information, prices, and add-to-cart functionality will be temporarily unavailable until Shopify is restored.
+</details>
+
+<details>
+<summary><strong>Can I customize how products display?</strong></summary>
+
+Yes! Webflow controls the design and layout, while Shopify provides the data. You can customize the appearance, styling, and placement of product information in Webflow's designer. The data will still come from Shopify but will be displayed according to your custom design.
+</details>
+
+<details>
+<summary><strong>Do I need to update both systems when adding products?</strong></summary>
+
+No, you primarily work in Shopify for product management. You only need to create a corresponding CMS item in Webflow with the Shopify ID when you want a product to have its own dedicated page on your website. Not all Shopify products need to be in Webflow's CMS.
+</details>
 
 ## The Power of This System
 
@@ -258,6 +298,6 @@ By combining Webflow's design flexibility with Shopify's e-commerce power:
 
 ---
 
-*Document Version: 2.0*  
+*Document Version: 2.1*  
 *Last Updated: August 8, 2025*  
 *Maintained by: Displace Agency*
