@@ -221,29 +221,216 @@ After changes, publish the site so updates go live; then verify in GSC/PSI.
 - **Purpose**: Deploy SEO changes to live site
 - **Links**: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
-## Schema Markup
-Inline JSON‑LD is placed in Webflow's Custom Code head to provide Organization, WebSite, and LocalBusiness context.
+## Schema Markup Implementation
 
-- **Location**: Webflow → Project Settings → Custom Code → Head  
-- **Link**: [Webflow Custom Code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
-- **Validate**: [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
+We've implemented comprehensive structured data across The Savage Report using JSON-LD schema markup. This helps search engines understand your content better and can enable rich results in search listings.
 
-## Schema JSON-LD (Examples)
+### Dual Schema Setup
 
-Organization
+We use two different schema implementations for optimal coverage:
+
+1. **Project Head Schema** - Global schema applied to all pages via Webflow's Custom Code head
+2. **Homepage Schema** - Specific schema for the homepage with enhanced details
+
+### Project Head Schema (Global)
+This schema is applied to all pages and provides basic organization and website context.
+
+**Location**: Webflow → Project Settings → Custom Code → Head  
+**Purpose**: Global organization and website context for all pages
+
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "THE SAVAGE REPORT",
-  "url": "https://the-savage-report.com",
-  "logo": "https://the-savage-report.com/assets/logo.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://the-savage-report.com/#organization",
+      "name": "THE SAVAGE REPORT",
+      "url": "https://the-savage-report.com",
+      "description": "Born from urban beats and metropolitan vibes."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://the-savage-report.com/#website",
+      "url": "https://the-savage-report.com",
+      "name": "THE SAVAGE REPORT",
+      "publisher": {"@id": "https://the-savage-report.com/#organization"}
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "THE SAVAGE REPORT",
+      "url": "https://the-savage-report.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NL"
+      }
+    }
+  ]
 }
 </script>
 ```
 
-Product (template)
+### Homepage Schema (Enhanced)
+This schema provides detailed information specifically for the homepage, including search functionality and breadcrumbs.
+
+**Location**: Homepage → Page Settings → Custom Code → Head  
+**Purpose**: Enhanced homepage context with search and navigation
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [ 
+    {
+      "@type": "Organization",
+      "@id": "https://the-savage-report.com/#organization",
+      "name": "THE SAVAGE REPORT",
+      "alternateName": "Savage Report",
+      "url": "https://the-savage-report.com",
+      "sameAs": [
+        "https://the-savage-report.com",
+        "https://www.the-savage-report.com"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://the-savage-report.com/#logo",
+        "url": "https://the-savage-report.com/logo.png",
+        "caption": "THE SAVAGE REPORT Logo"
+      },
+      "image": {
+        "@id": "https://the-savage-report.com/#logo"
+      },
+      "description": "Born from urban beats and metropolitan vibes. THE SAVAGE REPORT curates street culture and underground fashion where style meets city life.",
+      "foundingDate": "2025",
+      "slogan": "Born from urban beats and metropolitan vibes",
+      "knowsAbout": [
+        "Street Fashion",
+        "Urban Culture",
+        "Underground Fashion",
+        "Street Style",
+        "Metropolitan Fashion",
+        "Urban Streetwear",
+        "Culture Curation"
+      ],
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Street Culture Collections",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Newdrops",
+            "description": "Our latest, where style meets city life"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Collections",
+            "description": "Curated drops that speak to urban culture"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Special Projects",
+            "description": "Limited drops and cultural collaborations"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://the-savage-report.com/#website",
+      "url": "https://the-savage-report.com",
+      "name": "THE SAVAGE REPORT",
+      "description": "Urban Style & Street Culture - Born from urban beats and metropolitan vibes",
+      "publisher": {
+        "@id": "https://the-savage-report.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://the-savage-report.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://the-savage-report.com/#webpage",
+      "url": "https://the-savage-report.com",
+      "name": "SAVAGE REPORT | Urban Style & Street Culture",
+      "isPartOf": {
+        "@id": "https://the-savage-report.com/#website"
+      },
+      "about": {
+        "@id": "https://the-savage-report.com/#organization"
+      },
+      "description": "Born from urban beats and metropolitan vibes. Discover where style meets city life through our curated drops and collections.",
+      "breadcrumb": {
+        "@id": "https://the-savage-report.com/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": ["https://the-savage-report.com"]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://the-savage-report.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://the-savage-report.com"
+        }
+      ]
+    }
+  ]
+}
+</script>
+```
+
+### Key Optimizations Made
+
+1. **Fixed Location**: Changed `addressCountry` from "US" to "NL" (Netherlands)
+2. **Enhanced Organization**: Added comprehensive organization details with logo, description, and expertise
+3. **Search Functionality**: Included search action for better user experience
+4. **Breadcrumb Navigation**: Added breadcrumb schema for better navigation understanding
+5. **Rich Content**: Enhanced with founding date, slogan, and area served information
+
+### Schema Benefits
+
+- **Rich Results**: Enables enhanced search listings with logos, descriptions, and structured information
+- **Better Understanding**: Helps search engines understand your brand, content, and business
+- **Local SEO**: Proper location information for local search visibility
+- **Navigation**: Breadcrumb schema improves navigation understanding
+- **Search Integration**: Search action enables direct search functionality
+
+### Validation & Testing
+
+- **Rich Results Test**: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a>
+- **Schema Validator**: <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema.org Validator</a>
+- **Search Console**: <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a>
+
+### Implementation Notes
+
+- **Project Head**: Applied globally to all pages via Webflow Custom Code
+- **Homepage Specific**: Applied only to homepage for enhanced context
+- **Performance**: Lightweight implementation that doesn't impact page speed
+- **Maintenance**: Easy to update through Webflow's Custom Code interface
+
+## Schema JSON-LD (Examples)
+
+### Product Schema (Template)
+For individual product pages, use this template:
+
 ```html
 <script type="application/ld+json">
 {
@@ -263,9 +450,39 @@ Product (template)
 </script>
 ```
 
+### Collection Schema (Template)
+For collection pages, use this template:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{collection.name}}",
+  "description": "{{collection.description}}",
+  "url": "{{collection.url}}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "{{product.name}}",
+          "url": "{{product.url}}"
+        }
+      }
+    ]
+  }
+}
+</script>
+```
+
 ## Useful Links
 - **Webflow Site Settings**: [webflow.com/dashboard/sites/savage-report-we/general](https://webflow.com/dashboard/sites/savage-report-we/general)
 - **Webflow Designer**: [webflow.com/dashboard/sites/savage-report-we/designer](https://webflow.com/dashboard/sites/savage-report-we/designer)
+- **Webflow Custom Code**: [webflow.com/dashboard/sites/savage-report-we/custom-code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
 - **Google Search Console (Property)**: [search.google.com/search-console?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com)
 - **GSC Robots.txt Tester**: [search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
 - **GSC Sitemaps**: [search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
@@ -273,6 +490,8 @@ Product (template)
 - **Live Sitemap**: [the-savage-report.com/sitemap.xml](https://the-savage-report.com/sitemap.xml)
 - **Webflow Robots.txt**: [the-savage-report.com/robots.txt](https://the-savage-report.com/robots.txt)
 - **Shopify Robots.txt**: [shop.the-savage-report.com/robots.txt](https://shop.the-savage-report.com/robots.txt)
+- **Rich Results Test**: [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
+- **Schema Validator**: [validator.schema.org/](https://validator.schema.org/)
 - **Performance Doc**: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
 - **XML Sitemap Management (Guide)**: [knowledge-hub/seo/xml-sitemap-management.md](../knowledge-hub/seo/xml-sitemap-management.md)
 - **Analytics Implementation**: [docs/07-analytics-implementation.md](./07-analytics-implementation.md)
