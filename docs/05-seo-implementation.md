@@ -55,6 +55,9 @@ Customers → Webflow (Pages, CMS) → Smootify (Bridge) → Shopify (Products, 
 - Key metrics: LCP < 2.5s, CLS < 0.1, INP < 200ms
 - Evidence: [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
+## Submission Proof (GSC Sitemaps)
+![GSC Sitemaps submission – the-savage-report.com](../assets/seo/gsc-sitemaps-the-savage-report-2025-08-08.png)
+
 ## Schema JSON-LD (Examples)
 
 Organization
@@ -104,5 +107,5 @@ Product (template)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.3*  
+*Document Version: 1.4*  
 *Maintained by: Displace Agency*
