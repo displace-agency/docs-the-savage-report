@@ -86,6 +86,7 @@ Each CMS collection includes dedicated SEO fields:
 - Auto-generated sitemap for all public pages
 - Priority scoring based on page importance
 - Regular updates with new content
+- 📚 **[Learn more about XML Sitemap Management in Webflow →](../knowledge-hub/seo/xml-sitemap-management.md)**
 
 ### 4.2 Robots.txt Configuration
 ```
@@ -223,5 +224,5 @@ Our SEO implementation for The Savage Report combines technical excellence with 
 
 ---
 *Last Updated: August 2025*
-*Document Version: 1.0*
+*Document Version: 1.1*
 *Maintained by: Displace Agency*
