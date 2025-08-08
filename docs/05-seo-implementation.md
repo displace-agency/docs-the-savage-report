@@ -9,10 +9,10 @@ We implemented foundational SEO across The Savage Report to help search engines 
 |------|-------------------|--------|--------|-------------------|
 | [Structured Data (Schema Markup)](#structured-data-schema-markup) | JSON-LD for Product, Organization, Local Business, and Website | High | ✅ Active | [Schema Markup Doc](./05.1-seo-schema.md) |
 | [SEO-Optimized Content & Metadata](#seo-optimized-content--metadata) | Brand-consistent titles, descriptions, Open Graph tags, optimized URL slugs | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
-| [Technical SEO](#technical-seo) | XML sitemap, robots.txt, canonicals, HTTPS, site architecture improvements | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Robots.txt</a> |
+
 | [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
 | [XML Sitemap Implementation](#xml-sitemap-implementation) | Auto-generated sitemap with 61 URLs, verified in Google Search Console | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
-| [Webflow SEO Settings](#webflow-seo-settings) | Traffic controls for search engine crawlers and AI bots | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
+| [Webflow SEO Settings](#webflow-seo-settings) | Canonical URLs and traffic controls for search engine crawlers and AI bots | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
@@ -26,13 +26,6 @@ We implemented foundational SEO across The Savage Report to help search engines 
 - Implemented consistent, brand-first meta titles and optimized descriptions
 - Added Open Graph tags for improved social sharing
 - Standardized URL slugs using best practices
-
-## Technical SEO
-- Enabled and verified auto XML sitemap
-- Configured robots.txt for efficient crawling (verified in GSC)
-- Implemented self-referencing canonicals sitewide
-- Ensured HTTPS across domains with proper www/non-www handling
-- Improved site architecture ("Shop All" index, optimized CMS collections, staged non-core pages)
 
 ## Robots.txt Configuration
 
@@ -172,6 +165,15 @@ This is where you can review and manage sitemap status over time (status, last r
 - **Open**: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
 ## Webflow SEO Settings
+
+### Canonical URLs
+Set global canonical URL to prevent duplicate content and ensure proper search engine indexing.
+
+<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration with canonical URL and traffic controls" width="70%" style="border-radius:8px" />
+
+- **Purpose**: Control search engine crawling behavior and set global canonical URL
+- **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
+- **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
 
 ### Traffic Controls
 Control access for search engine crawlers and AI bots to manage site traffic and indexing.
