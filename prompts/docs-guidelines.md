@@ -148,11 +148,24 @@ Every technical detail must answer: so what’s the business value?
 - Link to internal docs using relative paths
 - Link to knowledge-hub for how-to/education
 
+### Article Numbering Guidelines
+- **Main Articles**: Use sequential numbers for primary topics
+  - Example: `01-project-overview.md`, `05-seo-implementation.md`
+- **Related Sub-Articles**: Use decimal numbering for related topics
+  - Example: `05-seo-implementation.md` and `05.1-seo-schema.md`
+  - Keeps related articles together without renumbering everything
+  - Use same prefix keyword (e.g., "seo") to show relationship
+- **When to Use Sub-Articles**:
+  - For detailed aspects of a main topic
+  - When content is closely related but deserves its own article
+  - To allow future expansion without renumbering
+
 ### Link Behavior Guidelines
 - **External links** (platforms, tools, live sites): Open in new tab using `target="_blank" rel="noopener noreferrer"`
   - Example: `<a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a>`
 - **Internal links** (documentation, related articles): Open in same tab using regular markdown links
-  - Example: `[SEO Implementation](./06-seo-implementation.md)`
+  - Example: `[SEO Implementation](./05-seo-implementation.md)`
+  - Example: `[Schema Markup](./05.1-seo-schema.md)`
 - **Security**: Always use `rel="noopener noreferrer"` for external links to prevent security vulnerabilities
 
 ## Quality Checklist (Quick)
