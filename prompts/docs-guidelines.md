@@ -34,17 +34,17 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 1–2 sentences that explain the concept in plain language plus the business value.
 
 ## Implementation Summary
-| Priority | Area | What We Delivered | Date(s) | Status | Evidence Link(s) |
-|----------|------|-------------------|---------|--------|------------------|
-| High/Medium/Low | Item | What we built/configured | Aug 2025 | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
+| Item | What We Delivered | Priority | Date(s) | Status | Evidence Link(s) |
+|------|-------------------|----------|---------|--------|------------------|
+| Item Name | What we built/configured | High/Medium/Low | Aug 2025 | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
 
-## What We Implemented (Concise)
+## What We Implemented
 - 3–6 concrete bullets (one line each)
-- Include brief config context where relevant (e.g., “Verified robots in GSC”)
+- Include brief config context where relevant (e.g., "Verified robots in GSC")
 
 ## Results & Impact
 - Quantified outcomes (metrics, scores, deltas)
-- Qualitative benefits if metrics aren’t available
+- Qualitative benefits if metrics aren't available
 
 ## Useful Links
 - Prefer deep admin links for verification:
@@ -65,9 +65,12 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 
 ### Patterns To Avoid in `/docs/`
 - Long, generic best-practice sections (move to knowledge-hub)
-- Maintenance checklists and “what you should do” (unless requested)
+- Maintenance checklists and "what you should do" (unless requested)
 - Future roadmaps unrelated to delivered scope (keep minimal or omit)
 - Dense paragraphs; prefer tables and bullets
+- **Unnecessary parentheses** like "(Concise)" or "(Quick)" - just state the section name
+- **Future promises** - never commit to future work or features not yet delivered
+- **Client responsibilities** - don't include items that are the client's responsibility (like Shopify Analytics)
 
 ## Writing Techniques
 
@@ -188,6 +191,21 @@ Every technical detail must answer: so what’s the business value?
 **Solution**: Always use `width="70%"` and `style="border-radius:8px"`
 **Example**: `<img src="../assets/image.png" alt="Description" width="70%" style="border-radius:8px" />`
 
+### Unnecessary Parentheses
+**Problem**: Adding unnecessary parentheses like "(Concise)" or "(Quick)"
+**Solution**: Just state the section name directly
+**Example**: Use "What We Implemented" not "What We Implemented (Concise)"
+
+### Future Promises
+**Problem**: Committing to future work or features not yet delivered
+**Solution**: Only document work that has been completed and delivered
+**Example**: Don't say "Once access is granted, we can set up custom dashboards" - only document what's already done
+
+### Client Responsibilities
+**Problem**: Including items that are the client's responsibility
+**Solution**: Only include work that the agency delivered
+**Example**: Don't include Shopify Analytics if the agency didn't implement it - move to "Other Sources" section
+
 ## Example Prompt (Copy/Paste)
 
 Write a client-facing `/docs/` page using this structure:
@@ -199,3 +217,20 @@ Write a client-facing `/docs/` page using this structure:
 - Links: <robots/sitemap/PSI/GSC/admin + knowledge-hub>
 
 Ensure it opens with an Implementation Summary table including Priority and Evidence Link(s), stays concise, includes deep admin verification links, and avoids how-to. Move educational content to `/knowledge-hub/` and cross-link it.
+
+## Table Structure Guidelines
+
+### Implementation Summary Table
+- **First column**: Item (what we implemented)
+- **Second column**: What We Delivered (description of the work)
+- **Third column**: Priority (High/Medium/Low)
+- **Fourth column**: Date(s) (when implemented)
+- **Fifth column**: Status (✅ Active / ⏸️ Paused / 🔄 In progress)
+- **Sixth column**: Evidence Link(s) (direct links to verify work)
+
+### Table Content Rules
+- **Item names**: Use clear, action-oriented names (e.g., "Google Search Console" not "GSC Integration")
+- **What We Delivered**: Focus on concrete deliverables, not future possibilities
+- **Priority**: Only use High/Medium/Low - avoid other priority levels
+- **Evidence Links**: Always provide direct, actionable links to verify the work
+- **No future promises**: Only include work that has been completed and delivered
