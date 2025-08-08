@@ -89,17 +89,21 @@ docs-the-savage-report/
 │   ├── 02-technical-architecture.md  🏗️ Platform infrastructure
 │   ├── 03-platform-details.md
 │   ├── 04-cms-structure.md           📁 Content management system
-│   ├── 05.1-seo-schema.md           🏷️ Structured data implementation
 │   ├── 05-seo-implementation.md      🎯 SEO strategy & implementation
+│   ├── 05.1-seo-schema.md            📋 Schema markup implementation
 │   ├── 06-page-speed-optimization.md ⚡ Performance optimizations
 │   ├── 07-analytics-implementation.md 📊 Analytics tracking & monitoring
+│   ├── 08-smootify-integration.md    🛒 E-commerce integration with Shopify
 │
 ├── knowledge-hub/           # Reusable knowledge articles
-│   ├── knowledge-hub-guidelines.md
+│   ├── ecommerce/
+│   │   └── smootify-webflow-integration-guide.md 🛒 Complete Smootify setup & troubleshooting
+│   ├── performance/
+│   │   └── page-speed-optimization-guide.md ⚡ Performance best practices
 │   └── seo/
 │       ├── xml-sitemap-management.md 📚 XML sitemap best practices
-│       ├── robots-txt-management.md
-│       └── schema-markup-for-ecommerce.md
+│       ├── robots-txt-management.md 🤖 Robots.txt configuration
+│       └── schema-markup-for-ecommerce.md 📋 Structured data implementation
 │
 ├── prompts/                 # Documentation templates
 │   └── docs-guidelines.md   ✍️ Documentation writing guidelines
