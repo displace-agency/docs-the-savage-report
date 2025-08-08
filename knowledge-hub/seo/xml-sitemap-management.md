@@ -27,6 +27,14 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 - In GSC, check Sitemaps for status, discovered URLs, and last read
 - Ensure no redirected or noindex URLs are present
 
+## Submission Proof (Google Search Console)
+Submitting the sitemap in Google Search Console confirms Google can fetch it and provides ongoing status (Success/Errors), last read time, and discovered URLs. This is a fast way to verify the setup and catch issues.
+
+![GSC Sitemaps submission for the-savage-report.com](../../assets/seo/gsc-sitemaps-submission.png)
+
+- Page: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+- If the screenshot doesn’t render, place it at `assets/seo/gsc-sitemaps-submission.png` in the repo.
+
 ## When to Resubmit in GSC
 - Major structure changes (navigation, URLs)
 - Bulk content additions (new sections/collections)
@@ -64,6 +72,6 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 
 ---
 Last Updated: August 2025  
-Article Version: 1.1  
+Article Version: 1.2  
 Category: SEO / Technical  
 Tags: #SEO #Sitemap #Webflow #SearchConsole #Technical-SEO
