@@ -51,11 +51,11 @@ Welcome to The Savage Report Knowledge Hub! This is a reusable collection of con
 
 ## 🗃️ Assets (Images & Media)
 - Purpose: Assets complement the text; they’re not “proof.” Use them to illustrate where to find settings or what to expect.
-- Placement: Store shared, generic images under `assets/` with subfolders (e.g., `assets/seo/`).
-- Naming: Kebab-case, descriptive, and date if relevant. Examples:
+- Placement: Store images under a flat `assets/` folder (no nested category folders).
+- Naming: Kebab-case, descriptive, include date if relevant. Examples:
   - `gsc-sitemaps-example-2025-08.png`
   - `webflow-custom-code-head-location.png`
-- Referencing: Use relative paths in articles, e.g. `![Alt text](../../assets/seo/gsc-sitemaps-example-2025-08.png)`.
+- Referencing: Use relative paths in articles, e.g. `![Alt text](../../assets/gsc-sitemaps-example-2025-08.png)`.
 - Client-specific screenshots belong in `/docs/` articles, not in the Knowledge Hub.
 - Prefer hosted links only if the asset must be external; otherwise keep in-repo.
 

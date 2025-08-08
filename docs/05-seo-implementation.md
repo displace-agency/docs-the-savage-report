@@ -58,7 +58,7 @@ Customers → Webflow (Pages, CMS) → Smootify (Bridge) → Shopify (Products, 
 ## Sitemaps in Google Search Console (Admin Reference)
 This is where you can review and manage sitemap status over time (status, last read, discovered URLs). After publishing significant changes, revisit this page to resubmit if needed.
 
-![GSC Sitemaps submission – the-savage-report.com](../assets/seo/gsc-sitemaps-the-savage-report-2025-08-08.png)
+![GSC Sitemaps submission – the-savage-report.com](../assets/gsc-sitemaps-the-savage-report-2025-08-08.png)
 
 - Open: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
@@ -75,27 +75,27 @@ This is where you can review and manage sitemap status over time (status, last r
 
 ## Webflow SEO Settings (Screenshots)
 
-![General SEO settings](../assets/seo/seo-implementation-webflow-seo-settings-01.png)
+![General SEO settings](../assets/seo-implementation-webflow-seo-settings-01.png)
 - We configure global SEO at the site level so defaults are consistent across all pages.
 - Open: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
 
-![Meta/OG configuration](../assets/seo/seo-implementation-webflow-seo-settings-02.png)
+![Meta/OG configuration](../assets/seo-implementation-webflow-seo-settings-02.png)
 - Titles and meta descriptions follow a brand-consistent format; Open Graph ensures clean social sharing cards.
 - Reference: [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
 
-![Sitemap auto‑generation](../assets/seo/seo-implementation-webflow-seo-settings-03.png)
+![Sitemap auto‑generation](../assets/seo-implementation-webflow-seo-settings-03.png)
 - Sitemap auto‑generation is enabled in Webflow; we also submitted it in GSC for tracking and diagnostics.
 - Links: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
-![robots.txt configuration](../assets/seo/seo-implementation-webflow-seo-settings-04.png)
+![robots.txt configuration](../assets/seo-implementation-webflow-seo-settings-04.png)
 - robots.txt allows public pages and excludes utility routes to avoid crawl waste.
 - Links: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
 
-![Canonical/advanced](../assets/seo/seo-implementation-webflow-seo-settings-05.png)
+![Canonical/advanced](../assets/seo-implementation-webflow-seo-settings-05.png)
 - Self‑referencing canonicals and advanced settings prevent duplicate content issues.
 - Tip: Verify in page source or using your SEO tool of choice.
 
-![Publishing](../assets/seo/seo-implementation-webflow-seo-settings-06.png)
+![Publishing](../assets/seo-implementation-webflow-seo-settings-06.png)
 - After changes, publish the site to push SEO settings live; then verify in GSC/PSI.
 - Links: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
