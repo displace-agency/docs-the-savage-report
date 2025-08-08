@@ -103,7 +103,10 @@ Every technical detail must answer: so what’s the business value?
   - Mentioning "meta titles" when displaying "robots.txt settings"
 
 ### Image Naming & Organization
-- **Naming convention**: `article-name-keywords-date.png` (e.g., `seo-implementation-webflow-seo-settings-01.png`)
+- **Naming convention**: 
+  - **Article-specific images**: `article-number-keywords.png` (e.g., `03-website-structure-webflow-designer-pages.png`)
+  - **General images**: `article-name-keywords-date.png` (e.g., `seo-implementation-webflow-seo-settings-01.png`)
+- **Article numbering format**: Use sequential numbers (01, 02, 03) followed by descriptive keywords (2-5 keywords)
 - **Placement**: Client-specific images in `/docs/`, generic images in `/assets/`
 - **Consistent styling**: Always use `width="70%"` and `style="border-radius:8px"` for embedded images
 
