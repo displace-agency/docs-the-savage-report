@@ -60,45 +60,64 @@ This is where you can review and manage sitemap status over time (status, last r
 
 <img src="../assets/seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
 
-- Open: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+• **Open**: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
 ## Webflow SEO Settings (By Topic)
 
 ### Global SEO Defaults
+We set site-wide defaults once, so every page starts with strong SEO settings.
+
 <img src="../assets/seo-implementation-webflow-seo-settings-01.png" alt="Global SEO defaults in Webflow" width="70%" style="border-radius:8px" />
-- We set site-wide defaults once, so every page starts with strong SEO settings.
-- Open: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
+
+• **Purpose**: Configure site-wide SEO defaults that apply to all pages
+• **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
 
 ### Titles, Meta & Open Graph
+Brand-consistent titles and optimized descriptions; Open Graph ensures clean social cards.
+
 <img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Meta title/description and Open Graph settings" width="70%" style="border-radius:8px" />
-- Brand-consistent titles and optimized descriptions; Open Graph ensures clean social cards.
-- Reference: [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
+
+• **Purpose**: Set default meta titles, descriptions, and Open Graph tags for social sharing
+• **Location**: [Webflow → Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
 
 ### Sitemap
-<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Sitemap auto-generation enabled" width="70%" style="border-radius:8px" />
-- Auto-generate sitemap is ON; we also submitted it in GSC for tracking and diagnostics.
-- Links: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+Sitemap auto‑generation is enabled in Webflow; we also submitted it in GSC for tracking and diagnostics.
 
-### robots.txt
+<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Sitemap auto‑generation enabled" width="70%" style="border-radius:8px" />
+
+• **Purpose**: Automatically generate and update sitemap.xml when site is published
+• **Links**: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+
+### Robots.txt
+Configured to allow public pages and exclude utility routes to avoid crawl waste.
+
 <img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration in Webflow" width="70%" style="border-radius:8px" />
-- Allows public pages and excludes utility routes to avoid crawl waste.
-- Links: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
+
+• **Purpose**: Control search engine crawling behavior and prevent duplicate content
+• **Links**: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
 
 ### Canonical & Advanced
+Self‑referencing canonicals and advanced options to prevent duplicate content.
+
 <img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Canonical and advanced settings" width="70%" style="border-radius:8px" />
-- Self‑referencing canonicals and advanced options to prevent duplicate content.
+
+• **Purpose**: Set global canonical URL and control bot access (search engines and AI)
+• **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
 
 ### Publishing
+After changes, publish the site so updates go live; then verify in GSC/PSI.
+
 <img src="../assets/seo-implementation-webflow-seo-settings-06.png" alt="Publishing changes in Webflow" width="70%" style="border-radius:8px" />
-- After changes, publish the site so updates go live; then verify in GSC/PSI.
-- Links: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+
+• **Purpose**: Deploy SEO changes to live site
+• **Links**: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
 ## Schema Markup
-Inline JSON‑LD is placed in Webflow’s Custom Code head to provide Organization, WebSite, and LocalBusiness context.
+Inline JSON‑LD is placed in Webflow's Custom Code head to provide Organization, WebSite, and LocalBusiness context.
 
-- Location: Webflow → Project Settings → Custom Code → Head  
-- Link: [webflow.com/dashboard/sites/savage-report-we/custom-code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
-- Validate with [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
+• **Location**: Webflow → Project Settings → Custom Code → Head  
+• **Link**: [Webflow Custom Code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
+• **Validate**: [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
 
 ## Schema JSON-LD (Examples)
 
@@ -136,16 +155,16 @@ Product (template)
 ```
 
 ## Useful Links
-- Webflow Site Settings: [webflow.com/dashboard/sites/savage-report-we/general](https://webflow.com/dashboard/sites/savage-report-we/general)
-- Webflow Designer: [webflow.com/dashboard/sites/savage-report-we/designer](https://webflow.com/dashboard/sites/savage-report-we/designer)
-- Google Search Console (Property): [search.google.com/search-console?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com)
-- GSC Robots.txt Tester: [search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com](https://search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain%3Athe-savage-report.com)
-- GSC Sitemaps: [search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
-- PageSpeed Insights: [pagespeed.web.dev/report?url=https://the-savage-report.com](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
-- Live Sitemap: [the-savage-report.com/sitemap.xml](https://the-savage-report.com/sitemap.xml)
-- Robots: [the-savage-report.com/robots.txt](https://the-savage-report.com/robots.txt)
-- Performance Doc: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
-- XML Sitemap Management (Guide): [knowledge-hub/seo/xml-sitemap-management.md](../knowledge-hub/seo/xml-sitemap-management.md)
+• **Webflow Site Settings**: [webflow.com/dashboard/sites/savage-report-we/general](https://webflow.com/dashboard/sites/savage-report-we/general)
+• **Webflow Designer**: [webflow.com/dashboard/sites/savage-report-we/designer](https://webflow.com/dashboard/sites/savage-report-we/designer)
+• **Google Search Console (Property)**: [search.google.com/search-console?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com)
+• **GSC Robots.txt Tester**: [search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
+• **GSC Sitemaps**: [search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+• **PageSpeed Insights**: [pagespeed.web.dev/report?url=https://the-savage-report.com](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+• **Live Sitemap**: [the-savage-report.com/sitemap.xml](https://the-savage-report.com/sitemap.xml)
+• **Robots**: [the-savage-report.com/robots.txt](https://the-savage-report.com/robots.txt)
+• **Performance Doc**: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
+• **XML Sitemap Management (Guide)**: [knowledge-hub/seo/xml-sitemap-management.md](../knowledge-hub/seo/xml-sitemap-management.md)
 
 ---
 *Last Updated: August 2025*  
