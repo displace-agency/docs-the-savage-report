@@ -5,42 +5,37 @@ We implemented foundational SEO across The Savage Report to help search engines 
 
 ## SEO Implementation Summary
 
-| Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
-|------|-------------------|----------|---------|--------|-------------------|
-| Core Web Vitals & Speed | Performance work that improves LCP/CLS/FID (see performance doc) | High | Aug 2025 | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights Report</a> · [Performance Doc](./06-page-speed-optimization.md) |
-| Metadata & Open Graph | Brand-consistent titles, optimized descriptions, Open Graph for key pages | High | Jul–Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Site Settings</a> |
-| XML Sitemap | Auto-generated sitemap enabled and verified | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
-| Robots.txt Configuration | Dual setup: Webflow main site + Shopify subdomain; optimized for SEO and crawl efficiency | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
-| Domain & SSL | Proper HTTPS and canonical host (www and non-www) configuration | High | Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Site Settings</a> |
-| Canonical URLs | Self-referencing canonicals implemented sitewide | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/" target="_blank" rel="noopener noreferrer">Homepage (view source to verify)</a> |
-| URL Structure | Clean, SEO-friendly slugs across pages and collections | Medium | Jul 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer (Pages/Slugs)</a> |
-| Site Architecture | Added "Shop All" index; optimized CMS collections and content staging | Medium | Aug 2025 | ✅ Active | [CMS Structure Doc](./04-cms-structure.md) |
-| Mobile SEO | Simplified mobile header; improved mobile UX structure | Medium | Aug 2025 | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights (Mobile Tab)</a> |
-| Structured Data (Schema) | Comprehensive schema markup implementation across all content types | High | Aug 2025 | ✅ Active | [Schema Markup Doc](./05.1-seo-schema.md) |
+| Item | What We Delivered | Impact | Status | Reference Link(s) |
+|------|-------------------|--------|--------|-------------------|
+| [Structured Data (Schema Markup)](#structured-data-schema-markup) | JSON-LD for Product, Organization, Local Business, and Website | High | ✅ Active | [Schema Markup Doc](./05.1-seo-schema.md) |
+| [SEO-Optimized Content & Metadata](#seo-optimized-content--metadata) | Brand-consistent titles, descriptions, Open Graph tags, optimized URL slugs | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
+| [Technical SEO](#technical-seo) | XML sitemap, robots.txt, canonicals, HTTPS, site architecture improvements | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Robots.txt</a> |
+| [Mobile & Performance](#mobile--performance) | Mobile layout improvements and Core Web Vitals optimization | Medium | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a> · [Performance Doc](./06-page-speed-optimization.md) |
+| [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
-## What We Implemented (Concise)
+## What We Implemented
 
-### 1) Structured Data (Schema Markup)
+### Structured Data (Schema Markup)
 - Prepared JSON-LD for Product, Organization, Local Business, and Website
 - Currently inactive to avoid conflicts with the performance optimizer; ready to enable after compatibility validation
 - Goal: enable rich results (stars, price, brand info) without compromising speed
 
-### 2) SEO-Optimized Content & Metadata
+### SEO-Optimized Content & Metadata
 - Added SEO text blocks on collection pages (human-first, keyword-informed)
 - Implemented consistent, brand-first meta titles and optimized descriptions
 - Added Open Graph tags for improved social sharing
 - Standardized URL slugs using best practices
 
-### 3) Technical SEO
+### Technical SEO
 - Enabled and verified auto XML sitemap
 - Configured robots.txt for efficient crawling (verified in GSC)
 - Implemented self-referencing canonicals sitewide
 - Ensured HTTPS across domains with proper www/non-www handling
 - Improved site architecture ("Shop All" index, optimized CMS collections, staged non-core pages)
 
-### 4) Mobile & Performance
+### Mobile & Performance
 - Mobile layout improvements (e.g., simplified homepage header for speed)
 - Core Web Vitals improved with performance work (see performance doc)
 
