@@ -9,8 +9,8 @@ We implemented foundational SEO across The Savage Report to help search engines 
 |----------|------|-------------------|---------|--------|------------------|
 | High | Core Web Vitals & Speed | Performance work that improves LCP/CLS/FID (see performance doc) | Aug 2025 | ✅ Active | [PageSpeed Insights Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com) · [Performance Doc](./06-page-speed-optimization.md) |
 | High | Metadata & Open Graph | Brand-consistent titles, optimized descriptions, Open Graph for key pages | Jul–Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
-| High | XML Sitemap | Auto-generated sitemap enabled and verified | Aug 2025 | ✅ Active | [Sitemap](https://the-savage-report.com/sitemap.xml) |
-| High | Robots.txt | Configured to prevent crawl waste and allow key pages; verified in GSC | Aug 2025 | ✅ Active | [robots.txt](https://the-savage-report.com/robots.txt) · [Google Search Console Property](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com) |
+| High | XML Sitemap | Auto-generated sitemap enabled and verified | Aug 2025 | ✅ Active | [Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com) |
+| High | Robots.txt | Configured to prevent crawl waste and allow key pages; verified in GSC | Aug 2025 | ✅ Active | [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots.txt Tester](https://search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain%3Athe-savage-report.com) |
 | High | Domain & SSL | Proper HTTPS and canonical host (www and non-www) configuration | Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
 | High | Canonical URLs | Self-referencing canonicals implemented sitewide | Aug 2025 | ✅ Active | [Homepage (view source to verify)](https://the-savage-report.com/) |
 | Medium | URL Structure | Clean, SEO-friendly slugs across pages and collections | Jul 2025 | ✅ Active | [Webflow Designer (Pages/Slugs)](https://webflow.com/dashboard/sites/savage-report-we/designer) |
@@ -20,7 +20,7 @@ We implemented foundational SEO across The Savage Report to help search engines 
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
-## What We Implemented
+## What We Implemented (Concise)
 
 ### 1) Structured Data (Schema Markup)
 - Prepared JSON-LD for Product, Organization, Local Business, and Website
@@ -94,6 +94,8 @@ Product (template)
 - Webflow Site Settings: [webflow.com/dashboard/sites/savage-report-we/general](https://webflow.com/dashboard/sites/savage-report-we/general)
 - Webflow Designer: [webflow.com/dashboard/sites/savage-report-we/designer](https://webflow.com/dashboard/sites/savage-report-we/designer)
 - Google Search Console (Property): [search.google.com/search-console?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com)
+- GSC Robots.txt Tester: [search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com](https://search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain%3Athe-savage-report.com)
+- GSC Sitemaps: [search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 - PageSpeed Insights: [pagespeed.web.dev/report?url=https://the-savage-report.com](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 - Live Sitemap: [the-savage-report.com/sitemap.xml](https://the-savage-report.com/sitemap.xml)
 - Robots: [the-savage-report.com/robots.txt](https://the-savage-report.com/robots.txt)

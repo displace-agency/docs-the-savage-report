@@ -36,7 +36,7 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 ## Implementation Summary
 | Priority | Area | What We Delivered | Date(s) | Status | Evidence Link(s) |
 |----------|------|-------------------|---------|--------|------------------|
-| High/Medium/Low | Item | What we built/configured | Aug 2025 | ✅ Active | Links to robots.txt, sitemap, PSI, GSC, admin, or internal doc |
+| High/Medium/Low | Item | What we built/configured | Aug 2025 | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
 
 ## What We Implemented (Concise)
 - 3–6 concrete bullets (one line each)
@@ -47,7 +47,12 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 - Qualitative benefits if metrics aren’t available
 
 ## Useful Links
-- Clickable links to live sources (robots.txt, sitemap, PSI, GSC), admin panels, and relevant knowledge-hub guides
+- Prefer deep admin links for verification:
+  - GSC robots tester, GSC sitemaps
+  - Live endpoints (robots.txt, sitemap.xml)
+  - PageSpeed Insights report for the domain
+  - Platform admin pages (e.g., Webflow site settings/designer)
+- Link to relevant knowledge-hub guides
 ```
 
 ### Patterns To Prefer
@@ -85,11 +90,13 @@ Every technical detail must answer: so what’s the business value?
 
 ## Linking Standards
 - Use real, actionable links when possible
-  - Example: Webflow settings `https://webflow.com/dashboard/sites/savage-report-we/general`
+  - Webflow settings `https://webflow.com/dashboard/sites/savage-report-we/general`
   - Live sitemap `https://the-savage-report.com/sitemap.xml`
   - Robots.txt `https://the-savage-report.com/robots.txt`
   - PageSpeed Insights `https://pagespeed.web.dev/report?url=https://the-savage-report.com`
   - Google Search Console property (domain) `https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com`
+  - GSC robots tester `https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com`
+  - GSC sitemaps `https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com`
 - Link to internal docs using relative paths
 - Link to knowledge-hub for how-to/education
 
@@ -97,7 +104,7 @@ Every technical detail must answer: so what’s the business value?
 - [ ] Clear: plain language, no jargon
 - [ ] Concise: visual summary first, bullets not paragraphs
 - [ ] Concrete: dates, statuses, metrics
-- [ ] Evidence: live links to verify work (robots, sitemap, PSI, GSC, admin)
+- [ ] Evidence: deep admin and live links to verify work (robots, sitemap, PSI, GSC)
 - [ ] Value-driven: benefits are explicit
 - [ ] Linked: admin URLs and knowledge-hub references
 
@@ -111,4 +118,4 @@ Write a client-facing `/docs/` page using this structure:
 - Business impact: <metrics or concise value>
 - Links: <robots/sitemap/PSI/GSC/admin + knowledge-hub>
 
-Ensure it opens with an Implementation Summary table including Priority and Evidence Link(s), stays concise, includes live verification links, and avoids how-to. Move educational content to `/knowledge-hub/` and cross-link it.
+Ensure it opens with an Implementation Summary table including Priority and Evidence Link(s), stays concise, includes deep admin verification links, and avoids how-to. Move educational content to `/knowledge-hub/` and cross-link it.
