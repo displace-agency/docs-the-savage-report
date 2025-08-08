@@ -1,20 +1,32 @@
-# CMS Structure - The Savage Report
+# CMS Structure & Content Management - The Savage Report
 
 ## What This Is & Why It Matters
-We've built a powerful hybrid content management system that combines Webflow's design flexibility with Shopify's e-commerce power. This dual-system approach ensures your products always display accurate, real-time information while maintaining beautiful, custom page designs that drive conversions.
+Your website uses a sophisticated dual-system approach: Webflow for beautiful, custom page designs and Shopify for real-time product data. This is the primary robots.txt that controls crawling for your main website content, products, and collections.
 
 ## CMS Implementation Summary
 
 | Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
 |------|-------------------|----------|---------|--------|-------------------|
-| Hybrid CMS Architecture | Webflow + Shopify integration via Smootify | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| Products Collection | 150+ product pages with Shopify ID linking | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Products Collection</a> |
-| Collections System | 12 themed product groupings with auto-updating | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Collections Collection</a> |
-| Vendors Collection | 8 brand profiles with logo and social links | Medium | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/vendors" target="_blank" rel="noopener noreferrer">Vendors Collection</a> |
-| Lookbooks Collection | 6 visual style guides for product inspiration | Medium | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/lookbooks" target="_blank" rel="noopener noreferrer">Lookbooks Collection</a> |
-| Campaigns Collection | 4 time-based marketing initiatives | Medium | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/campaigns" target="_blank" rel="noopener noreferrer">Campaigns Collection</a> |
-| Special Projects | 3 limited edition collaboration drops | Low | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/special-projects" target="_blank" rel="noopener noreferrer">Special Projects Collection</a> |
-| SEO Integration | Meta titles, descriptions, and structured data | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Product SEO Fields</a> |
+| Products Collection | 46 product pages with Shopify ID linking | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Products Collection</a> |
+| Collections Structure | 6 main collections with category organization | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Collections Management</a> |
+| SEO Optimization | Meta titles, descriptions, and structured data for all products | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Product SEO Fields</a> |
+| Shopify Integration | Real-time product sync with inventory management | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Shopify Bridge</a> |
+
+## CMS Collections Overview
+
+### 1) Collections (6 Main Categories)
+- **Accessories**: Jewelry, bags, and lifestyle items
+- **Hats**: Various hat styles and designs
+- **Pants**: Different pant styles and fits
+- **Shirts**: Long-sleeve and button-up options
+- **T-Shirts**: Casual and graphic tees
+- **All Products**: Complete product catalog
+
+### 2) Products Collection (46 Items)
+- **Product Variants**: Size, color, and style options
+- **SEO Fields**: Meta titles, descriptions, and structured data
+- **Shopify Integration**: Real-time inventory and pricing
+- **Image Management**: Multiple product photos with zoom functionality
 
 ## What We Implemented
 

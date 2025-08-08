@@ -1,15 +1,14 @@
-# Website Structure & Static Pages - The Savage Report
+# Website Content & Static Pages - The Savage Report
 
 ## What This Is & Why It Matters
-Your website, The Savage Report, is built with simplicity and flexibility in mind. This guide explains how your site is organized into 22 total pages, so you can understand the foundation and manage it confidently even without technical expertise.
+Your website, The Savage Report, is built with simplicity and flexibility in mind. This guide explains how your site is organized into 15 total pages, so you can understand the foundation and manage it confidently even without technical expertise.
 
 ## Website Structure Implementation Summary
 
 | Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
 |------|-------------------|----------|---------|--------|-------------------|
-| Site Architecture | Complete website foundation with 22 pages | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
-| Page Structure | 22 total pages organized by purpose and function | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/designer/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
-| CMS Collections | 6 collections with 150+ products and 12 categories | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/designer/savage-report-we" target="_blank" rel="noopener noreferrer">CMS Collections</a> |
+| Site Architecture | Complete website foundation with 15 pages | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
+| CMS Collections | 6 collections with 46 products and 12 categories | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/designer/savage-report-we" target="_blank" rel="noopener noreferrer">CMS Collections</a> |
 | Component Library | 12 reusable components for consistent design | Medium | Jun 2025 | ✅ Active | <a href="https://webflow.com/designer/savage-report-we" target="_blank" rel="noopener noreferrer">Components Panel</a> |
 | Navigation System | Intuitive menu structure with 5 main sections | High | Jun 2025 | ✅ Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site Navigation</a> |
 
@@ -23,7 +22,7 @@ Your website, The Savage Report, is built with simplicity and flexibility in min
 - **Last Published**: August 7, 2025
 - **Localization**: Primary locale set to English (en)
 
-### **Page Structure (22 Total Pages)**
+### **Page Structure (15 Total Pages)**
 - **Main Pages**: Home, About, Newdrops, Contact, Search Results
 - **Policy Pages**: Privacy, Terms, Shipping & Returns, Refund Policy
 - **Collection Pages**: Product, Collection, Vendor, Lookbooks, Campaigns, Special Projects
@@ -46,10 +45,10 @@ Your website, The Savage Report, is built with simplicity and flexibility in min
 ## Results & Impact
 
 ### **Operational Efficiency**
-- **150+ products** managed through integrated CMS
+- **46 products** managed through integrated CMS
 - **12 collections** for organized product categorization
 - **8 vendors** with dedicated brand pages
-- **22 total pages** with consistent design and functionality
+- **15 total pages** with consistent design and functionality
 
 ### **User Experience Benefits**
 - **Intuitive navigation** with 5 main sections
@@ -74,7 +73,7 @@ The main landing page showcases your brand with a prominent hero banner and navi
 - **Features**: Hero banner, main navigation, featured content sections
 
 ### **Webflow Designer Page Structure**
-All 22 pages are organized in the Webflow designer for easy management and updates.
+All 15 pages are organized in the Webflow designer for easy management and updates.
 
 <img src="../assets/03-website-structure-webflow-designer-pages.png" alt="Pages organized in Webflow designer" width="70%" style="border-radius:8px" />
 
