@@ -87,6 +87,7 @@ Every technical detail must answer: so what’s the business value?
 - Use tables for summaries/metrics/field lists; bullets for lists
 - Visual indicators: ✅ Active, ❌ Inactive, ⏸️ Paused, 🔄 In progress, ⚡ Performance, 🎯 Business
 - Keep sections under ~6 bullets; split if longer
+- **Bullet points**: Use proper markdown list format (-) for better list display, not bullet characters (•)
 
 ## 🖼️ Image & Visual Content Guidelines
 
@@ -106,7 +107,7 @@ Every technical detail must answer: so what’s the business value?
 ### Image Content Structure
 - **Before image**: Brief context about what the screenshot shows
 - **Image**: Properly named and styled screenshot
-- **After image**: Bullet points (•) with purpose and relevant links
+- **After image**: Bullet points (-) with purpose and relevant links
 - **Format**:
   ```markdown
   ### Section Title
@@ -114,9 +115,9 @@ Every technical detail must answer: so what’s the business value?
   
   <img src="../assets/article-name-keywords-date.png" alt="Descriptive alt text" width="70%" style="border-radius:8px" />
   
-  • **Purpose**: What this setting/feature accomplishes
-  • **Location**: [Deep link to admin page](url)
-  • **Links**: [Live verification](url) · [Admin panel](url)
+  - **Purpose**: What this setting/feature accomplishes
+  - **Location**: [Deep link to admin page](url)
+  - **Links**: [Live verification](url) · [Admin panel](url)
   ```
 
 ### Screenshot Quality Standards
@@ -152,7 +153,7 @@ Every technical detail must answer: so what’s the business value?
 - [ ] Value-driven: benefits are explicit
 - [ ] Linked: admin URLs and knowledge-hub references
 - [ ] **Image-text alignment**: Screenshots match descriptions exactly
-- [ ] **Consistent formatting**: All bullet points use • not -
+- [ ] **Consistent formatting**: All bullet points use proper markdown list format (-) not bullet characters (•)
 - [ ] **Proper styling**: Images have 70% width and rounded corners
 
 ## 🚨 Common Pitfalls & Lessons Learned
@@ -163,9 +164,9 @@ Every technical detail must answer: so what’s the business value?
 **Example**: Don't say "SEO settings" when screenshot shows "Custom Code" settings
 
 ### Formatting Inconsistencies
-**Problem**: Mixed use of dashes (-) and bullet points (•)
-**Solution**: Always use bullet points (•) for consistency and professionalism
-**Example**: Use `• **Purpose**:` not `- Purpose:`
+**Problem**: Mixed use of dashes (-) and bullet characters (•)
+**Solution**: Always use proper markdown list format (-) for consistency and better list display
+**Example**: Use `- **Purpose**:` not `• Purpose:` or `- Purpose:`
 
 ### Broken or Irrelevant Links
 **Problem**: Links point to wrong pages or are broken
