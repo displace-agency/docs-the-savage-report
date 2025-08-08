@@ -34,9 +34,9 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 1–2 sentences that explain the concept in plain language plus the business value.
 
 ## Implementation Summary
-| Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
-|------|-------------------|----------|---------|--------|-------------------|
-| Item Name | What we built/configured | High/Medium/Low | Aug 2025 | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
+| Item | What We Delivered | Impact | Status | Reference Link(s) |
+|------|-------------------|--------|--------|-------------------|
+| [Item Name](#item-name) | What we built/configured | High/Medium/Low | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
 
 ## What We Implemented
 - 3–6 concrete bullets (one line each)
@@ -56,10 +56,12 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 ```
 
 ### Patterns To Prefer
-- Start with a visual summary (table) with Priority and Evidence Link(s)
+- Start with a visual summary (table) with Impact and Evidence Link(s)
+- **Use anchor links in table first column** for seamless section navigation
+- **Ensure table items have exact corresponding section titles** for content consistency
 - Use short bullets and bold keywords
 - Add cross-links: related `/docs/` pages and relevant `/knowledge-hub/` articles
-- Include dates and statuses (✅ Active / ⏸️ Paused / 🔄 In progress)
+- Include statuses (✅ Active / ⏸️ Paused / 🔄 In progress)
 - Add small diagrams for quick orientation (ASCII or Mermaid) when helpful
 - Include small schema snippets when they build trust (e.g., Organization/Product JSON-LD)
 
@@ -250,16 +252,31 @@ Ensure it opens with an Implementation Summary table including Priority and Evid
 ## Table Structure Guidelines
 
 ### Implementation Summary Table
-- **First column**: Item (what we implemented)
+- **First column**: Item (what we implemented) - **MUST have corresponding section with exact same title**
 - **Second column**: What We Delivered (description of the work)
-- **Third column**: Priority (High/Medium/Low)
-- **Fourth column**: Date(s) (when implemented)
-- **Fifth column**: Status (✅ Active / ⏸️ Paused / 🔄 In progress)
-- **Sixth column**: Reference Link(s) (direct links to verify work)
+- **Third column**: Impact (High/Medium/Low) - **Use "Impact" instead of "Priority" for better business context**
+- **Fourth column**: Status (✅ Active / ⏸️ Paused / 🔄 In progress)
+- **Fifth column**: Reference Link(s) (direct links to verify work)
 
 ### Table Content Rules
 - **Item names**: Use clear, action-oriented names (e.g., "Google Search Console" not "GSC Integration")
 - **What We Delivered**: Focus on concrete deliverables, not future possibilities
-- **Priority**: Only use High/Medium/Low - avoid other priority levels
+- **Impact**: Only use High/Medium/Low - avoid other impact levels
 - **Reference Links**: Always provide direct, actionable links to verify the work
 - **No future promises**: Only include work that has been completed and delivered
+
+### **NEW: Table-Section Alignment Rule (Critical)**
+- **Every table item MUST have a corresponding section with the exact same title**
+- **Use anchor links in the first column**: `[Item Name](#item-name)` format
+- **Section titles must match table items exactly** for proper navigation
+- **Remove orphaned table rows** that don't have corresponding content sections
+- **This ensures content consistency** and prevents readers from clicking on non-existent sections
+
+### **NEW: Anchor Link Implementation**
+- **Format**: `[Item Name](#anchor-id)` where anchor-id matches the section
+- **Example**: `[Organization Schema](#organization-schema)` links to `### Organization Schema`
+- **Benefits**: 
+  - Readers can quickly navigate to relevant sections
+  - Content consistency is enforced (table items must have sections)
+  - Easy to spot missing or orphaned content
+  - Improves document usability and navigation
