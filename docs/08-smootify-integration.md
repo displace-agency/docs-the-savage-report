@@ -8,6 +8,7 @@ Smootify (formerly Multify) bridges Webflow's design flexibility with Shopify's 
 
 | Component | What We Delivered | Impact | Status | Reference Link(s) |
 |-----------|-------------------|--------|--------|-------------------|
+| [Installation & Page Integration](#installation--page-integration) | Site-wide scripts, PDP hero, carousels, add-to-cart, filters configured | High | ✅ Active | [Webflow Project Settings](https://webflow.com/dashboard/sites/savage-report-we/settings/general), [Webflow Designer](https://webflow.com/design/savage-report-we) |
 | [Product Synchronization](#product-synchronization) | 150+ products auto-sync from Shopify to Webflow CMS every 15 minutes | High - Zero manual updates needed | ✅ Active | [Live Products](https://the-savage-report.com/products), [Webflow CMS](https://webflow.com/dashboard/sites/savage-report-we/cms) |
 | [Collection Management](#collection-management) | 12 product collections with automated categorization | Medium - Streamlined navigation | ✅ Active | [Collections Page](https://the-savage-report.com/collections), [Shopify Collections](https://admin.shopify.com/store/the-savage-report/collections) |
 | [Cart & Checkout System](#cart-checkout-system) | Real-time cart with Shopify checkout integration | High - Secure payments & order processing | ✅ Active | [Test Cart](https://the-savage-report.com/cart), [Shopify Orders](https://admin.shopify.com/store/the-savage-report/orders) |
@@ -38,6 +39,72 @@ Smootify (formerly Multify) bridges Webflow's design flexibility with Shopify's 
 - **12 Collections**: Organized categorization with dynamic filtering
 - **Real-time Inventory**: Prevents overselling with live stock status
 - **Cross-platform Accounts**: Unified customer login experience
+
+## Installation & Page Integration
+
+The following sections explain exactly how the integration is implemented on the site and key page areas. This is documentation of what exists today, written so non-technical editors can understand or review it.
+
+### Site-Wide Setup (Global)
+Add the Smootify resources once at the site level so every page has product data and cart functionality.
+
+```html
+<link href="https://cdn.smootify.io/assets/latest/css/index.css" rel="stylesheet" />
+<script type="module" src="https://cdn.smootify.io/assets/latest/js/index.js" async defer></script>
+<script>
+  window.SmootifyUserOptions = {
+    newCustomerAccountsPublicKey: 'shp_c17adfac-9e88-41e3-9d2a-f94322b1dba5',
+    newCustomerLoginRedirect: window.location.origin + "/account",
+    selectMarketBasedOnBrowserLanguage: true,
+  }
+;</script>
+```
+
+Where this lives: Webflow Project Settings → Custom Code (Head and before </body>).
+
+### Product Page – Hero Section
+The product hero shows the key details with real-time price and availability.
+
+- Title: `<h1 product="title">...</h1>`
+- Price: `<span data-prop="price"></span>` and compare-at: `<span data-prop="compareAtPrice"></span>`
+- Description: `<div product="description"></div>`
+- Primary image: `<img product="specific-image" index="0" alt="...">`
+- Gallery: element with `product="images"`
+- Stock state badges: elements with `condition="in-stock"` and `condition="out-of-stock"`
+- Variant/size options: container with `option="title"`, `option="value"` and, where used, `variant="image"`
+- Add to cart button: element with `data-smootify-add-to-cart`
+
+### Product Carousels (Homepage/Collections)
+Carousels render product cards from the synchronized CMS list.
+
+- Image: `<img product="specific-image" index="0" alt="...">`
+- Title link: anchor with `product="url"` and inner `product="title"`
+- Price and sale: `data-prop="price"`, `data-prop="compareAtPrice"`, `condition="on-sale"`
+- Badges: optional elements using `condition="in-stock"` / `condition="out-of-stock"`
+
+These lists are standard Webflow Collection Lists bound to the Products collection (kept in sync by Smootify).
+
+### Add to Cart (Quick Add and PDP)
+
+- PDP add-to-cart: button with `data-smootify-add-to-cart` inside the product context
+- Quick add (cards): same attribute on card buttons; quantity defaults to 1 unless a quantity input with `data-smootify-quantity` is present
+- Mini cart totals: `cart="subtotal"`, `cart="total"`
+- Line items: `cart-item="title"`, `cart-item="image"`, `cart-item="quantity"`, `cart-item="price"`, `cart-item="total"`
+
+### Collection/Grid Filters
+
+- Price range: `filter-price="from"` and `filter-price="to"`
+- Active filters label: `filter="active-label"`
+- Swatches (where used): `swatch="image"`, `swatch="title"`
+
+### Sync Verification (What to check)
+
+- Products appear/refresh within 15 minutes of Shopify changes
+- Prices and compare-at values match Shopify
+- Stock badges reflect availability
+- Add to cart works on cards and PDP
+- Checkout redirects to Shopify and completes successfully
+
+If an urgent update is needed before the next interval, a manual sync can be triggered from the Smootify dashboard.
 
 ## Product Synchronization
 
@@ -282,31 +349,3 @@ Each collection includes a `shopify-id` field that maintains the connection betw
 - [Complete Smootify Setup Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md) - Detailed technical implementation instructions
 - [E-commerce Best Practices](../knowledge-hub/ecommerce/) - Industry standards and optimization strategies
 
-## Screenshots Needed for Future Updates
-
-To enhance this documentation with visual aids, the following screenshots should be captured:
-
-### Smootify Dashboard
-- **File Name**: `08-smootify-dashboard-overview-2025-01-XX.png`
-- **Purpose**: Show sync status and configuration options
-- **Location**: Smootify admin dashboard main page
-
-### Webflow CMS Collections
-- **File Name**: `08-webflow-cms-products-collection-2025-01-XX.png`
-- **Purpose**: Display CMS structure with Shopify ID fields
-- **Location**: Webflow dashboard > CMS Collections > Products
-
-### Product Sync in Action
-- **File Name**: `08-product-sync-before-after-2025-01-XX.png`
-- **Purpose**: Show product updates flowing from Shopify to Webflow
-- **Location**: Side-by-side comparison of Shopify admin and live website
-
-### Cart Functionality
-- **File Name**: `08-cart-real-time-updates-2025-01-XX.png`
-- **Purpose**: Demonstrate cart updates and checkout flow
-- **Location**: Live website cart interface
-
-### Custom Attributes Example
-- **File Name**: `08-custom-attributes-webflow-designer-2025-01-XX.png`
-- **Purpose**: Show how custom attributes are applied in Webflow Designer
-- **Location**: Webflow Designer with element selected showing attributes

@@ -85,11 +85,16 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 #### ❌ Avoid
 - **Orphaned content**: Sections not referenced in table
 - **Redundant information**: Same details repeated in multiple sections
-- **Future promises**: Work not yet completed
+- **Future promises**: Committing to undelivered work
 - **Client responsibilities**: Tasks outside agency scope
 - **Unnecessary sections**: Content that doesn't add unique value
 - **Generic advice**: How-to content (belongs in knowledge-hub)
 - **Dense paragraphs**: Use bullets and tables instead
+
+#### 🚫 No Placeholders / No “We’ll Add Later”
+- Do not include TODOs, placeholders, or “screenshots to be added later” sections
+- Only document what is implemented and verifiable now
+- If visuals aren’t available, omit the section rather than promising future updates
 
 ## Writing Techniques
 
