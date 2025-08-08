@@ -64,45 +64,46 @@ This is where you can review and manage sitemap status over time (status, last r
 
 ## Webflow SEO Settings (By Topic)
 
-### Global SEO Defaults
-We set site-wide defaults once, so every page starts with strong SEO settings.
+### Custom Code & Scripts
+Configure custom code and scripts for SEO enhancements like schema markup and tracking codes.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-01.png" alt="Global SEO defaults in Webflow" width="70%" style="border-radius:8px" />
+<img src="../assets/seo-implementation-webflow-seo-settings-01.png" alt="Custom Code settings in Webflow" width="70%" style="border-radius:8px" />
 
-• **Purpose**: Configure site-wide SEO defaults that apply to all pages
+• **Purpose**: Configure custom code and scripts for SEO enhancements
+• **Location**: [Webflow → Custom Code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
+
+### Sitemap Configuration
+Configure automatic sitemap generation when site is published for better search engine indexing.
+
+<img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Sitemap configuration in Webflow" width="70%" style="border-radius:8px" />
+
+• **Purpose**: Configure automatic sitemap generation when site is published
 • **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
 
-### Titles, Meta & Open Graph
-Brand-consistent titles and optimized descriptions; Open Graph ensures clean social cards.
+### Google Site Verification
+Verify site ownership with Google Search Console for access to search data and analytics.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Meta title/description and Open Graph settings" width="70%" style="border-radius:8px" />
+<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Google site verification in Webflow" width="70%" style="border-radius:8px" />
 
-• **Purpose**: Set default meta titles, descriptions, and Open Graph tags for social sharing
-• **Location**: [Webflow → Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
+• **Purpose**: Verify site ownership with Google Search Console for access to search data
+• **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
 
-### Sitemap
-Sitemap auto‑generation is enabled in Webflow; we also submitted it in GSC for tracking and diagnostics.
+### Robots.txt & Canonical
+Control search engine crawling behavior and set global canonical URL to prevent duplicate content.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Sitemap auto‑generation enabled" width="70%" style="border-radius:8px" />
+<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration with canonical URL and traffic controls" width="70%" style="border-radius:8px" />
 
-• **Purpose**: Automatically generate and update sitemap.xml when site is published
-• **Links**: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
-
-### Robots.txt
-Configured to allow public pages and exclude utility routes to avoid crawl waste.
-
-<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration in Webflow" width="70%" style="border-radius:8px" />
-
-• **Purpose**: Control search engine crawling behavior and prevent duplicate content
+• **Purpose**: Control search engine crawling behavior and set global canonical URL
+• **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
 • **Links**: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
 
-### Canonical & Advanced
-Self‑referencing canonicals and advanced options to prevent duplicate content.
+### Traffic Controls
+Control access for search engine crawlers and AI bots to manage site traffic and indexing.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Canonical and advanced settings" width="70%" style="border-radius:8px" />
+<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Traffic controls for search engines and AI bots" width="70%" style="border-radius:8px" />
 
-• **Purpose**: Set global canonical URL and control bot access (search engines and AI)
-• **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
+• **Purpose**: Control access for search engine crawlers and AI bots
+• **Configuration**: Both search engines and AI bots are allowed access
 
 ### Publishing
 After changes, publish the site so updates go live; then verify in GSC/PSI.
