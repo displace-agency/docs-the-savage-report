@@ -7,9 +7,9 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 | Item | What We Delivered | Priority | Date(s) | Status | Evidence Link(s) |
 |------|-------------------|----------|---------|--------|------------------|
-| Google Search Console | Site verification, search performance tracking, sitemap monitoring | High | Aug 2025 | ✅ Active | [GSC Performance](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com) |
-| Webflow Google Search | Integrated GSC data display within Webflow dashboard | Medium | Aug 2025 | ✅ Active | [Webflow Dashboard](https://webflow.com/dashboard/sites/savage-report-we) |
-| Google Analytics | Measurement ID configured in Webflow settings | Medium | Aug 2025 | ⏸️ Paused | [Webflow Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
+| Google Search Console | Site verification, search performance tracking, sitemap monitoring | High | Aug 2025 | ✅ Active | <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Performance</a> |
+| Webflow Google Search | Integrated GSC data display within Webflow dashboard | Medium | Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
+| Google Analytics | Measurement ID configured in Webflow settings | Medium | Aug 2025 | ⏸️ Paused | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 
 ## What We Implemented
 
@@ -38,7 +38,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 - **Primary Metrics**: Search queries, click-through rates, impressions, average position
 - **Technical Monitoring**: Core Web Vitals, mobile usability, indexing status
-- **Access**: [GSC Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
+- **Access**: <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Performance Dashboard</a>
 - **Verification**: Site ownership confirmed and verified
 
 ### Webflow Google Search Integration
@@ -47,7 +47,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 <img src="../assets/analytics-implementation-webflow-google-search-integration-2025-08-08.png" alt="Webflow Google Search integration showing GSC data in dashboard" width="70%" style="border-radius:8px" />
 
 - **Features**: Real-time GSC data display, search performance metrics
-- **Access**: [Webflow Dashboard](https://webflow.com/dashboard/sites/savage-report-we)
+- **Access**: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> · <a href="https://savage-report-we.design.webflow.com/" target="_blank" rel="noopener noreferrer">Webflow Designer</a>
 - **Status**: Active and displaying current search performance data
 
 ## Google Analytics Status
@@ -88,7 +88,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 - **Primary Metrics**: Sales, orders, customers, conversion rates, product performance
 - **Business Insights**: Revenue trends, customer acquisition, inventory management
-- **Access**: [Shopify Analytics](https://admin.shopify.com/store/thesavagereport/analytics)
+- **Access**: <a href="https://admin.shopify.com/store/thesavagereport/analytics" target="_blank" rel="noopener noreferrer">Shopify Analytics</a>
 - **Integration**: Fully connected to e-commerce operations
 
 <img src="../assets/analytics-implementation-shopify-analytics-dashboard-2025-08-08.png" alt="Shopify Analytics dashboard showing e-commerce performance metrics" width="70%" style="border-radius:8px" />
@@ -96,12 +96,12 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ## Useful Links
 
 ### Analytics Dashboards
-- **Google Search Console**: [Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
-- **Webflow Dashboard**: [Integrated Analytics](https://webflow.com/dashboard/sites/savage-report-we)
+- **Google Search Console**: <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">Performance Dashboard</a>
+- **Webflow Dashboard**: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Integrated Analytics</a>
 
 ### Admin Access
-- **Shopify Admin**: [Store Management](https://admin.shopify.com/store/thesavagereport)
-- **Webflow Settings**: [Analytics Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
+- **Shopify Admin**: <a href="https://admin.shopify.com/store/thesavagereport" target="_blank" rel="noopener noreferrer">Store Management</a>
+- **Webflow Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Analytics Configuration</a>
 
 ### Related Documentation
 - **SEO Implementation**: [docs/05-seo-implementation.md](./05-seo-implementation.md)

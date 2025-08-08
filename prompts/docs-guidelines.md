@@ -148,6 +148,13 @@ Every technical detail must answer: so what’s the business value?
 - Link to internal docs using relative paths
 - Link to knowledge-hub for how-to/education
 
+### Link Behavior Guidelines
+- **External links** (platforms, tools, live sites): Open in new tab using `target="_blank" rel="noopener noreferrer"`
+  - Example: `<a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a>`
+- **Internal links** (documentation, related articles): Open in same tab using regular markdown links
+  - Example: `[SEO Implementation](./05-seo-implementation.md)`
+- **Security**: Always use `rel="noopener noreferrer"` for external links to prevent security vulnerabilities
+
 ## Quality Checklist (Quick)
 - [ ] Clear: plain language, no jargon
 - [ ] Concise: visual summary first, bullets not paragraphs
@@ -158,6 +165,7 @@ Every technical detail must answer: so what’s the business value?
 - [ ] **Image-text alignment**: Screenshots match descriptions exactly
 - [ ] **Consistent formatting**: All bullet points use proper markdown list format (-) not bullet characters (•)
 - [ ] **Proper styling**: Images have 70% width and rounded corners
+- [ ] **Link behavior**: External links open in new tab, internal links open in same tab
 
 ## 🚨 Common Pitfalls & Lessons Learned
 
@@ -205,6 +213,11 @@ Every technical detail must answer: so what’s the business value?
 **Problem**: Including items that are the client's responsibility
 **Solution**: Only include work that the agency delivered
 **Example**: Don't include Shopify Analytics if the agency didn't implement it - move to "Other Sources" section
+
+### Incorrect Link Behavior
+**Problem**: External links opening in same tab or internal links opening in new tab
+**Solution**: External links should open in new tab, internal links should open in same tab
+**Example**: Use `<a href="https://webflow.com/dashboard" target="_blank" rel="noopener noreferrer">Webflow</a>` for external, `[Internal Doc](./file.md)` for internal
 
 ## Example Prompt (Copy/Paste)
 
