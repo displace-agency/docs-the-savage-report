@@ -5,18 +5,18 @@ We implemented foundational SEO across The Savage Report to help search engines 
 
 ## SEO Implementation Summary
 
-| Priority | Area | What We Delivered | Date(s) | Status | Evidence Link(s) |
-|----------|------|-------------------|---------|--------|------------------|
-| High | Core Web Vitals & Speed | Performance work that improves LCP/CLS/FID (see performance doc) | Aug 2025 | ✅ Active | [PageSpeed Insights Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com) · [Performance Doc](./06-page-speed-optimization.md) |
-| High | Metadata & Open Graph | Brand-consistent titles, optimized descriptions, Open Graph for key pages | Jul–Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
-| High | XML Sitemap | Auto-generated sitemap enabled and verified | Aug 2025 | ✅ Active | [Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com) |
-| High | Robots.txt | Configured to prevent crawl waste and allow key pages; verified in GSC | Aug 2025 | ✅ Active | [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots.txt Tester](https://search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain%3Athe-savage-report.com) |
-| High | Domain & SSL | Proper HTTPS and canonical host (www and non-www) configuration | Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
-| High | Canonical URLs | Self-referencing canonicals implemented sitewide | Aug 2025 | ✅ Active | [Homepage (view source to verify)](https://the-savage-report.com/) |
-| Medium | URL Structure | Clean, SEO-friendly slugs across pages and collections | Jul 2025 | ✅ Active | [Webflow Designer (Pages/Slugs)](https://webflow.com/dashboard/sites/savage-report-we/designer) |
-| Medium | Site Architecture | Added "Shop All" index; optimized CMS collections and content staging | Aug 2025 | ✅ Active | [CMS Structure Doc](./04-cms-structure.md) |
-| Medium | Mobile SEO | Simplified mobile header; improved mobile UX structure | Aug 2025 | ✅ Active | [PageSpeed Insights (Mobile Tab)](https://pagespeed.web.dev/report?url=https://the-savage-report.com) |
-| Medium | Structured Data (Schema) | Prepared Product, Organization, Local Business, Website schemas; paused to avoid perf conflicts | Jul 25–28, 2025 | ⏸️ Paused | See examples below |
+| Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
+|------|-------------------|----------|---------|--------|-------------------|
+| Core Web Vitals & Speed | Performance work that improves LCP/CLS/FID (see performance doc) | High | Aug 2025 | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights Report</a> · [Performance Doc](./06-page-speed-optimization.md) |
+| Metadata & Open Graph | Brand-consistent titles, optimized descriptions, Open Graph for key pages | High | Jul–Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Site Settings</a> |
+| XML Sitemap | Auto-generated sitemap enabled and verified | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
+| Robots.txt | Configured to prevent crawl waste and allow key pages; verified in GSC | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">robots.txt</a> · <a href="https://search.google.com/u/5/search-console/settings/robots-txt?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Robots.txt Tester</a> |
+| Domain & SSL | Proper HTTPS and canonical host (www and non-www) configuration | High | Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Site Settings</a> |
+| Canonical URLs | Self-referencing canonicals implemented sitewide | High | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com/" target="_blank" rel="noopener noreferrer">Homepage (view source to verify)</a> |
+| URL Structure | Clean, SEO-friendly slugs across pages and collections | Medium | Jul 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer (Pages/Slugs)</a> |
+| Site Architecture | Added "Shop All" index; optimized CMS collections and content staging | Medium | Aug 2025 | ✅ Active | [CMS Structure Doc](./04-cms-structure.md) |
+| Mobile SEO | Simplified mobile header; improved mobile UX structure | Medium | Aug 2025 | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights (Mobile Tab)</a> |
+| Structured Data (Schema) | Prepared Product, Organization, Local Business, Website schemas; paused to avoid perf conflicts | Medium | Jul 25–28, 2025 | ⏸️ Paused | See examples below |
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 

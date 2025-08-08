@@ -34,8 +34,8 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 1–2 sentences that explain the concept in plain language plus the business value.
 
 ## Implementation Summary
-| Item | What We Delivered | Priority | Date(s) | Status | Evidence Link(s) |
-|------|-------------------|----------|---------|--------|------------------|
+| Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
+|------|-------------------|----------|---------|--------|-------------------|
 | Item Name | What we built/configured | High/Medium/Low | Aug 2025 | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
 
 ## What We Implemented
@@ -239,11 +239,11 @@ Ensure it opens with an Implementation Summary table including Priority and Evid
 - **Third column**: Priority (High/Medium/Low)
 - **Fourth column**: Date(s) (when implemented)
 - **Fifth column**: Status (✅ Active / ⏸️ Paused / 🔄 In progress)
-- **Sixth column**: Evidence Link(s) (direct links to verify work)
+- **Sixth column**: Reference Link(s) (direct links to verify work)
 
 ### Table Content Rules
 - **Item names**: Use clear, action-oriented names (e.g., "Google Search Console" not "GSC Integration")
 - **What We Delivered**: Focus on concrete deliverables, not future possibilities
 - **Priority**: Only use High/Medium/Low - avoid other priority levels
-- **Evidence Links**: Always provide direct, actionable links to verify the work
+- **Reference Links**: Always provide direct, actionable links to verify the work
 - **No future promises**: Only include work that has been completed and delivered
