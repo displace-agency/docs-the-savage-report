@@ -1,22 +1,19 @@
-# Knowledge Hub
+# Knowledge Hub Guidelines
 
-Welcome to The Savage Report Knowledge Hub! This is a comprehensive collection of articles, guides, and best practices for managing and optimizing the website.
+Welcome to The Savage Report Knowledge Hub! This is a reusable collection of concise, value-driven guides and best practices that we can duplicate for future clients.
 
 ## 📚 Purpose
-
-The Knowledge Hub serves as a centralized resource for:
-- **Deep-dive articles** on specific technical topics
-- **Step-by-step guides** for common tasks
-- **Best practices** for SEO, performance, and integrations
-- **Troubleshooting guides** for common issues
-- **Platform-specific documentation** (Webflow, Shopify, etc.)
+- Deep-dive articles on specific topics (generic, reusable)
+- Step-by-step guides and best practices
+- Troubleshooting references
+- Platform-specific instructions (Webflow, Shopify, etc.)
 
 ## 🗂️ Structure
 
-The Knowledge Hub is organized by categories:
-
 ### SEO
-- [XML Sitemap Management](./seo/xml-sitemap-management.md) - Complete guide to managing sitemaps in Webflow
+- [XML Sitemap Management](./seo/xml-sitemap-management.md)
+- [robots.txt Management](./seo/robots-txt-management.md)
+- [Schema Markup for E‑Commerce](./seo/schema-markup-for-ecommerce.md)
 
 ### Performance (Coming Soon)
 - Image Optimization Techniques
@@ -33,59 +30,41 @@ The Knowledge Hub is organized by categories:
 - Custom Code Injection
 - Component Development
 
-### E-commerce (Coming Soon)
+### E‑commerce (Coming Soon)
 - Product Management
 - Inventory Sync
 - Order Processing
 
 ## 🔗 How to Use This Hub
-
-1. **Browse by category** to find articles on specific topics
-2. **Use search** (Ctrl/Cmd + F) to find specific information
-3. **Follow step-by-step guides** for implementation
-4. **Check prerequisites** at the beginning of each article
-5. **Reference official documentation** linked in articles
+1. Browse by category to find the relevant topic
+2. Use search (Ctrl/Cmd + F) for specifics
+3. Follow step-by-step instructions where provided
+4. Reference official docs linked in each article
 
 ## 📝 Article Format
+- Overview (what/why)
+- Quick summary table (what/where/why/links)
+- Steps or examples (concise)
+- Best practices
+- Troubleshooting
+- Resources (official links)
 
-Each article follows a consistent structure:
-- **Overview**: What the article covers
-- **Prerequisites**: What you need to know/have
-- **Step-by-step instructions**: Clear, actionable steps
-- **Best practices**: Recommended approaches
-- **Troubleshooting**: Common issues and solutions
-- **Resources**: Links to official documentation
-- **Quick reference**: Checklists and summaries
+## ✍️ Writing Philosophy
+- Be concise and scannable (tables and bullets first)
+- Be value-driven (explain the business impact)
+- Use live links to verify (admin, public endpoints, official docs)
+- Generic, client-agnostic (no client-specific details here)
 
 ## 🚀 Quick Links
-
-### Essential Reads
-- [XML Sitemap Management](./seo/xml-sitemap-management.md)
-
-### External Resources
-- [Webflow University](https://university.webflow.com/)
-- [Google Search Console](https://search.google.com/search-console)
-- [PageSpeed Insights](https://pagespeed.web.dev/)
+- Webflow University (https://university.webflow.com/)
+- Google Search Console (https://search.google.com/search-console)
+- PageSpeed Insights (https://pagespeed.web.dev/)
 
 ## 📖 Contributing
-
-To add a new article:
-1. Create a new `.md` file in the appropriate category folder
-2. Follow the article template structure
-3. Include practical examples and screenshots where helpful
-4. Add links to official documentation
-5. Update this README with a link to your article
-
-## 🏷️ Categories
-
-- `#SEO` - Search engine optimization
-- `#Performance` - Page speed and optimization
-- `#Webflow` - Platform-specific features
-- `#Shopify` - E-commerce integration
-- `#Technical` - Development and code
-- `#Design` - UI/UX and visual elements
-- `#Analytics` - Tracking and reporting
+1. Create a new `.md` file in the appropriate category
+2. Follow the format above and keep it concise
+3. Add practical examples and proof links
+4. Update these guidelines with a link to your new article
 
 ---
-*Knowledge Hub maintained by Displace Agency*
-*For questions or suggestions, contact: hello@displace.agency*
+Knowledge Hub maintained by Displace Agency

@@ -1,0 +1,111 @@
+# Schema Markup for E‑Commerce Websites (JSON‑LD)
+
+## Overview
+Schema markup helps search engines understand your content and unlock rich results (stars, pricing, breadcrumbs). JSON‑LD is the recommended format.
+
+## Quick Summary
+
+| Type | Where to Use | Why It Matters | Notes |
+|------|---------------|----------------|-------|
+| Organization | Site-wide | Brand knowledge panel eligibility; trust | Include name, URL, logo |
+| WebSite | Site-wide | Sitelinks Search Box eligibility | Include potentialAction |
+| BreadcrumbList | Template pages | Clear hierarchy in SERPs | Mirrors site navigation |
+| Product | Product pages | Price/availability/ratings rich results | Pull live data from platform |
+
+## Examples (Copy/Paste)
+
+Organization
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Your Brand",
+  "url": "https://example.com",
+  "logo": "https://example.com/assets/logo.png"
+}
+</script>
+```
+
+WebSite + SearchAction
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://example.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://example.com/search?query={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+```
+
+BreadcrumbList
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Shop", "item": "https://example.com/shop"},
+    {"@type": "ListItem", "position": 3, "name": "Product"}
+  ]
+}
+</script>
+```
+
+Product (template)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{product.name}}",
+  "image": ["{{product.imageUrl}}"],
+  "description": "{{product.description}}",
+  "brand": {"@type": "Brand", "name": "Your Brand"},
+  "sku": "{{product.sku}}",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "{{product.price}}",
+    "availability": "https://schema.org/{{product.availability}}",
+    "url": "{{product.url}}"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{product.rating}}",
+    "reviewCount": "{{product.reviewCount}}"
+  }
+}
+</script>
+```
+
+## Implementation Notes
+- Use JSON‑LD in the <head> or just before </body>
+- Ensure product schema values are real and current (price, availability)
+- Avoid duplicating schema from conflicting apps/scripts
+- Validate with Rich Results Test
+
+## Best Practices
+- Start with Organization and WebSite site-wide
+- Add BreadcrumbList on templates
+- Add Product on product pages only
+- Keep schema minimal and accurate; don’t stuff keywords
+- If performance scripts conflict, load one authoritative schema block
+
+## Resources
+- Google: Structured data (developers.google.com/search/docs/appearance/structured-data)
+- Rich Results Test (search.google.com/test/rich-results)
+- Schema.org (schema.org)
+
+---
+Category: SEO  
+Tags: #SEO #Schema #JSONLD #RichResults #Ecommerce
