@@ -41,8 +41,6 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ### Google Search Console (Primary Search Analytics)
 **Purpose**: Monitor search performance, indexing status, and technical SEO health
 
-<img src="../assets/analytics-implementation-gsc-dashboard.png" alt="Google Search Console dashboard" width="70%" style="border-radius:8px" />
-
 - **Primary Metrics**: Search queries, click-through rates, impressions, average position
 - **Technical Monitoring**: Core Web Vitals, mobile usability, indexing status
 - **Access**: [GSC Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
@@ -51,8 +49,6 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ### Shopify Analytics (E-commerce Performance)
 **Purpose**: Track sales performance, customer behavior, and business metrics
 
-<img src="../assets/analytics-implementation-shopify-dashboard.png" alt="Shopify Analytics dashboard" width="70%" style="border-radius:8px" />
-
 - **Primary Metrics**: Sales, orders, customers, conversion rates, product performance
 - **Business Insights**: Revenue trends, customer acquisition, inventory management
 - **Access**: [Shopify Analytics](https://admin.shopify.com/store/thesavagereport/analytics)
@@ -60,8 +56,6 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 ### Webflow Google Search Integration
 **Purpose**: Display GSC data directly within Webflow dashboard for convenience
-
-<img src="../assets/analytics-implementation-webflow-gsc.png" alt="Webflow Google Search integration" width="70%" style="border-radius:8px" />
 
 - **Features**: Real-time GSC data display, search performance metrics
 - **Access**: [Webflow Dashboard](https://webflow.com/dashboard/sites/savage-report-we)
