@@ -73,6 +73,16 @@ This is where you can review and manage sitemap status over time (status, last r
   - Publish the site (Webflow)
   - Validate with [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
 
+## Webflow SEO Settings (Screenshots)
+A quick visual guide to where SEO configuration lives in Webflow.
+
+![Webflow SEO settings – general](../assets/seo/seo-implementation-webflow-seo-settings-01.png)
+![Webflow SEO settings – meta/OG](../assets/seo/seo-implementation-webflow-seo-settings-02.png)
+![Webflow SEO settings – sitemap](../assets/seo/seo-implementation-webflow-seo-settings-03.png)
+![Webflow SEO settings – robots.txt](../assets/seo/seo-implementation-webflow-seo-settings-04.png)
+![Webflow SEO settings – canonical/advanced](../assets/seo/seo-implementation-webflow-seo-settings-05.png)
+![Webflow SEO settings – publishing](../assets/seo/seo-implementation-webflow-seo-settings-06.png)
+
 ## Schema JSON-LD (Examples)
 
 Organization
@@ -122,5 +132,5 @@ Product (template)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.5*  
+*Document Version: 1.6*  
 *Maintained by: Displace Agency*
