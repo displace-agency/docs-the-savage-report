@@ -12,6 +12,8 @@ We implemented foundational SEO across The Savage Report to help search engines 
 | [Technical SEO](#technical-seo) | XML sitemap, robots.txt, canonicals, HTTPS, site architecture improvements | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Robots.txt</a> |
 | [Mobile & Performance](#mobile--performance) | Mobile layout improvements and Core Web Vitals optimization | Medium | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a> · [Performance Doc](./06-page-speed-optimization.md) |
 | [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
+| [XML Sitemap Implementation](#xml-sitemap-implementation) | Auto-generated sitemap with 61 URLs, verified in Google Search Console | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
+| [Webflow SEO Settings](#webflow-seo-settings-by-topic) | Custom code, sitemap config, Google verification, robots.txt, traffic controls | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
@@ -161,18 +163,7 @@ Shopify automatically generates a robots.txt for your subdomain. It's optimized 
 - **Auto-updates**: New products and collections automatically added
 - **SEO Impact**: Helps search engines discover and index all content efficiently
 
-## Site Architecture (At a Glance)
-```
-Customers → Webflow (Pages, CMS) → Smootify (Bridge) → Shopify (Products, Orders)
-                           ↘ XML Sitemap / robots.txt ↙      
-```
-
-## Core Web Vitals Snapshot
-- Track with PageSpeed Insights (mobile/desktop) and internal monitoring
-- Key metrics: LCP < 2.5s, CLS < 0.1, INP < 200ms
-- Evidence: [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
-
-## Sitemaps in Google Search Console (Admin Reference)
+### Google Search Console Integration
 This is where you can review and manage sitemap status over time (status, last read, discovered URLs). After publishing significant changes, revisit this page to resubmit if needed.
 
 <img src="../assets/seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
@@ -222,11 +213,28 @@ Control access for search engine crawlers and AI bots to manage site traffic and
 - **Purpose**: Control access for search engine crawlers and AI bots
 - **Configuration**: Both search engines and AI bots are allowed access
 
-### Publishing
-After changes, publish the site so updates go live; then verify in GSC/PSI.
+## Useful Links
 
-<img src="../assets/seo-implementation-webflow-seo-settings-06.png" alt="Publishing changes in Webflow" width="70%" style="border-radius:8px" />
+### Implementation
+- **Webflow Custom Code**: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Project Head Schema</a>
+- **Webflow Designer**: <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Page-Specific Schema</a>
+- **Webflow Site Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
+- **Webflow SEO Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">SEO Configuration</a>
 
-- **Purpose**: Deploy SEO changes to live site
-- **Links**: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+### Testing & Validation
+- **Rich Results Test**: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a>
+- **Schema Validator**: <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema.org Validator</a>
+- **Search Console**: <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a>
+- **GSC Sitemaps**: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">Sitemap Management</a>
+
+### Related Documentation
+- **Schema Markup**: [docs/05.1-seo-schema.md](./05.1-seo-schema.md)
+- **Page Speed Optimization**: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
+- **CMS Structure**: [docs/04-cms-structure.md](./04-cms-structure.md)
+- **Analytics Implementation**: [docs/07-analytics-implementation.md](./07-analytics-implementation.md)
+
+---
+*Last Updated: August 2025*  
+*Document Version: 1.0*  
+*Maintained by: Displace Agency*
 
