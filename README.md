@@ -16,7 +16,7 @@ Contains all documentation specific to The Savage Report website, including:
 - Performance optimizations completed
 - Maintenance guides
 
-### 2. `/knowledge-base/` - Generic Knowledge Articles
+### 2. `/knowledge-hub/` - Generic Knowledge Articles
 Reusable documentation about general concepts and best practices:
 - Platform guides (Webflow, Shopify, etc.)
 - Performance optimization principles
@@ -35,20 +35,18 @@ Templates and prompts for creating consistent documentation:
 
 ### Client Documentation
 - [Project Overview](./docs/01-project-overview.md)
-- [Technical Architecture](./docs/02-technical-architecture.md)
+- [Technical Architecture](./docs/02-technical-architecture.md) 🏗️
 - [Platform Details](./docs/03-platform-details.md)
-- [CMS Structure](./docs/04-cms-structure.md)
-- [Components Library](./docs/05-components-library.md)
-- [**Page Speed Optimizations**](./docs/06-page-speed-optimization.md) ⚡ *Recently Updated*
-- [Integration Setup](./docs/07-integration-setup.md)
-- [Maintenance Guide](./docs/08-maintenance-guide.md)
+- [CMS Structure](./docs/04-cms-structure.md) 📁
+- [**SEO Implementation**](./docs/05-seo-implementation.md) 🎯 *Recently Updated*
+- [**Page Speed Optimizations**](./docs/06-page-speed-optimization.md) ⚡ *Performance Work Documented*
 
-### Knowledge Base
-- [Page Speed Optimization Guide](./knowledge-base/performance/page-speed-optimization-guide.md)
+### Knowledge Hub
+- [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md) 📚
 - *More articles to be added*
 
 ### Documentation Templates
-- [Page Speed Documentation Template](./prompts/documentation-templates/page-speed-optimization-template.md)
+- [Documentation Guidelines](./prompts/docs-guidelines.md) ✍️
 - *More templates to be added*
 
 ## 📋 Project Information
@@ -68,16 +66,16 @@ Templates and prompts for creating consistent documentation:
 ### For Website Owners
 1. Read the [Project Overview](./docs/01-project-overview.md)
 2. Review [Page Speed Optimizations](./docs/06-page-speed-optimization.md) to understand performance work
-3. Check [Maintenance Guide](./docs/08-maintenance-guide.md) for ongoing tasks
+3. Check [SEO Implementation](./docs/05-seo-implementation.md) for search optimization strategy
 
 ### For Developers
 1. Review [Technical Architecture](./docs/02-technical-architecture.md)
 2. Check [Page Speed Optimizations](./docs/06-page-speed-optimization.md) for performance implementation
-3. Use [Documentation Templates](./prompts/documentation-templates/) for consistent documentation
+3. Use [Documentation Guidelines](./prompts/docs-guidelines.md) for consistent documentation
 
 ### For Documentation Writers
 1. Use templates in `/prompts/` for consistency
-2. Reference `/knowledge-base/` for reusable content
+2. Reference `/knowledge-hub/` for reusable content
 3. Keep client-specific details in `/docs/`
 
 ## 📂 Detailed Repository Structure
@@ -86,21 +84,20 @@ Templates and prompts for creating consistent documentation:
 docs-the-savage-report/
 ├── docs/                    # Client-specific documentation
 │   ├── 01-project-overview.md
-│   ├── 02-technical-architecture.md
+│   ├── 02-technical-architecture.md  🏗️ Platform infrastructure
 │   ├── 03-platform-details.md
-│   ├── 04-cms-structure.md
-│   ├── 05-components-library.md
-│   ├── 06-page-speed-optimization.md  ⚡ Performance work documented
-│   ├── 07-integration-setup.md
-│   └── 08-maintenance-guide.md
+│   ├── 04-cms-structure.md           📁 Content management system
+│   ├── 05-seo-implementation.md      🎯 SEO strategy & implementation
+│   └── 06-page-speed-optimization.md ⚡ Performance optimizations
 │
-├── knowledge-base/          # Reusable knowledge articles
+├── knowledge-hub/           # Reusable knowledge articles
+│   ├── seo/
+│   │   └── xml-sitemap-management.md 📚 XML sitemap best practices
 │   └── performance/
 │       └── page-speed-optimization-guide.md
 │
 ├── prompts/                 # Documentation templates
-│   └── documentation-templates/
-│       └── page-speed-optimization-template.md
+│   └── docs-guidelines.md   ✍️ Documentation writing guidelines
 │
 ├── guides/                  # How-to guides
 ├── troubleshooting/         # Problem solutions
@@ -162,7 +159,7 @@ docs-the-savage-report/
    - Actual work completed
    - No future recommendations
 
-2. **Knowledge Base** (`/knowledge-base/`)
+2. **Knowledge Hub** (`/knowledge-hub/`)
    - Generic, educational content
    - Reusable across projects
    - Best practices and principles
@@ -179,6 +176,14 @@ docs-the-savage-report/
 - **Achievements over aspirations** - Document what was done, not what could be done
 - **Visual hierarchy** - Make information scannable
 - **Business value focus** - Connect technical work to business outcomes
+
+## 🔗 Cross-Linking Strategy
+
+Our documentation uses strategic cross-linking to help readers navigate between related topics:
+
+- **SEO Implementation** ↔ **Page Speed Optimizations** - Performance impacts SEO rankings
+- **Technical Architecture** ↔ **CMS Structure** - Platform infrastructure enables content management
+- **XML Sitemap Management** ↔ **SEO Implementation** - Technical SEO best practices
 
 ## 📞 Support
 

@@ -3,6 +3,11 @@
 ## Overview
 An XML sitemap is a crucial SEO tool that helps search engines discover and index your website's pages efficiently. Webflow provides built-in sitemap generation with granular control over which pages are included.
 
+> **Related Documentation:**
+> - 🎯 [SEO Implementation](../docs/05-seo-implementation.md) - Complete SEO strategy for The Savage Report
+> - ⚡ [Page Speed Optimizations](../docs/06-page-speed-optimization.md) - Performance optimizations that support SEO
+> - 🏗️ [Technical Architecture](../docs/02-technical-architecture.md) - Platform infrastructure overview
+
 ## What is an XML Sitemap?
 
 An XML sitemap is a structured file that lists all important URLs on your website, along with metadata about each URL such as:

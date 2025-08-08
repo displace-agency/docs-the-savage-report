@@ -10,6 +10,11 @@ A **Content Management System (CMS)** is like a digital filing cabinet for your 
 - **Organization**: All content organized in collections
 - **Scalability**: Add unlimited products without slowing down
 
+> **Related Documentation:**
+> - 🎯 [SEO Implementation](./05-seo-implementation.md) - How CMS structure supports SEO optimization
+> - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations for CMS content
+> - 🏗️ [Technical Architecture](./02-technical-architecture.md) - Platform infrastructure overview
+
 ## How Our Hybrid System Works
 
 The Savage Report uses a unique **dual-system approach** that combines the best of both worlds:
