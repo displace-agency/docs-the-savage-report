@@ -3,6 +3,11 @@
 ## Overview
 robots.txt tells search engines what to crawl (or not). A clean robots file prevents crawl waste, protects private areas, and ensures important pages are accessible.
 
+> Tip: Verify quickly with GSC Robots.txt Tester and PageSpeed Insights
+> - GSC Robots Tester: [search.google.com/search-console/settings/robots-txt](https://search.google.com/search-console/settings/robots-txt)
+> - PSI: [pagespeed.web.dev](https://pagespeed.web.dev/)
+> - Your sitemap (example): `https://your-domain.com/sitemap.xml`
+
 ## Quick Summary
 
 | What | Where to Configure | Why It Matters | Evidence Links |
@@ -30,6 +35,7 @@ Sitemap: https://example.com/sitemap.xml
 ## Validation & Monitoring
 - Open https://your-domain.com/robots.txt and confirm expected rules
 - In Google Search Console: Indexing → Pages (check for robots blocks)
+- Use GSC Robots.txt Tester to validate syntax and test URLs
 - Monitor Crawl Stats in GSC for unexpected crawl spikes or blocks
 
 ## Best Practices
@@ -44,9 +50,10 @@ Sitemap: https://example.com/sitemap.xml
 - Multiple sitemaps: Reference the sitemap index file in robots.txt
 
 ## Resources
-- Google: Robots.txt specs (developers.google.com/search/docs/crawling-indexing/robots/intro)
-- Google Search Console (search.google.com/search-console)
-- Webflow: Manage robots.txt (university.webflow.com)
+- Google: Robots.txt specs → [developers.google.com/search/docs/crawling-indexing/robots/intro](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- Google Search Console → [search.google.com/search-console](https://search.google.com/search-console)
+- GSC Robots Tester → [search.google.com/search-console/settings/robots-txt](https://search.google.com/search-console/settings/robots-txt)
+- Webflow University: Manage robots.txt → [university.webflow.com](https://university.webflow.com)
 
 ---
 Category: SEO  
