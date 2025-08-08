@@ -42,12 +42,13 @@ Templates and prompts for creating consistent documentation:
 - [**Page Speed Optimizations**](./docs/06-page-speed-optimization.md) ⚡ *Performance Work Documented*
 
 ### Knowledge Hub
-- [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md) 📚
-- *More articles to be added*
+- [Knowledge Hub Guidelines](./knowledge-hub/knowledge-hub-guidelines.md)
+- [XML Sitemap Management](./knowledge-hub/seo/xml-sitemap-management.md) 📚
+- [robots.txt Management](./knowledge-hub/seo/robots-txt-management.md)
+- [Schema Markup for E‑Commerce](./knowledge-hub/seo/schema-markup-for-ecommerce.md)
 
 ### Documentation Templates
 - [Documentation Guidelines](./prompts/docs-guidelines.md) ✍️
-- *More templates to be added*
 
 ## 📋 Project Information
 
@@ -91,10 +92,11 @@ docs-the-savage-report/
 │   └── 06-page-speed-optimization.md ⚡ Performance optimizations
 │
 ├── knowledge-hub/           # Reusable knowledge articles
-│   ├── seo/
-│   │   └── xml-sitemap-management.md 📚 XML sitemap best practices
-│   └── performance/
-│       └── page-speed-optimization-guide.md
+│   ├── knowledge-hub-guidelines.md
+│   └── seo/
+│       ├── xml-sitemap-management.md 📚 XML sitemap best practices
+│       ├── robots-txt-management.md
+│       └── schema-markup-for-ecommerce.md
 │
 ├── prompts/                 # Documentation templates
 │   └── docs-guidelines.md   ✍️ Documentation writing guidelines
