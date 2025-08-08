@@ -33,14 +33,14 @@ Templates and prompts for creating consistent documentation:
 
 ## 🎯 Quick Links
 
-### Client Documentation
-- [Project Overview](./docs/01-project-overview.md)
-- [Technical Architecture](./docs/02-technical-architecture.md) 🏗️
-- [Platform Details](./docs/03-platform-details.md)
-- [CMS Structure](./docs/04-cms-structure.md) 📁
-- [**SEO Implementation**](./docs/05-seo-implementation.md) 🎯 *Recently Updated*
-- [**Page Speed Optimizations**](./docs/06-page-speed-optimization.md) ⚡ *Performance Work Documented*
-- [**Analytics Implementation**](./docs/07-analytics-implementation.md) 📊 *Analytics Tracking & Monitoring*
+- [**Project Overview**](./docs/01-project-overview.md) 📋 *Start Here*
+- [**Technical Architecture**](./docs/02-technical-architecture.md) 🏗️ *System Design*
+- [**Platform Details**](./docs/03-platform-details.md) ⚙️ *Webflow & Shopify*
+- [**CMS Structure**](./docs/04-cms-structure.md) 📁 *Content Management*
+- [**Schema Markup**](./docs/05-schema-markup.md) 🏷️ *Structured Data*
+- [**SEO Implementation**](./docs/06-seo-implementation.md) 🎯 *Recently Updated*
+- [**Page Speed Optimization**](./docs/07-page-speed-optimization.md) ⚡ *Performance*
+- [**Analytics Implementation**](./docs/08-analytics-implementation.md) 📊 *Tracking & Monitoring*
 
 ### Knowledge Hub
 - [Knowledge Hub Guidelines](./knowledge-hub/knowledge-hub-guidelines.md)
@@ -67,12 +67,12 @@ Templates and prompts for creating consistent documentation:
 
 ### For Website Owners
 1. Read the [Project Overview](./docs/01-project-overview.md)
-2. Review [Page Speed Optimizations](./docs/06-page-speed-optimization.md) to understand performance work
-3. Check [SEO Implementation](./docs/05-seo-implementation.md) for search optimization strategy
+2. Review [Page Speed Optimizations](./docs/07-page-speed-optimization.md) to understand performance work
+3. Check [SEO Implementation](./docs/06-seo-implementation.md) for search optimization strategy
 
 ### For Developers
 1. Review [Technical Architecture](./docs/02-technical-architecture.md)
-2. Check [Page Speed Optimizations](./docs/06-page-speed-optimization.md) for performance implementation
+2. Check [Page Speed Optimizations](./docs/07-page-speed-optimization.md) for performance implementation
 3. Use [Documentation Guidelines](./prompts/docs-guidelines.md) for consistent documentation
 
 ### For Documentation Writers
@@ -89,9 +89,10 @@ docs-the-savage-report/
 │   ├── 02-technical-architecture.md  🏗️ Platform infrastructure
 │   ├── 03-platform-details.md
 │   ├── 04-cms-structure.md           📁 Content management system
-│   ├── 05-seo-implementation.md      🎯 SEO strategy & implementation
-│   ├── 06-page-speed-optimization.md ⚡ Performance optimizations
-│   ├── 07-analytics-implementation.md 📊 Analytics tracking & monitoring
+│   ├── 05-schema-markup.md           🏷️ Structured data implementation
+│   ├── 06-seo-implementation.md      🎯 SEO strategy & implementation
+│   ├── 07-page-speed-optimization.md ⚡ Performance optimizations
+│   ├── 08-analytics-implementation.md 📊 Analytics tracking & monitoring
 │
 ├── knowledge-hub/           # Reusable knowledge articles
 │   ├── knowledge-hub-guidelines.md

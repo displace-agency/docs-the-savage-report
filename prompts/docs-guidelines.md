@@ -152,7 +152,7 @@ Every technical detail must answer: so what’s the business value?
 - **External links** (platforms, tools, live sites): Open in new tab using `target="_blank" rel="noopener noreferrer"`
   - Example: `<a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a>`
 - **Internal links** (documentation, related articles): Open in same tab using regular markdown links
-  - Example: `[SEO Implementation](./05-seo-implementation.md)`
+  - Example: `[SEO Implementation](./06-seo-implementation.md)`
 - **Security**: Always use `rel="noopener noreferrer"` for external links to prevent security vulnerabilities
 
 ## Quality Checklist (Quick)
