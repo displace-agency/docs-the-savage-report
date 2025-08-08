@@ -41,6 +41,8 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ### Google Search Console (Primary Search Analytics)
 **Purpose**: Monitor search performance, indexing status, and technical SEO health
 
+<img src="../assets/analytics-implementation-gsc-dashboard-2025-08-08.png" alt="Google Search Console dashboard showing search performance metrics" width="70%" style="border-radius:8px" />
+
 - **Primary Metrics**: Search queries, click-through rates, impressions, average position
 - **Technical Monitoring**: Core Web Vitals, mobile usability, indexing status
 - **Access**: [GSC Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
@@ -49,6 +51,8 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ### Shopify Analytics (E-commerce Performance)
 **Purpose**: Track sales performance, customer behavior, and business metrics
 
+<img src="../assets/analytics-implementation-shopify-analytics-dashboard-2025-08-08.png" alt="Shopify Analytics dashboard showing e-commerce performance metrics" width="70%" style="border-radius:8px" />
+
 - **Primary Metrics**: Sales, orders, customers, conversion rates, product performance
 - **Business Insights**: Revenue trends, customer acquisition, inventory management
 - **Access**: [Shopify Analytics](https://admin.shopify.com/store/thesavagereport/analytics)
@@ -56,6 +60,8 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 ### Webflow Google Search Integration
 **Purpose**: Display GSC data directly within Webflow dashboard for convenience
+
+<img src="../assets/analytics-implementation-webflow-google-search-integration-2025-08-08.png" alt="Webflow Google Search integration showing GSC data in dashboard" width="70%" style="border-radius:8px" />
 
 - **Features**: Real-time GSC data display, search performance metrics
 - **Access**: [Webflow Dashboard](https://webflow.com/dashboard/sites/savage-report-we)
@@ -68,6 +74,11 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Tracking Code**: Properly implemented across all pages
 - **Account Access**: Agency doesn't have access to the GA account
 - **Status**: Paused until account access is provided
+
+<img src="../assets/analytics-implementation-google-analytics-webflow-settings-2025-08-08.png" alt="Google Analytics measurement ID configured in Webflow settings" width="70%" style="border-radius:8px" />
+
+- **Configuration**: Measurement ID properly configured in Webflow project settings
+- **Status**: Tracking code implemented but account access pending
 
 ### Next Steps for Google Analytics
 - Client needs to provide GA account access to Displace Agency
@@ -83,6 +94,11 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Click-Through Rate**: Percentage of impressions that result in clicks
 - **Average Position**: Average ranking position in search results
 - **Impressions**: How often the site appears in search results
+
+<img src="../assets/analytics-implementation-gsc-search-queries-2025-08-08.png" alt="Google Search Console search queries showing top performing keywords" width="70%" style="border-radius:8px" />
+
+- **Search Queries**: Monitor which keywords are driving traffic to the site
+- **Performance Tracking**: Track CTR, impressions, and average position for each query
 
 ### E-commerce Performance (Shopify)
 - **Total Sales**: Revenue generated from online sales
