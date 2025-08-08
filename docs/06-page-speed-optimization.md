@@ -28,9 +28,9 @@ These tests show the platform’s current performance standing. While PSI’s fi
 
 - Report link (all references): [pagespeed.web.dev/analysis/https-www-the-savage-report-com/mkccvp5ha6?form_factor=desktop](https://pagespeed.web.dev/analysis/https-www-the-savage-report-com/mkccvp5ha6?form_factor=desktop)
 
-<img src="../assets/Screenshot 2025-08-08 at 20.25.58.png" alt="PageSpeed Insights – Desktop snapshot" width="70%" style="border-radius:8px" />
+<img src="../assets/page-speed-optimization-psi-desktop-2025-08-08.png" alt="PageSpeed Insights – Desktop snapshot" width="70%" style="border-radius:8px" />
 
-<img src="../assets/Screenshot 2025-08-08 at 20.26.05.png" alt="PageSpeed Insights – Mobile snapshot" width="70%" style="border-radius:8px" />
+<img src="../assets/page-speed-optimization-psi-mobile-2025-08-08.png" alt="PageSpeed Insights – Mobile snapshot" width="70%" style="border-radius:8px" />
 
 ## Completed Optimizations
 
