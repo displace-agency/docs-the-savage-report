@@ -11,7 +11,7 @@ A **Content Management System (CMS)** is like a digital filing cabinet for your 
 - **Scalability**: Add unlimited products without slowing down
 
 > **Related Documentation:**
-> - 🎯 [SEO Implementation](./06-seo-implementation.md) - How CMS structure supports SEO optimization
+> - 🎯 [SEO Implementation](./05-seo-implementation.md) - How CMS structure supports SEO optimization
 > - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations for CMS content
 > - 🏗️ [Technical Architecture](./02-technical-architecture.md) - Platform infrastructure overview
 > - 📊 [Analytics Implementation](./07-analytics-implementation.md) - Analytics tracking and monitoring
