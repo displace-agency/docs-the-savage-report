@@ -49,6 +49,16 @@ Welcome to The Savage Report Knowledge Hub! This is a reusable collection of con
 - Troubleshooting
 - Resources (official links)
 
+## 🗃️ Assets (Images & Media)
+- Purpose: Assets complement the text; they’re not “proof.” Use them to illustrate where to find settings or what to expect.
+- Placement: Store shared, generic images under `assets/` with subfolders (e.g., `assets/seo/`).
+- Naming: Kebab-case, descriptive, and date if relevant. Examples:
+  - `gsc-sitemaps-example-2025-08.png`
+  - `webflow-custom-code-head-location.png`
+- Referencing: Use relative paths in articles, e.g. `![Alt text](../../assets/seo/gsc-sitemaps-example-2025-08.png)`.
+- Client-specific screenshots belong in `/docs/` articles, not in the Knowledge Hub.
+- Prefer hosted links only if the asset must be external; otherwise keep in-repo.
+
 ## ✍️ Writing Philosophy
 - Be concise and scannable (tables and bullets first)
 - Be value-driven (explain the business impact)
@@ -63,7 +73,7 @@ Welcome to The Savage Report Knowledge Hub! This is a reusable collection of con
 ## 📖 Contributing
 1. Create a new `.md` file in the appropriate category
 2. Follow the format above and keep it concise
-3. Add practical examples and proof links
+3. Add practical examples and links; include assets where helpful and name them properly
 4. Update these guidelines with a link to your new article
 
 ---

@@ -55,8 +55,23 @@ Customers → Webflow (Pages, CMS) → Smootify (Bridge) → Shopify (Products, 
 - Key metrics: LCP < 2.5s, CLS < 0.1, INP < 200ms
 - Evidence: [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
-## Submission Proof (GSC Sitemaps)
+## Sitemaps in Google Search Console (Admin Reference)
+This is where you can review and manage sitemap status over time (status, last read, discovered URLs). After publishing significant changes, revisit this page to resubmit if needed.
+
 ![GSC Sitemaps submission – the-savage-report.com](../assets/seo/gsc-sitemaps-the-savage-report-2025-08-08.png)
+
+- Open: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+
+## Schema Markup (Re‑enabled)
+- Removed the Performance Optimizer NoSchema blocker
+- Created a new inline script “Active Schema Markup” (v2.0.0)
+  - Organization, WebSite, LocalBusiness schemas
+  - Loaded in the site header for consistent coverage
+- Location: Webflow → Project Settings → Custom Code → Head
+  - Link: [webflow.com/dashboard/sites/savage-report-we/custom-code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
+- Next steps after any change:
+  - Publish the site (Webflow)
+  - Validate with [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
 
 ## Schema JSON-LD (Examples)
 
@@ -107,5 +122,5 @@ Product (template)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.4*  
+*Document Version: 1.5*  
 *Maintained by: Displace Agency*
