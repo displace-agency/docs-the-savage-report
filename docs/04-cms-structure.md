@@ -1,205 +1,263 @@
-# CMS Structure
+# CMS Structure - The Savage Report
+
+## What is a CMS and Why It Matters
+
+A **Content Management System (CMS)** is like a digital filing cabinet for your website. Instead of hard-coding every product into the website's code, we use a CMS to store and organize all your content in one place. Think of it as a spreadsheet that automatically creates beautiful web pages.
+
+**Why we use a CMS:**
+- **Easy Updates**: Add new products without touching code
+- **Consistency**: Every product page looks perfect automatically
+- **Organization**: All content organized in collections
+- **Scalability**: Add unlimited products without slowing down
+
+## How Our Hybrid System Works
+
+The Savage Report uses a unique **dual-system approach** that combines the best of both worlds:
+
+### 🎨 Webflow CMS (Structure & Design)
+- Creates the page templates and visual structure
+- Manages URLs and page routing
+- Handles SEO and metadata
+- Provides the design framework
+
+### 🛍️ Shopify + Smootify (Live Product Data)
+- Displays real-time product information
+- Manages inventory and pricing
+- Handles all e-commerce functionality
+- Processes orders and payments
+
+**Important:** While you see fields in Webflow's CMS, the actual product information displayed to customers comes directly from Shopify through Smootify. This ensures prices and inventory are always accurate.
+
+## The Magic Field: Shopify ID
+
+The **Shopify ID** field is the bridge between both systems. This unique identifier tells Smootify which product from Shopify to display on each page.
+
+```
+How it works:
+Webflow Page (with Shopify ID) → Smootify reads ID → Pulls data from Shopify → Customer sees live product info
+```
 
 ## Collections Overview
 
-The Savage Report uses 6 main CMS collections to manage dynamic content:
+We've organized your content into 6 smart collections, each serving a specific purpose:
+
+| Collection | Purpose | Items | Key Feature |
+|------------|---------|-------|-------------|
+| **Products** | Individual product pages | 150+ | Links to Shopify inventory |
+| **Collections** | Product groupings (Summer, Essentials, etc.) | 12 | Organizes products by theme |
+| **Vendors** | Brand/designer profiles | 8 | Showcases your partners |
+| **Lookbooks** | Visual style guides | 6 | Inspirational content |
+| **Campaigns** | Marketing initiatives | 4 | Time-based promotions |
+| **Special Projects** | Limited edition drops | 3 | Exclusive releases |
 
 ## 1. Products Collection
 
-**Collection ID**: `6842dbb7fd62fe84163d606c`  
-**Slug**: `product`  
-**Created**: June 6, 2025  
+**What it's for:** Every individual item you sell  
+**Created:** June 6, 2025  
+**Total Items:** 150+ products
 
-### Fields
+### Critical Fields
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Name | Plain Text | Yes | Product title |
-| Slug | Slug | Yes | URL identifier |
-| Images | Multi-Image | Yes | Product photos |
-| Price | Number | Yes | Current price |
-| Compare Price | Number | No | Original price |
-| Description | Rich Text | Yes | Product details |
-| Stock | Number | Yes | Inventory count |
-| SKU | Plain Text | Yes | Stock keeping unit |
-| Variants | Reference | No | Size/color options |
-| Collection | Reference | Yes | Parent collection |
-| Vendor | Reference | No | Brand/designer |
-| Tags | Multi-Reference | No | Filter tags |
-| Featured | Switch | No | Homepage display |
-| SEO Title | Plain Text | No | Meta title |
-| SEO Description | Plain Text | No | Meta description |
+| Field | Purpose | Who Updates It |
+|-------|---------|---------------|
+| **Shopify ID** 🔑 | Links to Shopify product | Automatic via sync |
+| **Name** | Product title for URL | Set once, rarely changed |
+| **Slug** | Creates the web address (/product/cool-tshirt) | Auto-generated |
+| **SEO Fields** | Helps Google find products | Marketing team |
 
-### Template Page
-- **URL Pattern**: `/product/[slug]`
-- **Template**: Product Template
+### Display Fields (Managed by Shopify/Smootify)
 
-## 2. Collections
+These fields exist in Webflow but are **overridden by live Shopify data**:
 
-**Collection ID**: `6842dbb7024e4a79c2aa030f`  
-**Slug**: `collection`  
-**Created**: June 6, 2025  
+| Field | Where It Actually Comes From |
+|-------|------------------------------|
+| **Price** | Shopify (always current) |
+| **Images** | Shopify product images |
+| **Description** | Shopify product description |
+| **Inventory** | Shopify stock levels |
+| **Variants** | Shopify (sizes, colors) |
 
-### Fields
+### Why This Dual System?
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Name | Plain Text | Yes | Collection name |
-| Slug | Slug | Yes | URL identifier |
-| Description | Rich Text | Yes | Collection story |
-| Hero Image | Image | Yes | Banner image |
-| Thumbnail | Image | Yes | Grid display image |
-| Season | Option | No | Season identifier |
-| Year | Number | No | Collection year |
-| Featured | Switch | No | Homepage feature |
-| Order | Number | Yes | Display order |
-| SEO Description | Plain Text | No | Meta description |
+- **Webflow** provides the beautiful page design
+- **Shopify** provides accurate product data
+- **Customers** always see correct prices and stock levels
+- **You** only need to update products in one place (Shopify)
 
-### Template Page
-- **URL Pattern**: `/collection/[slug]`
-- **Template**: Collection Template
+## 2. Collections (Product Groups)
 
-## 3. Vendors
+**What it's for:** Organizing products into shoppable categories  
+**Example:** "Summer Essentials", "New Arrivals", "Best Sellers"
 
-**Collection ID**: `6842dbb8ccb3e3517016896f`  
-**Slug**: `vendor`  
-**Created**: June 6, 2025  
+### Key Fields Explained
 
-### Fields
+| Field | What It Does | Example |
+|-------|--------------|---------|
+| **Name** | Collection title | "Summer 2025" |
+| **Shopify ID** | Links to Shopify collection | Ensures products auto-update |
+| **Hero Image** | Banner at top of page | 1920x1080px lifestyle shot |
+| **Description** | Story about the collection | "Inspired by urban summers..." |
+| **Order** | Controls display sequence | 1 = First, 2 = Second, etc. |
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Name | Plain Text | Yes | Vendor name |
-| Slug | Slug | Yes | URL identifier |
-| Logo | Image | No | Brand logo |
-| Description | Rich Text | Yes | About the vendor |
-| Website | Link | No | External website |
-| Instagram | Link | No | Social media |
-| Featured | Switch | No | Homepage display |
+### How Collections Work
+```
+Shopify Collection (managed there) 
+    ↓
+Webflow provides the page design
+    ↓
+Smootify pulls products automatically
+    ↓
+Customer sees beautiful, organized page
+```
 
-### Template Page
-- **URL Pattern**: `/vendor/[slug]`
-- **Template**: Vendor Template
+## 3. Vendors (Brands/Designers)
 
-## 4. Lookbooks
+**What it's for:** Showcasing the brands and designers you carry  
+**Purpose:** Builds credibility and allows shopping by brand
 
-**Collection ID**: `685a3111edecaa3b6cdec12d`  
-**Slug**: `lookbooks`  
-**Created**: June 24, 2025  
+### Fields That Matter
 
-### Fields
+| Field | Purpose | Update Frequency |
+|-------|---------|-----------------|
+| **Name** | Brand name | Once when added |
+| **Logo** | Brand identity | Once when added |
+| **Description** | Brand story | Occasionally |
+| **Instagram** | Social link | When URL changes |
+| **Featured** | Shows on homepage | Marketing decision |
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Title | Plain Text | Yes | Lookbook name |
-| Slug | Slug | Yes | URL identifier |
-| Cover Image | Image | Yes | Main image |
-| Gallery | Multi-Image | Yes | Photo collection |
-| Season | Plain Text | Yes | Season/theme |
-| Year | Number | Yes | Publication year |
-| Description | Rich Text | Yes | Lookbook story |
-| Credits | Rich Text | No | Photography credits |
-| Products | Multi-Reference | No | Featured products |
-| Published Date | Date | Yes | Release date |
+## 4. Lookbooks (Visual Content)
 
-### Template Page
-- **URL Pattern**: `/lookbooks/[slug]`
-- **Template**: Lookbooks Template
+**What it's for:** Inspirational content showing products in context  
+**Purpose:** Drives desire and shows styling options
+
+### Content Strategy
+
+| Field | Marketing Value |
+|-------|----------------|
+| **Gallery** | Shows lifestyle/styling | 
+| **Season** | Creates urgency |
+| **Products** | Direct shopping links |
+| **Credits** | Builds partnerships |
+
+**How Lookbooks Drive Sales:**
+1. Customer browses beautiful imagery
+2. Clicks on featured products
+3. Goes directly to product page
+4. Makes purchase
 
 ## 5. Campaigns
 
-**Collection ID**: `6862adb5e3f9b5783503d701`  
-**Slug**: `campaigns`  
-**Created**: June 30, 2025  
+**What it's for:** Time-based marketing initiatives  
+**Examples:** "Black Friday", "Spring Launch", "Collaboration Drops"
 
-### Fields
+### Strategic Fields
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Name | Plain Text | Yes | Campaign title |
-| Slug | Slug | Yes | URL identifier |
-| Hero Visual | Image | Yes | Main campaign image |
-| Gallery | Multi-Image | No | Campaign visuals |
-| Video | Video Link | No | Campaign video |
-| Story | Rich Text | Yes | Campaign narrative |
-| Launch Date | Date | Yes | Campaign start |
-| End Date | Date | No | Campaign end |
-| Products | Multi-Reference | No | Related products |
-| Collaborators | Plain Text | No | Partners involved |
-| Active | Switch | Yes | Display status |
-
-### Template Page
-- **URL Pattern**: `/campaigns/[slug]`
-- **Template**: Campaigns Template
+| Field | Business Purpose |
+|-------|-----------------|
+| **Launch Date** | Creates anticipation |
+| **End Date** | Urgency for purchase |
+| **Hero Visual** | Grabs attention |
+| **Products** | What's being promoted |
+| **Active Switch** | Easy on/off control |
 
 ## 6. Special Projects
 
-**Collection ID**: `6862adfed82af921b1980c1e`  
-**Slug**: `special-projects`  
-**Created**: June 30, 2025  
+**What it's for:** Limited edition releases and collaborations  
+**Purpose:** Creates exclusivity and buzz
 
-### Fields
+### Key Features
 
-| Field Name | Field Type | Required | Description |
-|------------|------------|----------|-------------|
-| Title | Plain Text | Yes | Project name |
-| Slug | Slug | Yes | URL identifier |
-| Type | Option | Yes | Project type |
-| Cover | Image | Yes | Main visual |
-| Gallery | Multi-Image | Yes | Project images |
-| Description | Rich Text | Yes | Project details |
-| Release Date | Date | Yes | Drop date |
-| Limited Quantity | Number | No | Stock limit |
-| Price Range | Plain Text | No | Pricing info |
-| Collaboration | Plain Text | No | Partners |
-| Products | Multi-Reference | No | Related items |
-| Status | Option | Yes | Active/Sold Out |
+| Field | Why It's Important |
+|-------|--------------------|
+| **Limited Quantity** | Creates scarcity |
+| **Release Date** | Builds hype |
+| **Status** | Shows availability |
+| **Collaboration** | Adds prestige |
 
-### Template Page
-- **URL Pattern**: `/special-projects/[slug]`
-- **Template**: Special Projects Template
+## How to Manage Content
 
-## CMS Best Practices
+### Daily Management (In Shopify)
+- Product prices
+- Inventory levels  
+- Product descriptions
+- Product images
+- Variants (sizes/colors)
 
-### Naming Conventions
-- Use clear, descriptive names
-- Maintain consistent formatting
-- Include season/year where relevant
-- Avoid special characters in slugs
+### Occasional Updates (In Webflow)
+- New collection pages
+- Lookbook launches
+- Campaign creation
+- SEO optimization
+- Homepage features
 
-### Image Requirements
-- **Product Images**: 1200x1600px minimum
-- **Hero Images**: 1920x1080px minimum
-- **Thumbnails**: 600x800px
-- **Format**: JPG or PNG
-- **File Size**: Under 500KB optimized
+### Understanding the Sync Process
 
-### SEO Fields
-- Always fill SEO title (50-60 characters)
-- Write unique descriptions (150-160 characters)
-- Use relevant keywords naturally
-- Include brand name consistently
-
-### Publishing Workflow
-1. Create item in CMS
-2. Add all required fields
-3. Upload optimized images
-4. Set SEO metadata
-5. Preview on staging
-6. Publish to live site
-
-## Relationships
-
-### Product Relationships
 ```
-Product → Collection (many-to-one)
-Product → Vendor (many-to-one)
-Product → Tags (many-to-many)
+1. You update product in Shopify
+2. Customer visits website
+3. Smootify checks Shopify ID
+4. Pulls latest data instantly
+5. Customer sees current info
 ```
 
-### Campaign Relationships
-```
-Campaign → Products (one-to-many)
-Lookbook → Products (one-to-many)
-Special Project → Products (one-to-many)
-```
+## Visual Content Guidelines
+
+### Image Requirements by Type
+
+| Content Type | Dimensions | File Size | Format |
+|--------------|------------|-----------|---------|
+| **Product Photos** | 1200x1600px | <150KB | WebP/JPG |
+| **Hero Banners** | 1920x1080px | <300KB | WebP/JPG |
+| **Collection Thumbs** | 600x800px | <100KB | WebP/JPG |
+| **Vendor Logos** | 500x500px | <50KB | PNG/SVG |
+
+### Why Image Optimization Matters
+- **Faster Loading** = Better user experience
+- **Better SEO** = Higher Google rankings
+- **Lower Bandwidth** = Reduced hosting costs
+- **Mobile Friendly** = Happy mobile shoppers
+
+## SEO Best Practices
+
+### What SEO Fields Do
+
+| Field | Purpose | Example |
+|-------|---------|---------|
+| **SEO Title** | What appears in Google | "Wavy Logo Tee - Streetwear | The Savage Report" |
+| **SEO Description** | Google preview text | "Premium cotton streetwear tee with signature wavy logo. Limited edition urban style." |
+| **Slug** | Clean URL | `/product/wavy-logo-tee` |
+
+### SEO Quick Rules
+- **Titles**: 50-60 characters with brand name
+- **Descriptions**: 150-160 characters with keywords
+- **Slugs**: Short, descriptive, no special characters
+
+## Common Questions Answered
+
+### "Why do some fields seem duplicate?"
+Webflow needs structure, but Shopify provides the live data. Think of Webflow fields as placeholders that get filled with real Shopify data.
+
+### "Where do I update product info?"
+Always in Shopify. Webflow is just for page structure and design.
+
+### "What if Shopify ID is missing?"
+The product won't display correctly. This field is critical for the connection.
+
+### "Can I add products directly in Webflow?"
+You can create the page, but without a Shopify ID, no product data will show.
+
+## The Power of This System
+
+By combining Webflow's design flexibility with Shopify's e-commerce power:
+
+✅ **Design Freedom**: Beautiful, custom pages  
+✅ **Real-time Accuracy**: Always-current inventory  
+✅ **Single Source of Truth**: Update once in Shopify  
+✅ **Scalability**: Grow without limitations  
+✅ **Performance**: Fast, optimized delivery  
+
+---
+
+*Document Version: 2.0*  
+*Last Updated: August 8, 2025*  
+*Maintained by: Displace Agency*
