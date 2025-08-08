@@ -12,24 +12,22 @@ We implemented foundational SEO across The Savage Report to help search engines 
 | [Technical SEO](#technical-seo) | XML sitemap, robots.txt, canonicals, HTTPS, site architecture improvements | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Robots.txt</a> |
 | [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
 | [XML Sitemap Implementation](#xml-sitemap-implementation) | Auto-generated sitemap with 61 URLs, verified in Google Search Console | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
-| [Webflow SEO Settings](#webflow-seo-settings-by-topic) | Traffic controls for search engine crawlers and AI bots | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
+| [Webflow SEO Settings](#webflow-seo-settings) | Traffic controls for search engine crawlers and AI bots | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
 
 > See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
-## What We Implemented
-
-### Structured Data (Schema Markup)
+## Structured Data (Schema Markup)
 - Prepared JSON-LD for Product, Organization, Local Business, and Website
 - Currently inactive to avoid conflicts with the performance optimizer; ready to enable after compatibility validation
 - Goal: enable rich results (stars, price, brand info) without compromising speed
 
-### SEO-Optimized Content & Metadata
+## SEO-Optimized Content & Metadata
 - Added SEO text blocks on collection pages (human-first, keyword-informed)
 - Implemented consistent, brand-first meta titles and optimized descriptions
 - Added Open Graph tags for improved social sharing
 - Standardized URL slugs using best practices
 
-### Technical SEO
+## Technical SEO
 - Enabled and verified auto XML sitemap
 - Configured robots.txt for efficient crawling (verified in GSC)
 - Implemented self-referencing canonicals sitewide
@@ -173,7 +171,7 @@ This is where you can review and manage sitemap status over time (status, last r
 
 - **Open**: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
-## Webflow SEO Settings (By Topic)
+## Webflow SEO Settings
 
 ### Traffic Controls
 Control access for search engine crawlers and AI bots to manage site traffic and indexing.
