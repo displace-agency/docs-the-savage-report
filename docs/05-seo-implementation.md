@@ -5,58 +5,102 @@ We implemented foundational SEO across The Savage Report to help search engines 
 
 ## SEO Implementation Summary
 
-| Area | What We Delivered | Date(s) | Status | Business Impact |
-|------|-------------------|---------|--------|-----------------|
-| Metadata & Open Graph | Custom titles with brand consistency, optimized meta descriptions, and social sharing tags across key pages | Jul–Aug 2025 | ✅ Active | Higher CTR and consistent branding in search/social |
-| URL Structure | Clean, SEO-friendly slugs across pages and collections | Jul 2025 | ✅ Active | Clearer indexing and more readable links |
-| Structured Data (Schema) | Prepared Product, Organization, Local Business, and Website schemas; currently paused to ensure compatibility with the performance optimizer | Jul 25–28, 2025 | ⏸️ Paused | Eligibility for rich results once enabled |
-| XML Sitemap | Auto-generated sitemap enabled and verified | Aug 2025 | ✅ Active | Faster discovery and indexing |
-| Robots.txt | Configured to allow key pages and prevent crawl waste | Aug 2025 | ✅ Active | Efficient crawl budget usage |
-| Canonical URLs | Self-referencing canonicals across pages | Aug 2025 | ✅ Active | Prevents duplicate content issues |
-| Mobile SEO | Improved mobile UX structure; single image/slider on homepage | Aug 2025 | ✅ Active | Better mobile experience and rankings |
-| Domain & SSL | Proper HTTPS and domain configuration (www and non-www) | Aug 2025 | ✅ Active | Security signals and stable indexing |
-| Site Architecture | Added "Shop All" index; optimized CMS collections and content staging | Aug 2025 | ✅ Active | Better crawlability and product discovery |
-| Core Web Vitals & Speed | See Performance work | Aug 2025 | ✅ Active | Direct ranking factor; faster UX → more conversions |
+| Priority | Area | What We Delivered | Date(s) | Status | Evidence Link(s) |
+|----------|------|-------------------|---------|--------|------------------|
+| High | Core Web Vitals & Speed | Performance work that improves LCP/CLS/FID (see performance doc) | Aug 2025 | ✅ Active | [PageSpeed Insights Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com) · [Performance Doc](./06-page-speed-optimization.md) |
+| High | Metadata & Open Graph | Brand-consistent titles, optimized descriptions, Open Graph for key pages | Jul–Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
+| High | XML Sitemap | Auto-generated sitemap enabled and verified | Aug 2025 | ✅ Active | [Sitemap](https://the-savage-report.com/sitemap.xml) |
+| High | Robots.txt | Configured to prevent crawl waste and allow key pages; verified in GSC | Aug 2025 | ✅ Active | [robots.txt](https://the-savage-report.com/robots.txt) · [Google Search Console Property](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com) |
+| High | Domain & SSL | Proper HTTPS and canonical host (www and non-www) configuration | Aug 2025 | ✅ Active | [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general) |
+| High | Canonical URLs | Self-referencing canonicals implemented sitewide | Aug 2025 | ✅ Active | [Homepage (view source to verify)](https://the-savage-report.com/) |
+| Medium | URL Structure | Clean, SEO-friendly slugs across pages and collections | Jul 2025 | ✅ Active | [Webflow Designer (Pages/Slugs)](https://webflow.com/dashboard/sites/savage-report-we/designer) |
+| Medium | Site Architecture | Added "Shop All" index; optimized CMS collections and content staging | Aug 2025 | ✅ Active | [CMS Structure Doc](./04-cms-structure.md) |
+| Medium | Mobile SEO | Simplified mobile header; improved mobile UX structure | Aug 2025 | ✅ Active | [PageSpeed Insights (Mobile Tab)](https://pagespeed.web.dev/report?url=https://the-savage-report.com) |
+| Medium | Structured Data (Schema) | Prepared Product, Organization, Local Business, Website schemas; paused to avoid perf conflicts | Jul 25–28, 2025 | ⏸️ Paused | See examples below |
 
-> See: ⚡ Page Speed Optimizations → `./06-page-speed-optimization.md`  |  📚 XML Sitemap Management → `../knowledge-hub/seo/xml-sitemap-management.md`
+> See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
 
 ## What We Implemented (Concise)
 
 ### 1) Structured Data (Schema Markup)
-- Created schema scripts for Product, Organization, Local Business, and Website
+- Prepared JSON-LD for Product, Organization, Local Business, and Website
 - Currently inactive to avoid conflicts with the performance optimizer; ready to enable after compatibility validation
 - Goal: enable rich results (stars, price, brand info) without compromising speed
 
 ### 2) SEO-Optimized Content & Metadata
 - Added SEO text blocks on collection pages (human-first, keyword-informed)
 - Implemented consistent, brand-first meta titles and optimized descriptions
-- Added Open Graph tags for improved sharing on social platforms
+- Added Open Graph tags for improved social sharing
 - Standardized URL slugs using best practices
 
 ### 3) Technical SEO
-- Enabled auto XML sitemap and verified configuration
-- Configured robots.txt for efficient crawling
+- Enabled and verified auto XML sitemap
+- Configured robots.txt for efficient crawling (verified in GSC)
 - Implemented self-referencing canonicals sitewide
 - Ensured HTTPS across domains with proper www/non-www handling
-- Improved site architecture: added "Shop All" index, optimized CMS collections, and staged non-core pages
+- Improved site architecture ("Shop All" index, optimized CMS collections, staged non-core pages)
 
 ### 4) Mobile & Performance
 - Mobile layout improvements (e.g., simplified homepage header for speed)
-- Core Web Vitals improved with performance work (see page speed doc)
+- Core Web Vitals improved with performance work (see performance doc)
 
-## Results & Impact
-- Improved Core Web Vitals and faster load times (supports higher rankings)
-- Increased mobile performance (mobile score improved from ~65 → 85+)
-- Reduced bounce rate by ~25% (better engagement signals)
-- Clearer indexing and crawl efficiency → improved search visibility potential
+## Site Architecture (At a Glance)
+```
+Customers → Webflow (Pages, CMS) → Smootify (Bridge) → Shopify (Products, Orders)
+                           ↘ XML Sitemap / robots.txt ↙      
+```
+
+## Core Web Vitals Snapshot
+- Track with PageSpeed Insights (mobile/desktop) and internal monitoring
+- Key metrics: LCP < 2.5s, CLS < 0.1, INP < 200ms
+- Evidence: [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+
+## Schema JSON-LD (Examples)
+
+Organization
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "THE SAVAGE REPORT",
+  "url": "https://the-savage-report.com",
+  "logo": "https://the-savage-report.com/assets/logo.png"
+}
+</script>
+```
+
+Product (template)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{product.name}}",
+  "image": ["{{product.imageUrl}}"],
+  "description": "{{product.description}}",
+  "brand": {"@type": "Brand", "name": "THE SAVAGE REPORT"},
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "{{product.price}}",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+```
 
 ## Useful Links
-- Webflow Site Settings: `https://webflow.com/dashboard/sites/savage-report-we/general`
-- Live Sitemap: `https://the-savage-report.com/sitemap.xml`
-- Page Speed Optimizations: `./06-page-speed-optimization.md`
-- XML Sitemap Management (Guide): `../knowledge-hub/seo/xml-sitemap-management.md`
+- Webflow Site Settings: [webflow.com/dashboard/sites/savage-report-we/general](https://webflow.com/dashboard/sites/savage-report-we/general)
+- Webflow Designer: [webflow.com/dashboard/sites/savage-report-we/designer](https://webflow.com/dashboard/sites/savage-report-we/designer)
+- Google Search Console (Property): [search.google.com/search-console?resource_id=sc-domain:the-savage-report.com](https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com)
+- PageSpeed Insights: [pagespeed.web.dev/report?url=https://the-savage-report.com](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+- Live Sitemap: [the-savage-report.com/sitemap.xml](https://the-savage-report.com/sitemap.xml)
+- Robots: [the-savage-report.com/robots.txt](https://the-savage-report.com/robots.txt)
+- Performance Doc: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
+- XML Sitemap Management (Guide): [knowledge-hub/seo/xml-sitemap-management.md](../knowledge-hub/seo/xml-sitemap-management.md)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.2*  
+*Document Version: 1.3*  
 *Maintained by: Displace Agency*

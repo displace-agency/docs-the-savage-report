@@ -34,27 +34,29 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 1–2 sentences that explain the concept in plain language plus the business value.
 
 ## Implementation Summary
-| Area | What We Delivered | Date(s) | Status | Business Impact |
-|------|-------------------|---------|--------|-----------------|
-| Item | What we built/configured | Aug 2025 | ✅ Active | Why it matters |
+| Priority | Area | What We Delivered | Date(s) | Status | Evidence Link(s) |
+|----------|------|-------------------|---------|--------|------------------|
+| High/Medium/Low | Item | What we built/configured | Aug 2025 | ✅ Active | Links to robots.txt, sitemap, PSI, GSC, admin, or internal doc |
 
 ## What We Implemented (Concise)
-- Bullet list of 3–6 concrete things delivered
-- Keep each bullet short (one line where possible)
+- 3–6 concrete bullets (one line each)
+- Include brief config context where relevant (e.g., “Verified robots in GSC”)
 
 ## Results & Impact
 - Quantified outcomes (metrics, scores, deltas)
 - Qualitative benefits if metrics aren’t available
 
 ## Useful Links
-- Real admin links (e.g., Webflow dashboard), live assets, relevant knowledge-hub guides
+- Clickable links to live sources (robots.txt, sitemap, PSI, GSC), admin panels, and relevant knowledge-hub guides
 ```
 
 ### Patterns To Prefer
-- Start with a visual summary (table) just like Page Speed Optimizations
+- Start with a visual summary (table) with Priority and Evidence Link(s)
 - Use short bullets and bold keywords
 - Add cross-links: related `/docs/` pages and relevant `/knowledge-hub/` articles
 - Include dates and statuses (✅ Active / ⏸️ Paused / 🔄 In progress)
+- Add small diagrams for quick orientation (ASCII or Mermaid) when helpful
+- Include small schema snippets when they build trust (e.g., Organization/Product JSON-LD)
 
 ### Patterns To Avoid in `/docs/`
 - Long, generic best-practice sections (move to knowledge-hub)
@@ -85,6 +87,9 @@ Every technical detail must answer: so what’s the business value?
 - Use real, actionable links when possible
   - Example: Webflow settings `https://webflow.com/dashboard/sites/savage-report-we/general`
   - Live sitemap `https://the-savage-report.com/sitemap.xml`
+  - Robots.txt `https://the-savage-report.com/robots.txt`
+  - PageSpeed Insights `https://pagespeed.web.dev/report?url=https://the-savage-report.com`
+  - Google Search Console property (domain) `https://search.google.com/search-console?resource_id=sc-domain:the-savage-report.com`
 - Link to internal docs using relative paths
 - Link to knowledge-hub for how-to/education
 
@@ -92,6 +97,7 @@ Every technical detail must answer: so what’s the business value?
 - [ ] Clear: plain language, no jargon
 - [ ] Concise: visual summary first, bullets not paragraphs
 - [ ] Concrete: dates, statuses, metrics
+- [ ] Evidence: live links to verify work (robots, sitemap, PSI, GSC, admin)
 - [ ] Value-driven: benefits are explicit
 - [ ] Linked: admin URLs and knowledge-hub references
 
@@ -103,6 +109,6 @@ Write a client-facing `/docs/` page using this structure:
 - What we delivered: <3–6 bullets>
 - Dates and statuses: <per item>
 - Business impact: <metrics or concise value>
-- Links: <admin URLs and knowledge-hub articles>
+- Links: <robots/sitemap/PSI/GSC/admin + knowledge-hub>
 
-Ensure it opens with a summary table, stays concise, and avoids how-to. Move educational content to `/knowledge-hub/` and cross-link it.
+Ensure it opens with an Implementation Summary table including Priority and Evidence Link(s), stays concise, includes live verification links, and avoids how-to. Move educational content to `/knowledge-hub/` and cross-link it.
