@@ -62,38 +62,43 @@ This is where you can review and manage sitemap status over time (status, last r
 
 - Open: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 
+## Webflow SEO Settings (By Topic)
+
+### Global SEO Defaults
+<img src="../assets/seo-implementation-webflow-seo-settings-01.png" alt="Global SEO defaults in Webflow" width="70%" style="border-radius:8px" />
+- We set site-wide defaults once, so every page starts with strong SEO settings.
+- Open: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
+
+### Titles, Meta & Open Graph
+<img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Meta title/description and Open Graph settings" width="70%" style="border-radius:8px" />
+- Brand-consistent titles and optimized descriptions; Open Graph ensures clean social cards.
+- Reference: [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
+
+### Sitemap
+<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Sitemap auto-generation enabled" width="70%" style="border-radius:8px" />
+- Auto-generate sitemap is ON; we also submitted it in GSC for tracking and diagnostics.
+- Links: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+
+### robots.txt
+<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration in Webflow" width="70%" style="border-radius:8px" />
+- Allows public pages and excludes utility routes to avoid crawl waste.
+- Links: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
+
+### Canonical & Advanced
+<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Canonical and advanced settings" width="70%" style="border-radius:8px" />
+- Self‑referencing canonicals and advanced options to prevent duplicate content.
+
+### Publishing
+<img src="../assets/seo-implementation-webflow-seo-settings-06.png" alt="Publishing changes in Webflow" width="70%" style="border-radius:8px" />
+- After changes, publish the site so updates go live; then verify in GSC/PSI.
+- Links: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
+
 ## Schema Markup
 Inline JSON‑LD is placed in Webflow’s Custom Code head to provide Organization, WebSite, and LocalBusiness context.
 
 - Location: Webflow → Project Settings → Custom Code → Head  
 - Link: [webflow.com/dashboard/sites/savage-report-we/custom-code](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
 - Validate with [Rich Results Test](https://search.google.com/test/rich-results) and [Search Console](https://search.google.com/search-console)
-
-## Webflow SEO Settings
-
-<img src="../assets/seo-implementation-webflow-seo-settings-01.png" alt="General SEO settings" width="70%" style="border-radius:8px" />
-- We configure global SEO at the site level so defaults are consistent across all pages.
-- Open: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
-
-<img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Meta title/description and Open Graph" width="70%" style="border-radius:8px" />
-- Titles and meta descriptions follow a brand-consistent format; Open Graph ensures clean social sharing cards.
-- Reference: [Webflow Site Settings](https://webflow.com/dashboard/sites/savage-report-we/general)
-
-<img src="../assets/seo-implementation-webflow-seo-settings-03.png" alt="Sitemap auto‑generation enabled" width="70%" style="border-radius:8px" />
-- Sitemap auto‑generation is enabled in Webflow; we also submitted it in GSC for tracking and diagnostics.
-- Links: [Live Sitemap](https://the-savage-report.com/sitemap.xml) · [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
-
-<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration in Webflow" width="70%" style="border-radius:8px" />
-- robots.txt allows public pages and excludes utility routes to avoid crawl waste.
-- Links: [robots.txt](https://the-savage-report.com/robots.txt) · [GSC Robots Tester](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
-
-<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Canonical and advanced settings" width="70%" style="border-radius:8px" />
-- Self‑referencing canonicals and advanced settings prevent duplicate content issues.
-- Tip: Verify in page source or using your SEO tool of choice.
-
-<img src="../assets/seo-implementation-webflow-seo-settings-06.png" alt="Webflow publishing" width="70%" style="border-radius:8px" />
-- After changes, publish the site to push SEO settings live; then verify in GSC/PSI.
-- Links: [Publish in Webflow](https://webflow.com/dashboard/sites/savage-report-we) · [PSI Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
 ## Schema JSON-LD (Examples)
 
@@ -144,5 +149,5 @@ Product (template)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.8*  
+*Document Version: 1.9*  
 *Maintained by: Displace Agency*
