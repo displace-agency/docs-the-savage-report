@@ -88,6 +88,50 @@ Every technical detail must answer: so what’s the business value?
 - Visual indicators: ✅ Active, ❌ Inactive, ⏸️ Paused, 🔄 In progress, ⚡ Performance, 🎯 Business
 - Keep sections under ~6 bullets; split if longer
 
+## 🖼️ Image & Visual Content Guidelines
+
+### Image-Text Alignment (Critical)
+- **ALWAYS verify** that image descriptions match the actual screenshot content
+- **Test the "screenshot test"**: If someone looks at the image, does the text below accurately describe what they see?
+- **Common mismatches to avoid**:
+  - Describing "SEO settings" when screenshot shows "Custom Code"
+  - Saying "sitemap configuration" when showing "Google verification"
+  - Mentioning "meta titles" when displaying "robots.txt settings"
+
+### Image Naming & Organization
+- **Naming convention**: `article-name-keywords-date.png` (e.g., `seo-implementation-webflow-seo-settings-01.png`)
+- **Placement**: Client-specific images in `/docs/`, generic images in `/assets/`
+- **Consistent styling**: Always use `width="70%"` and `style="border-radius:8px"` for embedded images
+
+### Image Content Structure
+- **Before image**: Brief context about what the screenshot shows
+- **Image**: Properly named and styled screenshot
+- **After image**: Bullet points (•) with purpose and relevant links
+- **Format**:
+  ```markdown
+  ### Section Title
+  Brief context about what this screenshot demonstrates.
+  
+  <img src="../assets/article-name-keywords-date.png" alt="Descriptive alt text" width="70%" style="border-radius:8px" />
+  
+  • **Purpose**: What this setting/feature accomplishes
+  • **Location**: [Deep link to admin page](url)
+  • **Links**: [Live verification](url) · [Admin panel](url)
+  ```
+
+### Screenshot Quality Standards
+- **Content accuracy**: Screenshot must show exactly what the text describes
+- **Relevance**: Only include screenshots that add value or provide evidence
+- **Clarity**: Screenshots should be clear, well-lit, and focused on the relevant area
+- **Consistency**: Use similar zoom levels and cropping across related screenshots
+
+### Image-Text Review Process
+1. **Content check**: Does the text accurately describe what's visible in the screenshot?
+2. **Purpose alignment**: Does the stated purpose match the actual functionality shown?
+3. **Link verification**: Are the provided links relevant to the screenshot content?
+4. **Context clarity**: Is there enough context before the image to understand what to look for?
+5. **Actionability**: Can someone use the information to verify or replicate the work?
+
 ## Linking Standards
 - Use real, actionable links when possible
   - Webflow settings `https://webflow.com/dashboard/sites/savage-report-we/general`
@@ -107,6 +151,41 @@ Every technical detail must answer: so what’s the business value?
 - [ ] Evidence: deep admin and live links to verify work (robots, sitemap, PSI, GSC)
 - [ ] Value-driven: benefits are explicit
 - [ ] Linked: admin URLs and knowledge-hub references
+- [ ] **Image-text alignment**: Screenshots match descriptions exactly
+- [ ] **Consistent formatting**: All bullet points use • not -
+- [ ] **Proper styling**: Images have 70% width and rounded corners
+
+## 🚨 Common Pitfalls & Lessons Learned
+
+### Image-Text Mismatches (Critical Issue)
+**Problem**: Descriptions don't match actual screenshot content
+**Solution**: Always verify by asking "If someone looks at this image, does the text accurately describe what they see?"
+**Example**: Don't say "SEO settings" when screenshot shows "Custom Code" settings
+
+### Formatting Inconsistencies
+**Problem**: Mixed use of dashes (-) and bullet points (•)
+**Solution**: Always use bullet points (•) for consistency and professionalism
+**Example**: Use `• **Purpose**:` not `- Purpose:`
+
+### Broken or Irrelevant Links
+**Problem**: Links point to wrong pages or are broken
+**Solution**: Test all links and ensure they point to relevant admin pages or live endpoints
+**Example**: Link to specific GSC sitemaps page, not just the main GSC dashboard
+
+### Section Title Mismatches
+**Problem**: Section titles don't reflect actual content
+**Solution**: Update titles to match what the content actually covers
+**Example**: "Custom Code & Scripts" instead of "Global SEO Defaults" when showing custom code settings
+
+### Missing Context
+**Problem**: Screenshots lack context about what to look for
+**Solution**: Provide brief context before each image
+**Example**: "Configure automatic sitemap generation when site is published for better search engine indexing."
+
+### Inconsistent Image Styling
+**Problem**: Images lack consistent styling (width, corners)
+**Solution**: Always use `width="70%"` and `style="border-radius:8px"`
+**Example**: `<img src="../assets/image.png" alt="Description" width="70%" style="border-radius:8px" />`
 
 ## Example Prompt (Copy/Paste)
 
