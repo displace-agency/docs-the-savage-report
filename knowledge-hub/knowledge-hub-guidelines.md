@@ -44,7 +44,9 @@ Welcome to The Savage Report Knowledge Hub! This is a reusable collection of con
 ## 📝 Article Format
 - Overview (what/why)
 - Quick summary table (what/where/why/links)
-- Steps or examples (concise)
+- Tiled sections per topic (e.g., Sitemap, Robots, Schema):
+  - Short narrative (what/why)
+  - One or two images with caption + deep links
 - Best practices
 - Troubleshooting
 - Resources (official links)
@@ -55,7 +57,9 @@ Welcome to The Savage Report Knowledge Hub! This is a reusable collection of con
 - Naming: Kebab-case, descriptive, include date if relevant. Examples:
   - `gsc-sitemaps-example-2025-08.png`
   - `webflow-custom-code-head-location.png`
-- Referencing: Use relative paths in articles, e.g. `![Alt text](../../assets/gsc-sitemaps-example-2025-08.png)`.
+- Referencing in Markdown:
+  - Prefer HTML `<img>` for consistent sizing and rounded corners:
+    - `<img src="../../assets/example.png" alt="description" width="70%" style="border-radius:8px" />`
 - Client-specific screenshots belong in `/docs/` articles, not in the Knowledge Hub.
 - Prefer hosted links only if the asset must be external; otherwise keep in-repo.
 
