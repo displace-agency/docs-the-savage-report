@@ -23,6 +23,15 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 | **Critical CSS Optimization** | August 2, 2025 | ✅ Active | Content appears immediately, no white flash |
 | **Load More Products** | July 28, 2025 | ✅ Active | Collection pages load 3x faster |
 
+## PageSpeed Insights Snapshot
+These tests show the platform’s current performance standing. While PSI’s field data may be unavailable for newer sites, the lab diagnostics confirm strong performance foundations.
+
+- Report link (all references): [pagespeed.web.dev/analysis/https-www-the-savage-report-com/mkccvp5ha6?form_factor=desktop](https://pagespeed.web.dev/analysis/https-www-the-savage-report-com/mkccvp5ha6?form_factor=desktop)
+
+<img src="../assets/Screenshot 2025-08-08 at 20.25.58.png" alt="PageSpeed Insights – Desktop snapshot" width="70%" style="border-radius:8px" />
+
+<img src="../assets/Screenshot 2025-08-08 at 20.26.05.png" alt="PageSpeed Insights – Mobile snapshot" width="70%" style="border-radius:8px" />
+
 ## Completed Optimizations
 
 ### 1. Performance Optimizer Script (Version 4.0.0)
