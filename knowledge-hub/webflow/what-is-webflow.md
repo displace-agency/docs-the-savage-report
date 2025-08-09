@@ -19,7 +19,7 @@ Webflow is a visual website builder that lets Displace Agency design and ship cu
 ## Webflow Made Simple
 **Webflow combines professional design freedom with client‑friendly content editing.** We build unique experiences that match your brand precisely. You can edit text, swap images, and publish changes in minutes.
 
-<img src="../../assets/knowledge-hub/webflow/1.1%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Webflow overview" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-webflow-overview.png" alt="Webflow overview" width="800" />
 
 <a id="key-features"></a>
 ## Key Features
@@ -37,7 +37,7 @@ Where we build your site’s structure, style, and interactions.
 - Component‑based design system
 - Animation timeline and scroll interactions
 
-<img src="../../assets/knowledge-hub/webflow/1.2%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Webflow Designer UI" width="800" />
+<img src="../../assets/knowledge-hub/webflow/02-webflow-designer-ui.png" alt="Webflow Designer UI" width="800" />
 
 <a id="webflow-editor"></a>
 ## Webflow Editor (for You)
@@ -51,7 +51,7 @@ How to access:
 1. Visit `https://your-site.com/?edit`
 2. Log in with your Displace Agency credentials
 
-<img src="../../assets/knowledge-hub/webflow/1.3%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Webflow Editor access" width="800" />
+<img src="../../assets/knowledge-hub/webflow/03-webflow-editor-access.png" alt="Webflow Editor access" width="800" />
 
 <a id="webflow-hosting"></a>
 ## Webflow Hosting
@@ -61,7 +61,7 @@ Fast, secure, and managed hosting included.
 - Automatic backups and versioning
 - Global CDN for speed and reliability
 
-<img src="../../assets/knowledge-hub/webflow/1.4%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Webflow Hosting overview" width="800" />
+<img src="../../assets/knowledge-hub/webflow/04-webflow-hosting-overview.png" alt="Webflow Hosting overview" width="800" />
 
 <a id="why-displace-agency-chooses-webflow"></a>
 ## Why Displace Agency Chooses Webflow
@@ -74,7 +74,7 @@ Teams can update bios, pricing, promotions, and content safely. The visual edito
 ### 3) Better Performance
 Webflow’s optimized delivery typically results in faster loads vs. generic CMS stacks, improving rankings and UX.
 
-<img src="../../assets/knowledge-hub/webflow/1.5%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Reasons to use Webflow" width="800" />
+<img src="../../assets/knowledge-hub/webflow/05-why-webflow-benefits.png" alt="Reasons to use Webflow" width="800" />
 
 <a id="getting-started-with-your-webflow-site"></a>
 ## Getting Started With Your Webflow Site
@@ -83,21 +83,21 @@ Webflow’s optimized delivery typically results in faster loads vs. generic CMS
 2. Click “Accept Invitation”
 3. Bookmark `https://your-site.com/?edit`
 
-<img src="../../assets/knowledge-hub/webflow/2.1How%20to%20Log%20In%20and%20Access%20Your%20Website.png" alt="Login flow" width="800" />
+<img src="../../assets/knowledge-hub/webflow/06-webflow-login-access.png" alt="Login flow" width="800" />
 
 ### Step 2: Edit Content
 - Click any text or image to edit
 - Use the sidebar to upload files
 - Save frequently
 
-<img src="../../assets/knowledge-hub/webflow/1.6%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Editing content inline" width="800" />
+<img src="../../assets/knowledge-hub/webflow/07-webflow-editor-inline-editing.png" alt="Editing content inline" width="800" />
 
 ### Step 3: Publish Safely
 1. Click “Preview” to review changes
 2. Select “Publish to Live Site”
 3. Confirm in the pop‑up
 
-<img src="../../assets/knowledge-hub/webflow/1.7%20What%20is%20Webflow%20and%20How%20Does%20It%20Work%3F.png" alt="Publishing in Webflow" width="800" />
+<img src="../../assets/knowledge-hub/webflow/08-webflow-publish-flow.png" alt="Publishing in Webflow" width="800" />
 
 ## Useful Links
 - Webflow University: Getting Started — <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>
