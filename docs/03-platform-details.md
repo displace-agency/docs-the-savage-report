@@ -166,8 +166,7 @@ Essential legal and policy pages for business compliance and customer trust.
 - [Policy Pages](https://the-savage-report.com/policies) - View legal pages
 
 ### **Related Documentation**
-- [CMS Structure](./04-cms-structure.md) - Content management system details
-- [CMS Collections](./05-seo-implementation.md) - Six collections overview
+- [CMS Collections](./04-cms-collections.md) - Six collections overview
 - [Page Speed Optimization](./06-page-speed-optimization.md) - Performance metrics
 
 ### **Knowledge Hub Resources**

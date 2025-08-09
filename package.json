@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "check:links": "node admin/scripts/check-external-links.mjs",
-    "fix:links": "node admin/scripts/fix-external-links.mjs"
+    "fix:links": "node admin/scripts/fix-external-links.mjs",
+    "fix:aliases": "node admin/scripts/alias-links.mjs"
   }
 }
 

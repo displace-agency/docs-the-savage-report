@@ -77,7 +77,7 @@ Reusable admin utilities and documentation templates:
 3. Use [Documentation Guidelines](./admin/docs-guidelines.md) for consistent documentation
 
 ### For Documentation Writers
-1. Use templates in `/prompts/` for consistency
+1. Use templates in `/admin/` for consistency
 2. Reference `/knowledge-hub/` for reusable content
 3. Keep client-specific details in `/docs/`
 
@@ -177,7 +177,7 @@ docs-the-savage-report/
    - Best practices and principles
    - Platform-agnostic when possible
 
-3. **Templates** (`/prompts/`)
+3. **Admin** (`/admin/`)
    - Consistency guidelines
    - Documentation standards
    - Writing prompts for AI assistance

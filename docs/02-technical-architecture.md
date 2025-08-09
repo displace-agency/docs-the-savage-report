@@ -3,9 +3,8 @@
 ## System Overview
 
 > **Related Documentation:**
-> - 📁 [CMS Structure](./04-cms-structure.md) - Detailed content management system overview
-> - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations built on this architecture
-> - 📁 [CMS Collections](./05-seo-implementation.md) - Six collections content model
+- 📁 [CMS Collections](./04-cms-collections.md) - Six collections content model
+- ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations built on this architecture
 > - [Analytics Implementation](./07-analytics-implementation.md) - Analytics tracking and monitoring
 
 ```
