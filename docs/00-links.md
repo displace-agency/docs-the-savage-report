@@ -12,6 +12,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="page-speed"></a> page-speed | [./06-page-speed-optimization.md](./06-page-speed-optimization.md) | Performance work |
 | <a id="analytics"></a> analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
 | <a id="smootify-integration"></a> smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
+| <a id="subscriptions"></a> subscriptions | [./09-subscriptions.md](./09-subscriptions.md) | Subscriptions & billing overview |
 
 ## Live Site
 
