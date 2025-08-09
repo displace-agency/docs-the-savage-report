@@ -6,7 +6,7 @@ The Savage Report is a premium streetwear e-commerce platform that bridges urban
 
 > **Related Documentation:**
 > - 🏗️ [Technical Architecture](./02-technical-architecture.md) - Platform infrastructure and system design
-- 📁 [CMS Collections](./04-cms-collections.md) - Six collections overview
+> - 📁 [CMS Collections](./00-links.md#cms-collections) - Six collections overview
 > - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance achievements
 
 ## Brand Positioning
@@ -97,6 +97,6 @@ From the streets to your style - where urban beats meet metropolitan vibes throu
 ## Quick Links
 - [Technical Architecture](./02-technical-architecture.md) - Platform setup and integrations
 - [Platform Details](./03-platform-details.md) - Webflow and Shopify configuration
-- [CMS Collections](./04-cms-collections.md) - Six CMS collections overview
+- [CMS Collections](./00-links.md#cms-collections) - Six CMS collections overview
 - [Page Speed Optimization](./06-page-speed-optimization.md) - Performance improvements and Core Web Vitals
 - [Analytics Implementation](./07-analytics-implementation.md) - Analytics tracking and monitoring

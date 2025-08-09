@@ -95,19 +95,18 @@ This article documents the six CMS collections powering The Savage Report. It ex
 ## Useful Links
 
 ### Implementation
-- Webflow CMS: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Content Management</a>
-- Products: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Manage Products</a>
-- Collections: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Manage Collections</a>
+- Webflow CMS: [See 00 — Global Links → webflow-cms](./00-links.md#webflow-cms)
+- Products: [See 00 — Global Links → webflow-products-collection](./00-links.md#webflow-products-collection)
+- Collections: [See 00 — Global Links → webflow-collections-collection](./00-links.md#webflow-collections-collection)
 
 ### Admin Access
-- Shopify Admin: <a href="https://the-savage-report.myshopify.com/admin" target="_blank" rel="noopener noreferrer">Store Management</a>
-- Webflow Designer: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Design & Layout</a>
-- Live Website: <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Customer View</a>
+- Shopify Admin: [See 00 — Global Links → shopify-admin](./00-links.md#shopify-admin)
+- Webflow Designer: [See 00 — Global Links → webflow-designer](./00-links.md#webflow-designer)
+- Live Website: [See 00 — Global Links → live-site](./00-links.md#live-site)
 
 ### Related Documentation
 - Smootify Integration Guide: [knowledge-hub/ecommerce/smootify-webflow-integration-guide.md](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
-- Smootify Integration Guide: [knowledge-hub/ecommerce/smootify-webflow-integration-guide.md](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
-- Page Speed Optimization: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
+- Page Speed Optimization: [See 00 — Global Links → page-speed](./00-links.md#page-speed)
 
 ---
 *Last Updated: August 2025*  

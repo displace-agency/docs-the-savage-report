@@ -70,13 +70,12 @@ Control access for search engine crawlers and AI bots.
 ## Useful Links
 
 ### Implementation
-- Webflow Custom Code: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Project Head Scripts</a>
-- Webflow Site Settings: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
+- Webflow Custom Code: [00 — Global Links → webflow-custom-code](./00-links.md#webflow-custom-code)
+- Webflow Site Settings: [00 — Global Links → webflow-general](./00-links.md#webflow-general)
 
 ### Testing & Validation
-- Rich Results Test: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a>
-- Schema Validator: <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema.org Validator</a>
-- Search Console: <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a>
+- GSC Performance: [00 — Global Links → gsc-performance](./00-links.md#gsc-performance)
+- GSC Sitemaps: [00 — Global Links → gsc-sitemaps](./00-links.md#gsc-sitemaps)
 
 ---
 *Last Updated: August 2025*  

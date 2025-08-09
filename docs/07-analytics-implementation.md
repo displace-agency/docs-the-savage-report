@@ -104,9 +104,9 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Webflow Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Analytics Configuration</a>
 
 ### Related Documentation
-- **CMS Collections**: [docs/05-seo-implementation.md](./05-seo-implementation.md)
+- **CMS Collections**: [See 00 — Global Links → cms-collections](./00-links.md#cms-collections)
 - **Schema Markup**: [docs/05.1-seo-schema.md](./05.1-seo-schema.md)
-- **Page Speed Optimization**: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
+- **Page Speed Optimization**: [See 00 — Global Links → page-speed](./00-links.md#page-speed)
 
 ---
 *Last Updated: August 2025*  
