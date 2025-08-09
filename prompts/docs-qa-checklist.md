@@ -90,6 +90,71 @@ rg -n -P '^\|.*https?://[^| ]+' -- **/*.md | cat
 ```
 Manual review is recommended to confirm whether the link should be an HTML anchor with new-tab behavior.
 
+#### D) Table–content alignment check (first-column anchors link to H2s)
+```bash
+python3 - << 'PY'
+import os, re, sys
+
+root = '.'
+link_in_first_col = re.compile(r'^\|\s*\[([^\]]+)\]\(#([^\)]+)\)\s*\|')
+h2 = re.compile(r'^##\s+(.+)$')
+explicit_id = re.compile(r'<a\s+id="([^"]+)"\s*>', re.I)
+
+def slugify(text: str):
+    import unicodedata
+    t = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
+    t = re.sub(r'[^a-zA-Z0-9\s-]', '', t).lower()
+    t = re.sub(r'\s+', '-', t)
+    t = re.sub(r'-+', '-', t).strip('-')
+    return t
+
+def analyze(path: str):
+    table_ids = set()
+    section_ids = set()
+    # 1) collect ids from explicit anchors and from H2 slugs
+    with open(path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    for line in lines:
+        m = explicit_id.search(line)
+        if m:
+            section_ids.add(m.group(1))
+        m2 = h2.match(line)
+        if m2:
+            section_ids.add(slugify(m2.group(1)))
+    # 2) find any table with first column anchors and collect their ids
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith('| Item |'):
+            # header sep on next line, then rows until blank
+            i += 2
+            while i < len(lines) and lines[i].startswith('|'):
+                m = link_in_first_col.match(lines[i])
+                if m:
+                    table_ids.add(m.group(2))
+                i += 1
+        else:
+            i += 1
+    if not table_ids:
+        return
+    only_in_table = sorted(table_ids - section_ids)
+    only_in_sections = sorted(section_ids - table_ids)
+    if only_in_table or only_in_sections:
+        print(f"\nFILE: {path}")
+        if only_in_table:
+            print('  TABLE_ONLY (rows without matching H2):', ', '.join(only_in_table))
+        if only_in_sections:
+            print('  SECTIONS_ONLY (H2s missing from table):', ', '.join(only_in_sections))
+
+for dirpath, _, files in os.walk(root):
+    for fn in files:
+        if fn.endswith('.md'):
+            analyze(os.path.join(dirpath, fn))
+PY
+```
+Action:
+- If TABLE_ONLY items exist: either create matching H2 sections or remove those rows from the table.
+- If SECTIONS_ONLY items exist: add corresponding rows to the table (or remove the section if out of scope).
+
 ---
 
 ## Manual QA Checklist
