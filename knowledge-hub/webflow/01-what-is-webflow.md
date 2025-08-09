@@ -47,6 +47,8 @@ Your on‑page, safe‑to‑use content editing dashboard.
 
 The Webflow Editor is the safest way for non‑technical users to update text, images, rich content, and links directly on the page. For step‑by‑step access instructions, see “How to Access Your Webflow Site.”
 
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-editor-text-editing.png" alt="Editing content inline in the Webflow Editor" width="800" />
+
 ### Editor vs Designer — Purpose, Pros & Cons
 
 | Item | Purpose | Pros | Cons |
