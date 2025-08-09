@@ -75,6 +75,11 @@ const toTitle = (alias) => {
     .join(' ');
 };
 
+// Build reverse map: title -> alias
+const titleToAlias = Object.fromEntries(
+  Object.keys(aliasToUrl).map((alias) => [toTitle(alias).toLowerCase(), alias])
+);
+
 for (const file of files) {
   let content = readFileSync(file, 'utf8');
   let changed = false;
@@ -97,6 +102,32 @@ for (const file of files) {
     .replace(/\[See 00 [^\]]*cms-collections\]\([^)]*\)/gi, '[CMS Collections](./04-cms-collections.md)')
     .replace(/\[See 00 [^\]]*page-speed\]\([^)]*\)/gi, '[Page Speed Optimization](./06-page-speed-optimization.md)')
     .replace(/\[See 00 [^\]]*analytics\]\([^)]*\)/gi, '[Analytics Implementation](./07-analytics-implementation.md)');
+
+  // Normalize any links within the "## Useful Links" section so that labels map to the
+  // latest URLs in 00-links.md. This keeps the nice readable label while ensuring
+  // the destination stays current when 00-links.md changes.
+  const usefulStart = content.search(/^##\s+Useful\s+Links\s*$/im);
+  if (usefulStart !== -1) {
+    // Find end of this section: next level-2 heading or EOF
+    const afterUseful = content.slice(usefulStart);
+    const nextHeadingRel = afterUseful.search(/\n##\s+/m);
+    const sectionEndIdx = nextHeadingRel === -1 ? content.length : usefulStart + nextHeadingRel + 1; // +1 to include leading \n
+    const before = content.slice(0, usefulStart);
+    const section = content.slice(usefulStart, sectionEndIdx);
+    const after = content.slice(sectionEndIdx);
+
+    const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const updatedSection = section.replace(linkRe, (m, label, href) => {
+      const key = titleToAlias[label.trim().toLowerCase()];
+      if (!key) return m;
+      const target = aliasToUrl[key];
+      if (!target || target === href) return m;
+      changed = true;
+      return `[${label}](${target})`;
+    });
+
+    content = before + updatedSection + after;
+  }
   if (changed) {
     writeFileSync(file, content);
     console.log(`Expanded 00-links references in ${file}`);
