@@ -4,10 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "expand:aliases": "node admin/scripts/expand-aliases.mjs",
-    "fix:aliases": "node admin/scripts/expand-aliases.mjs",
     "lint:links": "node admin/scripts/link-lint.mjs",
-    "lint:tables": "node admin/scripts/table-lint.mjs"
+    "lint:tables": "node admin/scripts/table-lint.mjs",
+    "maintenance": "npm run lint:links && npm run lint:tables"
   }
 }
 
