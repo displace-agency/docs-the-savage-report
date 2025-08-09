@@ -5,7 +5,7 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 
 > Tip: Quick access
 > - Live sitemap (example): `https://your-domain.com/sitemap.xml`
-> - GSC Sitemaps: [search.google.com/search-console/sitemaps](https://search.google.com/search-console/sitemaps)
+> - GSC Sitemaps: <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">search.google.com/search-console/sitemaps</a>
 > - Webflow SEO Settings → Sitemap (Project Settings)
 
 ## Quick Summary
@@ -15,7 +15,7 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 | Auto‑generated sitemap | Webflow → Project Settings → SEO → Sitemap | Faster discovery of public URLs | Visit yourdomain.com/sitemap.xml |
 | Page inclusion toggle | Webflow Designer → Page Settings → SEO → Include in sitemap | Control which pages are indexed | Verify presence/absence in sitemap.xml |
 | CMS collection inclusion | Webflow → CMS Collection Settings → SEO | Bulk include/exclude CMS items | Check generated sitemap sections |
-| Submission to Google | Google Search Console → Sitemaps | Tracking, errors, discovered URLs | [GSC Sitemaps](https://search.google.com/search-console/sitemaps) |
+| Submission to Google | Google Search Console → Sitemaps | Tracking, errors, discovered URLs | <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
 
 ## Webflow Configuration
 - Project level: enable auto‑generation; set defaults
@@ -32,7 +32,7 @@ Submitting the sitemap in Google Search Console confirms Google can fetch it and
 
 ![GSC Sitemaps submission for the-savage-report.com](../../assets/seo/gsc-sitemaps-submission.png)
 
-- Page: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
+- Page: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a>
 - If the screenshot doesn’t render, place it at `assets/seo/gsc-sitemaps-submission.png` in the repo.
 
 ## When to Resubmit in GSC
@@ -66,9 +66,9 @@ Submitting the sitemap in Google Search Console confirms Google can fetch it and
 - “Too many URLs”: create a sitemap index and split
 
 ## Resources
-- Webflow: SEO & sitemaps → [university.webflow.com/lesson/seo-in-webflow#sitemap](https://university.webflow.com/lesson/seo-in-webflow#sitemap)
-- Google: Sitemaps → [developers.google.com/search/docs/crawling-indexing/sitemaps/overview](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
-- GSC Sitemaps → [search.google.com/search-console/sitemaps](https://search.google.com/search-console/sitemaps)
+- Webflow: SEO & sitemaps → <a href="https://university.webflow.com/lesson/seo-in-webflow#sitemap" target="_blank" rel="noopener noreferrer">university.webflow.com/lesson/seo-in-webflow#sitemap</a>
+- Google: Sitemaps → <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/crawling-indexing/sitemaps/overview</a>
+- GSC Sitemaps → <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">search.google.com/search-console/sitemaps</a>
 
 ---
 Last Updated: August 2025  

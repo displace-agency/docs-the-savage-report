@@ -19,7 +19,7 @@ This guide provides detailed instructions for implementing and maintaining Smoot
 ## Step-by-Step Setup Process
 
 ### 1. Install Smootify in Shopify
-1. Visit the [Shopify App Store](https://apps.shopify.com/smootify)
+1. Visit the <a href="https://apps.shopify.com/smootify" target="_blank" rel="noopener noreferrer">Shopify App Store</a>
 2. Click "Add app" and authorize Smootify
 3. Complete the setup wizard in your Shopify admin
 4. Note your Shopify store URL and domain
@@ -313,9 +313,9 @@ Implement skeleton loading for better UX:
 ## Support Resources
 
 ### Official Documentation
-- [Smootify Documentation](https://docs.smootify.io/)
+- <a href="https://docs.smootify.io/" target="_blank" rel="noopener noreferrer">Smootify Documentation</a>
 - [Webflow CMS Guide](https://webflow.com/cms)
-- [Shopify API Documentation](https://shopify.dev/docs)
+- <a href="https://shopify.dev/docs" target="_blank" rel="noopener noreferrer">Shopify API Documentation</a>
 
 ### Community Support
 - Smootify Discord Community

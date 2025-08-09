@@ -208,7 +208,7 @@ Shopify (Product Data) → Smootify (Integration Layer) → Webflow (Page Displa
 - Live Website: <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Customer View</a>
 
 ### Related Documentation
-- SEO Implementation: [docs/05-seo-implementation.md](./05-seo-implementation.md)
+- CMS Collections: [docs/05-seo-implementation.md](./05-seo-implementation.md)
 - Page Speed Optimization: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
 - Technical Architecture: [docs/02-technical-architecture.md](./02-technical-architecture.md)
 - Analytics Implementation: [docs/07-analytics-implementation.md](./07-analytics-implementation.md)

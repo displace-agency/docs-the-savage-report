@@ -5,7 +5,7 @@
 > **Related Documentation:**
 > - 📁 [CMS Structure](./04-cms-structure.md) - Detailed content management system overview
 > - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations built on this architecture
-> - 🎯 [SEO Implementation](./05-seo-implementation.md) - SEO strategy supported by this technical foundation
+> - 📁 [CMS Collections](./05-seo-implementation.md) - Six collections content model
 > - [Analytics Implementation](./07-analytics-implementation.md) - Analytics tracking and monitoring
 
 ```

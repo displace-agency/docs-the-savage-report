@@ -3,7 +3,7 @@
 ## Overview
 Schema markup helps search engines understand your content and unlock rich results (stars, pricing, breadcrumbs). JSON‑LD is the recommended format.
 
-> Tip: Quickly verify your schema with Google’s Rich Results Test: [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
+> Tip: Quickly verify your schema with Google’s Rich Results Test: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">search.google.com/test/rich-results</a>
 
 ## Quick Summary
 
@@ -118,10 +118,10 @@ Product (template)
 - If performance scripts conflict, load one authoritative schema block
 
 ## Resources
-- Google: Structured data → [developers.google.com/search/docs/appearance/structured-data](https://developers.google.com/search/docs/appearance/structured-data)
-- Google: Rich Results Test → [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
-- Google: Data‑vocabulary deprecation & breadcrumbs → [developers.google.com/search/blog/2020/01/data-vocabulary](https://developers.google.com/search/blog/2020/01/data-vocabulary)
-- Schema.org reference → [schema.org](https://schema.org)
+- Google: Structured data → <a href="https://developers.google.com/search/docs/appearance/structured-data" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/appearance/structured-data</a>
+- Google: Rich Results Test → <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">search.google.com/test/rich-results</a>
+- Google: Data‑vocabulary deprecation & breadcrumbs → <a href="https://developers.google.com/search/blog/2020/01/data-vocabulary" target="_blank" rel="noopener noreferrer">developers.google.com/search/blog/2020/01/data-vocabulary</a>
+- Schema.org reference → <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>
 
 ---
 Category: SEO  

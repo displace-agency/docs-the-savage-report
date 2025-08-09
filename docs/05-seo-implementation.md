@@ -1,210 +1,117 @@
-# SEO Implementation & Strategy - The Savage Report
+# CMS Collections - The Savage Report
 
 ## What This Is & Why It Matters
-We implemented foundational SEO across The Savage Report to help search engines understand the site quickly, index the right pages, and present high-quality results that drive traffic and sales.
+This article documents the six CMS collections powering The Savage Report. It explains what each collection does, how content flows from Shopify to Webflow, and the business value of a clean, scalable content model.
 
-## SEO Implementation Summary
+## Collections Implementation Summary
 
 | Item | What We Delivered | Impact | Status | Reference Link(s) |
 |------|-------------------|--------|--------|-------------------|
-| [Structured Data (Schema Markup)](#structured-data-schema-markup) | JSON-LD for Product, Organization, Local Business, and Website | High | ✅ Active | [Schema Markup Doc](./05.1-seo-schema.md) |
-| [SEO-Optimized Content & Metadata](#seo-optimized-content--metadata) | Brand-consistent titles, descriptions, Open Graph tags, optimized URL slugs | High | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
-| [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
-| [XML Sitemap Implementation](#xml-sitemap-implementation) | Auto-generated sitemap with 61 URLs, verified in Google Search Console | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
-| [Webflow SEO Settings](#webflow-seo-settings) | Canonical URLs and traffic controls for search engine crawlers and AI bots | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow SEO Settings</a> |
+| [Products](#products) | 46 product pages synced from Shopify via Smootify; custom secondary image field for merchandising | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Webflow → Products</a> |
+| [Collections](#collections) | Category grouping synced from Shopify; clean slugs and descriptions | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Webflow → Collections</a> |
+| [Vendors](#vendors) | Brand profiles synced from Shopify (currently one vendor) | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Lookbooks](#lookbooks) | Visual editorials with gallery field and optional product linking | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Campaigns](#campaigns) | Time-bound collections with start/end dates and hero creative | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Special Projects](#special-projects) | Limited releases/collaborations with dedicated templates | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
 
-> See also: 📚 [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
+> See also: [CMS Structure & Content Management](./04-cms-structure.md)
 
-## Structured Data (Schema Markup)
-- Prepared JSON-LD for Product, Organization, Local Business, and Website
-- Currently inactive to avoid conflicts with the performance optimizer; ready to enable after compatibility validation
-- Goal: enable rich results (stars, price, brand info) without compromising speed
+<a id="products"></a>
+## Products
+- Synced from Shopify via Smootify; core data (title, price, inventory, variants) is read-only in Webflow
+- Custom image fields enabled for merchandising (e.g., secondary card image for carousels)
+- Product template renders content consistently with SEO fields available per item
 
-## SEO-Optimized Content & Metadata
-- Added SEO text blocks on collection pages (human-first, keyword-informed)
-- Implemented consistent, brand-first meta titles and optimized descriptions
-- Added Open Graph tags for improved social sharing
-- Standardized URL slugs using best practices
+<img src="../assets/04-product-cms.png" alt="Products collection fields in Webflow CMS" width="70%" style="border-radius:8px" />
 
-## Robots.txt Configuration
+- **Purpose**: Single source of truth for product content with Webflow display control
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Webflow → Products</a>
 
-### Dual Setup Overview
-We have two separate robots.txt files that work independently:
+<a id="collections"></a>
+## Collections
+- Synced taxonomy from Shopify organizes products (e.g., T-Shirts, Hats)
+- Clean slugs and descriptions for user-friendly navigation and SEO
+- Optional image field for richer collection landing pages
 
-1. **Webflow Main Site** (`the-savage-report.com/robots.txt`) - Controls crawling for your main website content
-2. **Shopify Subdomain** (`shop.the-savage-report.com/robots.txt`) - Controls crawling for checkout/cart pages (auto-generated by Shopify)
+<img src="../assets/04-collection-cms.png" alt="Collections collection fields in Webflow CMS" width="70%" style="border-radius:8px" />
 
-### Webflow Robots.txt (Main Site)
-This is the primary robots.txt that controls crawling for your main website content, products, and collections.
+- **Purpose**: Category pages that group products and improve discovery
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Webflow → Collections</a>
 
-```txt
-# THE SAVAGE REPORT - Robots.txt
-# Website: https://the-savage-report.com
-# Last Updated: August 2025
+<a id="vendors"></a>
+## Vendors
+- Synced from Shopify; reflects brand/manufacturer information
+- Currently one vendor (The Savage Report), so edits are infrequent
+- Template ready for future multi-brand expansion
 
-# Main crawler directives
-User-agent: *
-Allow: /
+- **Purpose**: Brand context and filtering where applicable
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a>
 
-# Core pages - explicitly allow
-Allow: /about
-Allow: /contact
-Allow: /newdrops
-Allow: /policies/
-Allow: /policies/privacy-policy
-Allow: /policies/terms-of-service
-Allow: /policies/refund-policy
-Allow: /policies/shipping-returns
+<a id="lookbooks"></a>
+## Lookbooks
+- Editorial galleries with hero + multi-image fields; optional product tagging
+- Designed for storytelling and seasonal inspiration
+- Auto-rendered via the Lookbook template; SEO fields per item
 
-# Collections - allow indexing
-Allow: /product/
-Allow: /collection/
-Allow: /vendor/
-Allow: /lookbooks/
-Allow: /campaigns/
-Allow: /special-projects/
+<img src="../assets/04-lookbook-cms.png" alt="Lookbooks collection fields in Webflow CMS" width="70%" style="border-radius:8px" />
 
-# Prevent duplicate content from filters/sorting
-Disallow: /*?*sort=
-Disallow: /*?*filter=
-Disallow: /*?*page=
-Disallow: /*?*size=
-Disallow: /*?*color=
-Disallow: /*?*price=
-Disallow: /*?*view=
-Disallow: /search?
+- **Purpose**: Publish visual narratives that link to featured products
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a>
 
-# Block utility pages
-Disallow: /401
-Disallow: /style-guide
+<img src="../assets/04-lookbook-template.png" alt="Lookbook template rendering gallery content" width="70%" style="border-radius:8px" />
 
-# Block draft/unpublished pages
-Disallow: /shop
-Disallow: /lookbook
-Disallow: /special-project
+<a id="campaigns"></a>
+## Campaigns
+- Time-bound launches with start/end dates and hero creative
+- Ideal for seasonal drops or promotional moments
+- Template-driven pages keep design consistent
 
-# Googlebot-specific (for better crawl budget)
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
+<img src="../assets/04-campaign-cms.png" alt="Campaigns collection fields in Webflow CMS" width="70%" style="border-radius:8px" />
 
-# Aggressive bot management
-User-agent: AhrefsBot
-Crawl-delay: 10
+- **Purpose**: Coordinate marketing pushes with clear timelines
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a>
 
-User-agent: SemrushBot
-Crawl-delay: 10
+<img src="../assets/04-campaign-template.png" alt="Campaign template page example" width="70%" style="border-radius:8px" />
 
-User-agent: DotBot
-Crawl-delay: 10
+<a id="special-projects"></a>
+## Special Projects
+- One-off collaborations, limited releases, and cultural features
+- Dedicated template for brand storytelling beyond standard products
+- Simple fields for fast publishing (title, hero, release date)
 
-User-agent: MJ12bot
-Crawl-delay: 15
+<img src="../assets/04-special-projects-cms.png" alt="Special Projects collection fields in Webflow CMS" width="70%" style="border-radius:8px" />
 
-# Block unwanted bots
-User-agent: PetalBot
-Disallow: /
+- **Purpose**: Spotlight unique initiatives with their own narrative
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a>
 
-User-agent: AspiegelBot
-Disallow: /
+<img src="../assets/04-special-projects-template.png" alt="Special Projects template page example" width="70%" style="border-radius:8px" />
 
-User-agent: DataForSeoBot
-Disallow: /
-
-# Sitemap locations
-Sitemap: https://the-savage-report.com/sitemap.xml
-```
-
-### Shopify Robots.txt (Subdomain)
-Shopify automatically generates a robots.txt for your subdomain. It's optimized for e-commerce and includes:
-- Allow crawling of product pages and collections
-- Block admin areas and checkout pages
-- Include sitemap reference
-
-### Why This Dual Setup Works
-- **Main site control**: Webflow robots.txt gives you full control over main site crawling
-- **E-commerce optimization**: Shopify's auto-generated robots.txt is optimized for product discovery
-- **No conflicts**: Each robots.txt only controls its respective domain
-- **SEO benefits**: Both are configured for optimal search engine crawling
-
-### Verification & Testing
-- **Webflow robots.txt**: Verified in [Google Search Console](https://search.google.com/search-console/settings/robots-txt?resource_id=sc-domain:the-savage-report.com)
-- **Shopify robots.txt**: Automatically managed by Shopify
-- **Both working**: Search engines can access both sites without conflicts
-
-## XML Sitemap Implementation
-
-### Sitemap Summary
-- **Total URLs**: 61
-- **Static Pages**: 8 (Home, About, Contact, Newdrops, Policies)
-- **Collection Pages**: 6 (Accessories, All Products, Hats, Pants, Shirts, T-Shirts)
-- **Product Pages**: 46 individual products
-- **Auto-generated**: Yes, by Webflow CMS
-- **Last Updated**: Automatically updated when content changes
-
-### Sitemap Management
-- **Location**: https://www.the-savage-report.com/sitemap.xml
-- **Google Search Console**: Verified and indexed
-- **Auto-updates**: New products and collections automatically added
-- **SEO Impact**: Helps search engines discover and index all content efficiently
-
-### Sitemap Configuration
-Configure automatic sitemap generation when site is published for better search engine indexing.
-
-<img src="../assets/seo-implementation-webflow-seo-settings-02.png" alt="Sitemap configuration in Webflow" width="70%" style="border-radius:8px" />
-
-- **Purpose**: Configure automatic sitemap generation when site is published
-- **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
-
-### Google Search Console Integration
-This is where you can review and manage sitemap status over time (status, last read, discovered URLs). After publishing significant changes, revisit this page to resubmit if needed.
-
-<img src="../assets/seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
-
-- **Open**: [GSC Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
-
-## Webflow SEO Settings
-
-### Canonical URLs
-Set global canonical URL to prevent duplicate content and ensure proper search engine indexing.
-
-<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration with canonical URL and traffic controls" width="70%" style="border-radius:8px" />
-
-- **Purpose**: Control search engine crawling behavior and set global canonical URL
-- **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
-- **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
-
-### Traffic Controls
-Control access for search engine crawlers and AI bots to manage site traffic and indexing.
-
-<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Traffic controls for search engines and AI bots" width="70%" style="border-radius:8px" />
-
-- **Purpose**: Control access for search engine crawlers and AI bots
-- **Configuration**: Both search engines and AI bots are allowed access
-- **Location**: [Webflow → SEO Settings](https://webflow.com/dashboard/sites/savage-report-we/seo)
+## Results & Impact
+- **Operational efficiency**: Update products once in Shopify; Webflow displays instantly
+- **Consistent quality**: Templates ensure professional, on-brand pages
+- **Faster launches**: Lookbooks, campaigns, and projects publish in minutes
+- **SEO readiness**: Clean slugs, meta fields, and cross-linking across items
 
 ## Useful Links
 
 ### Implementation
-- **Webflow Custom Code**: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Project Head Schema</a>
-- **Webflow Designer**: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Page-Specific Schema</a>
-- **Webflow Site Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
-- **Webflow SEO Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">SEO Configuration</a>
+- Webflow CMS: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Content Management</a>
+- Products: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Manage Products</a>
+- Collections: <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Manage Collections</a>
 
-### Testing & Validation
-- **Rich Results Test**: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a>
-- **Schema Validator**: <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema.org Validator</a>
-- **Search Console**: <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a>
-- **GSC Sitemaps**: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">Sitemap Management</a>
+### Admin Access
+- Shopify Admin: <a href="https://the-savage-report.myshopify.com/admin" target="_blank" rel="noopener noreferrer">Store Management</a>
+- Webflow Designer: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Design & Layout</a>
+- Live Website: <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Customer View</a>
 
 ### Related Documentation
-- **Schema Markup**: [docs/05.1-seo-schema.md](./05.1-seo-schema.md)
-- **Page Speed Optimization**: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
-- **CMS Structure**: [docs/04-cms-structure.md](./04-cms-structure.md)
-- **Analytics Implementation**: [docs/07-analytics-implementation.md](./07-analytics-implementation.md)
+- CMS Structure: [docs/04-cms-structure.md](./04-cms-structure.md)
+- Smootify Integration Guide: [knowledge-hub/ecommerce/smootify-webflow-integration-guide.md](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
+- Page Speed Optimization: [docs/06-page-speed-optimization.md](./06-page-speed-optimization.md)
 
 ---
 *Last Updated: August 2025*  
-*Document Version: 1.0*  
+*Document Version: 2.0*  
 *Maintained by: Displace Agency*
+
 

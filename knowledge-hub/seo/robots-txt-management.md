@@ -4,8 +4,8 @@
 robots.txt tells search engines what to crawl (or not). A clean robots file prevents crawl waste, protects private areas, and ensures important pages are accessible.
 
 > Tip: Verify quickly with GSC Robots.txt Tester and PageSpeed Insights
-> - GSC Robots Tester: [search.google.com/search-console/settings/robots-txt](https://search.google.com/search-console/settings/robots-txt)
-> - PSI: [pagespeed.web.dev](https://pagespeed.web.dev/)
+> - GSC Robots Tester: <a href="https://search.google.com/search-console/settings/robots-txt" target="_blank" rel="noopener noreferrer">search.google.com/search-console/settings/robots-txt</a>
+> - PSI: <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">pagespeed.web.dev</a>
 > - Your sitemap (example): `https://your-domain.com/sitemap.xml`
 
 ## Quick Summary
@@ -50,10 +50,10 @@ Sitemap: https://example.com/sitemap.xml
 - Multiple sitemaps: Reference the sitemap index file in robots.txt
 
 ## Resources
-- Google: Robots.txt specs → [developers.google.com/search/docs/crawling-indexing/robots/intro](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
-- Google Search Console → [search.google.com/search-console](https://search.google.com/search-console)
-- GSC Robots Tester → [search.google.com/search-console/settings/robots-txt](https://search.google.com/search-console/settings/robots-txt)
-- Webflow University: Manage robots.txt → [university.webflow.com](https://university.webflow.com)
+- Google: Robots.txt specs → <a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/crawling-indexing/robots/intro</a>
+- Google Search Console → <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">search.google.com/search-console</a>
+- GSC Robots Tester → <a href="https://search.google.com/search-console/settings/robots-txt" target="_blank" rel="noopener noreferrer">search.google.com/search-console/settings/robots-txt</a>
+- Webflow University: Manage robots.txt → <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>
 
 ---
 Category: SEO  

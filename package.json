@@ -1,0 +1,12 @@
+{
+  "name": "docs-the-savage-report",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "check:links": "node admin/scripts/check-external-links.mjs",
+    "fix:links": "node admin/scripts/fix-external-links.mjs"
+  }
+}
+
+

@@ -167,7 +167,7 @@ Essential legal and policy pages for business compliance and customer trust.
 
 ### **Related Documentation**
 - [CMS Structure](./04-cms-structure.md) - Content management system details
-- [SEO Implementation](./05-seo-implementation.md) - Search engine optimization
+- [CMS Collections](./05-seo-implementation.md) - Six collections overview
 - [Page Speed Optimization](./06-page-speed-optimization.md) - Performance metrics
 
 ### **Knowledge Hub Resources**

@@ -22,10 +22,10 @@ Notes:
 
 ### 2) External <a> links missing target/rel (should open in new tab)
 ```bash
-# <a href="https://..."> without target="_blank"
+# <a rel="noopener noreferrer" target="_blank" href="https://..."> without target="_blank"
 rg -n -P '<a\s+href="https?://[^"]+"(?![^>]*target="_blank")' -- **/*.md | cat
 
-# <a href="https://..." target="_blank"> missing rel="noopener noreferrer"
+# <a rel="noopener noreferrer" href="https://..." target="_blank"> missing rel="noopener noreferrer"
 rg -n -P '<a\s+href="https?://[^"]+"(?=[^>]*target="_blank")(?![^>]*rel="noopener noreferrer")' -- **/*.md | cat
 ```
 Guideline:
