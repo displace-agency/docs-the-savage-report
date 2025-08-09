@@ -95,18 +95,18 @@ This article documents the six CMS collections powering The Savage Report. It ex
 ## Useful Links
 
 ### Implementation
-- Webflow CMS: [Webflow CMS](https://webflow.com/dashboard/sites/savage-report-we/cms)
-- Products: [Webflow Products Collection](./00-links.md#webflow-products-collection)
-- Collections: [Webflow Collections Collection](./00-links.md#webflow-collections-collection)
+- [Webflow CMS: Management](https://webflow.com/dashboard/sites/savage-report-we/cms)
+- [Webflow CMS: Products Collection](https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products)
+- [Webflow CMS: Collections](https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections)
 
 ### Admin Access
-- Shopify Admin: [Shopify Admin](https://admin.shopify.com/store/thesavagereport)
-- Webflow Designer: [Webflow Designer](https://webflow.com/design/savage-report-we)
-- Live Website: [Live Site](https://www.the-savage-report.com)
+- [Shopify Admin: Store Management](https://admin.shopify.com/store/thesavagereport)
+- [Webflow Designer: Editing & CMS](https://webflow.com/design/savage-report-we)
+- [Live Site: Homepage](https://www.the-savage-report.com)
 
 ### Related Documentation
-- Smootify Integration Guide: [knowledge-hub/ecommerce/smootify-webflow-integration-guide.md](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
-- Page Speed Optimization: [Page Speed Optimization](./00-links.md#page-speed)
+- [Smootify Integration Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
+- [Page Speed Optimization](./06-page-speed-optimization.md)
 
 ---
 *Last Updated: August 2025*  

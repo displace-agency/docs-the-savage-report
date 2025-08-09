@@ -330,18 +330,18 @@ Each collection includes a `shopify-id` field that maintains the connection betw
 ## Useful Links
 
 ### Administration & Monitoring
-- <a href="https://admin.shopify.com/store/the-savage-report" target="_blank" rel="noopener noreferrer">Shopify Store Admin</a>
-- <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS Management</a>
-- <a href="https://app.smootify.io/dashboard" target="_blank" rel="noopener noreferrer">Smootify Integration Dashboard</a>
+- [Shopify Admin: Store Management](https://admin.shopify.com/store/the-savage-report)
+- [Webflow CMS: Management](https://webflow.com/dashboard/sites/savage-report-we/cms)
+- [Smootify: Integration Dashboard](https://app.smootify.io/dashboard)
 
 ### Live Site Testing
-- <a href="https://the-savage-report.com/products" target="_blank" rel="noopener noreferrer">Live Products Page</a>
-- <a href="https://the-savage-report.com/collections" target="_blank" rel="noopener noreferrer">Collections Overview</a>
-- <a href="https://the-savage-report.com/cart" target="_blank" rel="noopener noreferrer">Shopping Cart</a>
+- [Live Site: Products](https://the-savage-report.com/products)
+- [Live Site: Collections](https://the-savage-report.com/collections)
+- [Live Site: Cart](https://the-savage-report.com/cart)
 
 ### Related Documentation
 - [Technical Architecture](./02-technical-architecture.md)
-- [CMS Structure](./04-cms-structure.md)
+- [CMS Collections](./04-cms-collections.md)
 - [Performance Optimization](./06-page-speed-optimization.md)
 - [Analytics Implementation](./07-analytics-implementation.md)
 

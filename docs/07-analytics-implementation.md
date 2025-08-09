@@ -96,17 +96,17 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ## Useful Links
 
 ### Analytics Dashboards
-- **Google Search Console**: <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">Performance Dashboard</a>
-- **Webflow Dashboard**: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Integrated Analytics</a>
+- [GSC: Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
+- [Webflow Dashboard: Integrated Analytics](https://webflow.com/dashboard/sites/savage-report-we)
 
 ### Admin Access
-- **Shopify Admin**: <a href="https://admin.shopify.com/store/thesavagereport" target="_blank" rel="noopener noreferrer">Store Management</a>
-- **Webflow Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Analytics Configuration</a>
+- [Shopify Admin: Store Management](https://admin.shopify.com/store/thesavagereport)
+- [Webflow Settings: Analytics Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
 
 ### Related Documentation
-- **CMS Collections**: [CMS Collections](./00-links.md#cms-collections)
-- **Schema Markup**: [docs/05.1-seo-schema.md](./05.1-seo-schema.md)
-- **Page Speed Optimization**: [Page Speed Optimization](./00-links.md#page-speed)
+- [CMS Collections](./04-cms-collections.md)
+- [Schema Markup: Implementation Guide](./05.1-seo-schema.md)
+- [Page Speed Optimization](./06-page-speed-optimization.md)
 
 ---
 *Last Updated: August 2025*  

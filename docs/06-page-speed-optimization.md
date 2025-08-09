@@ -112,20 +112,20 @@ Mobile optimization showing significant improvements in user experience.
 ## Useful Links
 
 ### Implementation
-- Webflow Custom Code: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Project Performance Scripts</a>
-- Webflow Settings: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
+- [Webflow Custom Code: Project Performance Scripts](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
+- [Webflow Settings: Site Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
 
 ### Testing & Validation
-- PageSpeed Insights: <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Performance Report</a>
+- [PageSpeed Insights: Performance Report](https://pagespeed.web.dev/report?url=https://the-savage-report.com)
 
 ### Admin Access
-- Webflow Designer: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Design & Development</a>
-- Webflow Dashboard: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Site Management</a>
+- [Webflow Designer: Design & Development](https://webflow.com/design/savage-report-we)
+- [Webflow Dashboard: Site Management](https://webflow.com/dashboard/sites/savage-report-we)
 
 ### Related Documentation
-- CMS Collections: [CMS Collections](./00-links.md#cms-collections)
-- Technical Architecture: [docs/02-technical-architecture.md](./02-technical-architecture.md)
-- Analytics Implementation: [Analytics Implementation](./00-links.md#analytics)
+- [CMS Collections](./04-cms-collections.md)
+- [Technical Architecture](./02-technical-architecture.md)
+- [Analytics Implementation](./07-analytics-implementation.md)
 
 ---
 *Last Updated: August 2025*  

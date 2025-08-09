@@ -3,7 +3,7 @@
 ## System Overview
 
 > **Related Documentation:**
-> - 📁 [CMS Collections](./00-links.md#cms-collections) - Six collections content model
+> - 📁 [CMS Collections](./04-cms-collections.md) - Six collections content model
 > - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance optimizations built on this architecture
 > - [Analytics Implementation](./07-analytics-implementation.md) - Analytics tracking and monitoring
 
