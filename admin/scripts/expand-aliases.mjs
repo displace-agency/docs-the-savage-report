@@ -92,6 +92,11 @@ for (const file of files) {
     const title = toTitle(key);
     return `[${title}](${url})`;
   });
+  // Also fix internal docs references for CMS collections, page speed, analytics
+  content = content
+    .replace(/\[See 00 [^\]]*cms-collections\]\([^)]*\)/gi, '[CMS Collections](./04-cms-collections.md)')
+    .replace(/\[See 00 [^\]]*page-speed\]\([^)]*\)/gi, '[Page Speed Optimization](./06-page-speed-optimization.md)')
+    .replace(/\[See 00 [^\]]*analytics\]\([^)]*\)/gi, '[Analytics Implementation](./07-analytics-implementation.md)');
   if (changed) {
     writeFileSync(file, content);
     console.log(`Expanded 00-links references in ${file}`);
