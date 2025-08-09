@@ -7,27 +7,16 @@ Connecting your custom domain gives your brand a professional, memorable address
 
 | Item | What We Cover | Status | Link |
 |------|----------------|--------|------|
-| [Prerequisites](#what-you-need-before-you-start) | What you need before starting | Active | — |
-| [Add Domain](#step-1-add-your-custom-domain-in-webflow) | Add root and www in Webflow | Active | — |
-| [Copy DNS Records](#step-2-copy-the-dns-records-provided-by-webflow) | A records and CNAME from Webflow | Active | — |
-| [Update Registrar DNS](#step-3-update-dns-settings-at-your-domain-registrar) | Add records at GoDaddy/Namecheap | Active | — |
-| [Verify & Publish](#step-4-verify-and-publish) | Check status, set default, publish | Active | — |
-| [Test Domain](#step-5-test-your-domain) | Confirm the site loads on custom domain | Active | — |
-| [Troubleshooting](#common-issues-troubleshooting) | Fix common errors | Active | — |
-| [Tips](#tips-best-practices) | Best practices for reliability | Active | — |
+| [What You Need Before You Start](#what-you-need-before-you-start) | What you need before starting | Active | — |
+| [Step 1: Add Your Custom Domain in Webflow](#step-1-add-your-custom-domain-in-webflow) | Add root and www in Webflow | Active | — |
+| [Step 2: Copy the DNS Records Provided by Webflow](#step-2-copy-the-dns-records-provided-by-webflow) | A records and CNAME from Webflow | Active | — |
+| [Step 3: Update DNS Settings at Your Domain Registrar](#step-3-update-dns-settings-at-your-domain-registrar) | Add records at GoDaddy/Namecheap | Active | — |
+| [Step 4: Verify and Publish](#step-4-verify-and-publish) | Check status, set default, publish | Active | — |
+| [Step 5: Test Your Domain](#step-5-test-your-domain) | Confirm the site loads on custom domain | Active | — |
+| [Common Issues & Troubleshooting](#common-issues-troubleshooting) | Fix common errors | Active | — |
+| [Tips & Best Practices](#tips-best-practices) | Best practices for reliability | Active | — |
 
-### Table of Contents
 
-- [What You Need Before You Start](#what-you-need-before-you-start)
-- [Step 1: Add Your Custom Domain in Webflow](#step-1-add-your-custom-domain-in-webflow)
-- [Step 2: Copy the DNS Records Provided by Webflow](#step-2-copy-the-dns-records-provided-by-webflow)
-- [Step 3: Update DNS Settings at Your Domain Registrar](#step-3-update-dns-settings-at-your-domain-registrar)
-- [Step 4: Verify and Publish](#step-4-verify-and-publish)
-- [Step 5: Test Your Domain](#step-5-test-your-domain)
-- [Common Issues & Troubleshooting](#common-issues-troubleshooting)
-- [Tips & Best Practices](#tips-best-practices)
-
----
 
 <a id="what-you-need-before-you-start"></a>
 ## What You Need Before You Start
