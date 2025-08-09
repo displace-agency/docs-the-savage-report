@@ -101,4 +101,11 @@ Last Updated: August 2025
 Document Version: 1.0  
 Maintained by: Displace Agency
 
+<div style="display:flex;gap:12px;margin-top:12px;">
+  <a href="./01-what-is-webflow.md" style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">◀ Previous: What is Webflow</a>
+  <a href="./03-managing-content-with-the-editor.md" style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">Next: Managing Content with the Editor ▶</a>
+  <a href="../webflow/" style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">All Webflow Articles</a>
+  <a href="../.." style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">Knowledge Hub Home</a>
+</div>
+
 

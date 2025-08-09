@@ -103,8 +103,12 @@ for (const file of files) {
   const footerHasLastUpdated = /\*Last Updated:/i.test(content);
   const footerHasVersion = /Document Version:/i.test(content);
   const footerHasMaintainer = /Maintained by:/i.test(content);
+  const footerHasNav = /<div\s+style=\"display:flex;[^\"]*\">[\s\S]*?<\/div>/i.test(content);
   if (!(footerHasLastUpdated && footerHasVersion && footerHasMaintainer)) {
     violations.push({ file, line: lines.length, rule: 'missing-footer', msg: 'Footer must include Last Updated, Document Version, Maintained by' });
+  }
+  if (!footerHasNav) {
+    violations.push({ file, line: lines.length, rule: 'missing-footer-nav', msg: 'Footer should include navigation links block (Previous/Next/All/Home)' });
   }
 
   if (tableAnchors.length) {
