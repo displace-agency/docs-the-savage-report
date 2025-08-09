@@ -6,12 +6,12 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 
 | Alias | URL | Notes |
 |------|-----|------|
-| cms-collections | ./04-cms-collections.md | Six CMS collections overview |
-| seo-implementation | ./05-seo-implementation.md | SEO implementation & strategy |
-| seo-schema | ./05.1-seo-schema.md | Schema markup implementation |
-| page-speed | ./06-page-speed-optimization.md | Performance work |
-| analytics | ./07-analytics-implementation.md | Analytics setup |
-| smootify-integration | ./08-smootify-integration.md | Webflow ↔ Shopify bridge |
+| cms-collections | [./04-cms-collections.md](./04-cms-collections.md) | Six CMS collections overview |
+| seo-implementation | [./05-seo-implementation.md](./05-seo-implementation.md) | SEO implementation & strategy |
+| seo-schema | [./05.1-seo-schema.md](./05.1-seo-schema.md) | Schema markup implementation |
+| page-speed | [./06-page-speed-optimization.md](./06-page-speed-optimization.md) | Performance work |
+| analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
+| smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
 
 ## Webflow
 
@@ -33,7 +33,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 
 | Alias | URL | Notes |
 |------|-----|------|
-| gsc-sitemaps | https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com | Sitemap submission |
+| gsc-sitemaps | <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com</a> | Sitemap submission |
 
 ---
 

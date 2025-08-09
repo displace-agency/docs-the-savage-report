@@ -27,6 +27,8 @@ const files = walk(ROOT).filter((f) => isMarkdown(f));
 
 const mdLinkRe = /\[([^\]]+)\]\((https?:[^)\s]+)(?:\s+"[^"]*")?\)/g;
 const htmlLinkRe = /<a\s+([^>]*?)href="(https?:[^"]+)"([^>]*)>/gi;
+// bare external URLs not already inside a link
+const bareUrlRe = /(^|\s)(https?:\/\/[\w.-]+(?:\/[\w\-._~:/?#[\]@!$&'()*+,;=%]*)?)/gim;
 
 for (const file of files) {
   let md = readFileSync(file, 'utf8');
@@ -72,6 +74,21 @@ for (const file of files) {
   if (changed) {
     writeFileSync(file, md);
     console.log(`Fixed external links in ${file}`);
+  }
+
+  // Wrap bare external URLs with an anchor tag
+  let wrapped = md.replace(bareUrlRe, (m, pre, url) => {
+    try {
+      const u = new URL(url);
+      const isInternal = HOSTS.some((h) => u.hostname === h || u.hostname.endsWith('.the-savage-report.com'));
+      if (isInternal) return m; // leave internal bare URLs alone
+      return `${pre}<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    } catch {}
+    return m;
+  });
+  if (wrapped !== md) {
+    writeFileSync(file, wrapped);
+    console.log(`Wrapped bare URLs in ${file}`);
   }
 }
 

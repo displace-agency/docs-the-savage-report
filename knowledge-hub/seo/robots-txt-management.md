@@ -24,7 +24,7 @@ Disallow: /search?
 Disallow: /cart
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: <a href="https://example.com/sitemap.xml" target="_blank" rel="noopener noreferrer">https://example.com/sitemap.xml</a>
 ```
 
 ## Webflow Configuration
@@ -33,7 +33,7 @@ Sitemap: https://example.com/sitemap.xml
 3. Publish the site (staging + production)
 
 ## Validation & Monitoring
-- Open https://your-domain.com/robots.txt and confirm expected rules
+- Open <a href="https://your-domain.com/robots.txt" target="_blank" rel="noopener noreferrer">https://your-domain.com/robots.txt</a> and confirm expected rules
 - In Google Search Console: Indexing → Pages (check for robots blocks)
 - Use GSC Robots.txt Tester to validate syntax and test URLs
 - Monitor Crawl Stats in GSC for unexpected crawl spikes or blocks

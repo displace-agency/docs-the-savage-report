@@ -24,6 +24,7 @@ const files = walk(ROOT).filter((f) => isMarkdown(f));
 
 const mdLinkRe = /\[([^\]]+)\]\((https?:[^)\s]+)(?:\s+"[^"]*")?\)/g;
 const htmlLinkRe = /<a\s+[^>]*href="(https?:[^"]+)"[^>]*>/gi;
+const bareUrlRe = /(^|\s)(https?:\/\/[\w.-]+(?:\/[\w\-._~:/?#[\]@!$&'()*+,;=%]*)?)/gim;
 
 let errors = 0;
 
@@ -46,6 +47,18 @@ for (const file of files) {
 
   // HTML links
   for (const match of md.matchAll(htmlLinkRe)) {
+  // Bare URLs
+  for (const match of md.matchAll(bareUrlRe)) {
+    const url = match[2];
+    try {
+      const u = new URL(url);
+      const isInternal = HOSTS.some((h) => u.hostname === h || u.hostname.endsWith('.the-savage-report.com'));
+      if (!isInternal) {
+        console.log(`[BARE external] ${file}: ${url}`);
+        errors++;
+      }
+    } catch {}
+  }
     const tag = match[0];
     const url = match[1];
     try {
