@@ -83,7 +83,7 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 ### PageSpeed Insights Snapshot
 Current performance standing showing strong optimization results.
 
-<img src="../assets/page-speed-optimization-psi-desktop-2025-08-08.png" alt="PageSpeed Insights Desktop snapshot showing optimized performance scores" width="70%" style="border-radius:8px" />
+<img src="../assets/06-page-speed-optimization-psi-desktop-2025-08-08.png" alt="PageSpeed Insights Desktop snapshot showing optimized performance scores" width="70%" style="border-radius:8px" />
 
 - **Desktop Performance**: 92/100 score
 - **Mobile Performance**: 85/100 score
@@ -93,7 +93,7 @@ Current performance standing showing strong optimization results.
 ### Mobile Performance
 Mobile optimization showing significant improvements in user experience.
 
-<img src="../assets/page-speed-optimization-psi-mobile-2025-08-08.png" alt="PageSpeed Insights Mobile snapshot showing mobile optimization results" width="70%" style="border-radius:8px" />
+<img src="../assets/06-page-speed-optimization-psi-mobile-2025-08-08.png" alt="PageSpeed Insights Mobile snapshot showing mobile optimization results" width="70%" style="border-radius:8px" />
 
 - **Mobile Load Time**: 2.8s (55% improvement)
 - **Mobile Engagement**: 45% increase

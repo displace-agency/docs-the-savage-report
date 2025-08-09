@@ -34,7 +34,7 @@ We implemented foundational SEO so search engines understand the site quickly, i
 
 Manage robots.txt in Webflow → SEO Settings. This controls crawling for your main website content, products, and collections.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="robots.txt configuration with canonical URL and traffic controls" width="70%" style="border-radius:8px" />
+<img src="../assets/05-seo-implementation-global-canonical-url.png" alt="Global canonical URL configuration in Webflow SEO settings" width="70%" style="border-radius:8px" />
 
 - **Purpose**: Control search engine crawling behavior and set global canonical URL
 - **Live file**: <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a>
@@ -48,7 +48,7 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 - **Location**: <a href="https://www.the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">www.the-savage-report.com/sitemap.xml</a>
 - **Verified in GSC**: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a>
 
-<img src="../assets/seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
+<img src="../assets/05-seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
 
 <a id="webflow-seo-settings"></a>
 ## Webflow SEO Settings
@@ -58,7 +58,7 @@ Set global canonical URL to prevent duplicate content and ensure proper indexing
 
 <img src="../assets/05-seo-implementation-webflow-advanced-publishing.png" alt="Advanced publishing options in Webflow settings related to SEO and caching" width="70%" style="border-radius:8px" />
 
-<img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="Webflow SEO settings with canonical and robots controls" width="70%" style="border-radius:8px" />
+<img src="../assets/05-seo-implementation-webflow-advanced-publishing.png" alt="Webflow SEO settings with canonical and robots controls" width="70%" style="border-radius:8px" />
 
 - **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
@@ -66,7 +66,7 @@ Set global canonical URL to prevent duplicate content and ensure proper indexing
 ### Traffic Controls
 Control access for search engine crawlers and AI bots.
 
-<img src="../assets/seo-implementation-webflow-seo-settings-05.png" alt="Traffic controls for search engines and AI bots" width="70%" style="border-radius:8px" />
+<img src="../assets/05-seo-implementation-traffic-controls-workflow.png" alt="Traffic controls workflow for search engines and AI bots in Webflow" width="70%" style="border-radius:8px" />
 
 - **Configuration**: Search engines and AI bots allowed access
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
@@ -75,6 +75,14 @@ Control access for search engine crawlers and AI bots.
 
 - **Purpose**: Configure advanced publishing options for your site
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow → General Configuration</a>
+
+### Google Site Verification & Indexing Controls
+
+<img src="../assets/05-seo-implementation-google-site-verification.png" alt="Google Site Verification meta in Webflow settings" width="70%" style="border-radius:8px" />
+
+<img src="../assets/05-seo-implementation-sitemap-auto-generate-toggle.png" alt="Sitemap auto-generate toggle in Webflow settings" width="70%" style="border-radius:8px" />
+
+<img src="../assets/05-seo-implementation-indexing-toggle-subdomain-off.png" alt="Indexing toggle off for subdomain in Webflow settings" width="70%" style="border-radius:8px" />
 
 ## Useful Links
 

@@ -32,12 +32,16 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - Tracking code properly implemented
 - Account access pending (agency doesn't have access)
 
+## Google Analytics Configuration (Webflow Settings)
+
+<img src="../assets/07-analytics-implementation-google-analytics-webflow-settings-2025-08-08.png" alt="Google Analytics Measurement ID configured in Webflow settings" width="70%" style="border-radius:8px" />
+
 ## Analytics Platforms Overview
 
 ### Google Search Console (Primary Search Analytics)
 **Purpose**: Monitor search performance, indexing status, and technical SEO health
 
-<img src="../assets/analytics-implementation-gsc-dashboard-2025-08-08.png" alt="Google Search Console dashboard showing search performance metrics" width="70%" style="border-radius:8px" />
+<img src="../assets/07-analytics-implementation-gsc-dashboard-2025-08-08.png" alt="Google Search Console dashboard showing search performance metrics" width="70%" style="border-radius:8px" />
 
 - **Primary Metrics**: Search queries, click-through rates, impressions, average position
 - **Technical Monitoring**: Core Web Vitals, mobile usability, indexing status
@@ -47,7 +51,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ### Webflow Google Search Integration
 **Purpose**: Display GSC data directly within Webflow dashboard for convenience
 
-<img src="../assets/analytics-implementation-webflow-google-search-integration-2025-08-08.png" alt="Webflow Google Search integration showing GSC data in dashboard" width="70%" style="border-radius:8px" />
+<img src="../assets/07-analytics-implementation-webflow-google-search-integration-2025-08-08.png" alt="Webflow Google Search integration showing GSC data in dashboard" width="70%" style="border-radius:8px" />
 
 - **Features**: Real-time GSC data display, search performance metrics
 - **Access**: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> · <a href="https://savage-report-we.design.webflow.com/" target="_blank" rel="noopener noreferrer">Webflow Designer</a>
@@ -76,7 +80,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Average Position**: Average ranking position in search results
 - **Impressions**: How often the site appears in search results
 
-<img src="../assets/analytics-implementation-gsc-search-queries-2025-08-08.png" alt="Google Search Console search queries showing top performing keywords" width="70%" style="border-radius:8px" />
+<img src="../assets/07-analytics-implementation-gsc-search-queries-2025-08-08.png" alt="Google Search Console search queries showing top performing keywords" width="70%" style="border-radius:8px" />
 
 - **Search Queries**: Monitor which keywords are driving traffic to the site
 - **Performance Tracking**: Track CTR, impressions, and average position for each query
@@ -96,7 +100,7 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Access**: <a href="https://admin.shopify.com/store/thesavagereport/analytics" target="_blank" rel="noopener noreferrer">Shopify Analytics</a>
 - **Integration**: Fully connected to e-commerce operations
 
-<img src="../assets/analytics-implementation-shopify-analytics-dashboard-2025-08-08.png" alt="Shopify Analytics dashboard showing e-commerce performance metrics" width="70%" style="border-radius:8px" />
+<img src="../assets/07-analytics-implementation-shopify-analytics-dashboard-2025-08-08.png" alt="Shopify Analytics dashboard showing e-commerce performance metrics" width="70%" style="border-radius:8px" />
 
 ## Useful Links
 
