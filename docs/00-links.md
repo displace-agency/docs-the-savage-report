@@ -13,6 +13,21 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="analytics"></a> analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
 | <a id="smootify-integration"></a> smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
 
+## Live Site
+
+| Alias | URL | Notes |
+|------|-----|------|
+| <a id="live-site"></a> live-site | <a href="https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com</a> | Homepage |
+| <a id="sitemap"></a> sitemap | <a href="https://www.the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/sitemap.xml</a> | Auto-generated sitemap |
+| <a id="robots"></a> robots | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a> | Live robots.txt |
+| <a id="newdrops"></a> newdrops | <a href="https://www.the-savage-report.com/newdrops" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/newdrops</a> | New Drops |
+| <a id="about"></a> about | <a href="https://www.the-savage-report.com/about" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/about</a> | About |
+| <a id="contact"></a> contact | <a href="https://www.the-savage-report.com/contact" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/contact</a> | Contact |
+| <a id="refund-policy"></a> refund-policy | <a href="https://www.the-savage-report.com/policies/refund-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/refund-policy</a> | Refund Policy |
+| <a id="terms-of-service"></a> terms-of-service | <a href="https://www.the-savage-report.com/policies/terms-of-service" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/terms-of-service</a> | Terms of Service |
+| <a id="shipping-returns"></a> shipping-returns | <a href="https://www.the-savage-report.com/policies/shipping-returns" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/shipping-returns</a> | Shipping & Returns |
+| <a id="privacy-policy"></a> privacy-policy | <a href="https://www.the-savage-report.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/privacy-policy</a> | Privacy Policy |
+
 ## Webflow Settings
 
 | Alias | URL | Notes |
@@ -46,20 +61,6 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="webflow-billing"></a> webflow-billing | <a href="https://webflow.com/dashboard/sites/savage-report-we/billing" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/billing</a> | Webflow billing |
 | <a id="smootify-billing"></a> smootify-billing | <a href="https://dashboard.smootify.io/site/savage-report-w/plans" target="_blank" rel="noopener noreferrer">https://dashboard.smootify.io/site/savage-report-w/plans</a> | Smootify plans |
 
-## Live Site
-
-| Alias | URL | Notes |
-|------|-----|------|
-| <a id="live-site"></a> live-site | <a href="https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com</a> | Homepage |
-| <a id="sitemap"></a> sitemap | <a href="https://www.the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/sitemap.xml</a> | Auto-generated sitemap |
-| <a id="robots"></a> robots | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a> | Live robots.txt |
-| <a id="newdrops"></a> newdrops | <a href="https://www.the-savage-report.com/newdrops" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/newdrops</a> | New Drops |
-| <a id="about"></a> about | <a href="https://www.the-savage-report.com/about" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/about</a> | About |
-| <a id="contact"></a> contact | <a href="https://www.the-savage-report.com/contact" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/contact</a> | Contact |
-| <a id="refund-policy"></a> refund-policy | <a href="https://www.the-savage-report.com/policies/refund-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/refund-policy</a> | Refund Policy |
-| <a id="terms-of-service"></a> terms-of-service | <a href="https://www.the-savage-report.com/policies/terms-of-service" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/terms-of-service</a> | Terms of Service |
-| <a id="shipping-returns"></a> shipping-returns | <a href="https://www.the-savage-report.com/policies/shipping-returns" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/shipping-returns</a> | Shipping & Returns |
-| <a id="privacy-policy"></a> privacy-policy | <a href="https://www.the-savage-report.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/privacy-policy</a> | Privacy Policy |
 
 ## Google Search Console
 
@@ -85,8 +86,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 
 | Alias | URL | Notes |
 |------|-----|------|
-| <a id="pagespeed-report"></a> pagespeed-report | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">https://pagespeed.web.dev/report?url=https://the-savage-report.com</a> | PSI report for site |
-| <a id="pagespeed"></a> pagespeed | <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">https://pagespeed.web.dev/</a> | PageSpeed Insights |
+| <a id="pagespeed-report"></a> pagespeed-report | <a href="https://pagespeed.web.dev/report?url=https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://pagespeed.web.dev/report?url=https://www.the-savage-report.com</a> | PSI report for site |
 
 ---
 
