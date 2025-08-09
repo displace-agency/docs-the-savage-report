@@ -3,6 +3,19 @@
 ## What This Is & Why It Matters
 This guide provides detailed instructions for implementing and maintaining Smootify integrations between Webflow and Shopify. It covers technical setup, synchronization, troubleshooting, and performance so your storefront remains fast and up‑to‑date.
 
+## Implementation Summary
+
+| Item | What We Cover | Status |
+|------|----------------|--------|
+| [Install Smootify](#1-install-smootify-in-shopify) | App install and Shopify setup | Active |
+| [Connect Webflow](#2-connect-webflow-project) | Authorization and project linking | Active |
+| [Integration Scripts](#3-add-integration-scripts) | Scripts and options | Active |
+| [CMS Collections](#4-create-cms-collections) | Required fields and mapping | Active |
+| [Attributes & Cart](#5-configure-custom-attributes) | Product bindings and cart actions | Active |
+| [Sync & Monitoring](#synchronization-management) | Automatic, partial, and logs | Active |
+| [Troubleshooting](#troubleshooting-common-issues) | Common issues and fixes | Active |
+| [Performance & SEO](#performance-optimization) | Optimization and search best practices | Active |
+
 ## Prerequisites
 
 ### Required Accounts & Plans

@@ -2,6 +2,17 @@
 
 ## What This Is & Why It Matters
 A practical overview of adding JSON‑LD schema to Webflow e‑commerce sites so search engines can understand products, breadcrumbs, and brand details and unlock rich results.
+
+## Implementation Summary
+
+| Item | What We Cover | Status |
+|------|----------------|--------|
+| Where to Add | Site‑wide vs. page‑specific schema | Active |
+| Organization | Company-level schema | Active |
+| WebSite | SearchAction and sitelinks | Active |
+| BreadcrumbList | Hierarchy in SERPs | Active |
+| Product | Product details and offers | Active |
+| Validation | Testing tools | Active |
 Schema markup helps search engines understand your content and unlock rich results (stars, pricing, breadcrumbs). JSON‑LD is the recommended format.
 
 > Tip: Quickly verify your schema with Google’s Rich Results Test: <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">search.google.com/test/rich-results</a>
@@ -32,7 +43,7 @@ Schema markup helps search engines understand your content and unlock rich resul
 ## Examples (Copy/Paste)
 
 <a id="organization"></a>
-Organization
+## Organization
 ```html
 <script type="application/ld+json">
 {
@@ -46,7 +57,7 @@ Organization
 ```
 
 <a id="website--searchaction"></a>
-WebSite + SearchAction
+## WebSite + SearchAction
 ```html
 <script type="application/ld+json">
 {
@@ -66,7 +77,7 @@ WebSite + SearchAction
 ```
 
 <a id="breadcrumblist"></a>
-BreadcrumbList
+## BreadcrumbList
 ```html
 <script type="application/ld+json">
 {
@@ -82,7 +93,7 @@ BreadcrumbList
 ```
 
 <a id="product-template"></a>
-Product (template)
+## Product (template)
 ```html
 <script type="application/ld+json">
 {
@@ -127,6 +138,9 @@ Product (template)
 - Google: Rich Results Test → <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">search.google.com/test/rich-results</a>
 - Google: Data‑vocabulary deprecation & breadcrumbs → <a href="https://developers.google.com/search/blog/2020/01/data-vocabulary" target="_blank" rel="noopener noreferrer">developers.google.com/search/blog/2020/01/data-vocabulary</a>
 - Schema.org reference → <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>
+
+## Useful Links
+- Google SEO schema docs — <a href="https://developers.google.com/search/docs/appearance/structured-data" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/appearance/structured-data</a>
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <a href="robots-txt-management.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: robots.txt Management for Webflow Sites</a>

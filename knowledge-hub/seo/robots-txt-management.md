@@ -2,6 +2,17 @@
 
 ## What This Is & Why It Matters
 How to configure a clean robots.txt for Webflow sites to guide search engines, prevent crawl waste, and ensure important pages are accessible.
+
+## Implementation Summary
+
+| Item | What We Cover | Status |
+|------|----------------|--------|
+| Basics | Purpose and quick tips | Active |
+| Example | A clean robots.txt template | Active |
+| Configuration | Where to set robots.txt in Webflow | Active |
+| Validation | How to test and monitor | Active |
+| Best Practices | Dos and don’ts | Active |
+| Troubleshooting | Common issues | Active |
 robots.txt tells search engines what to crawl (or not). A clean robots file prevents crawl waste, protects private areas, and ensures important pages are accessible.
 
 > Tip: Verify quickly with GSC Robots.txt Tester and PageSpeed Insights
@@ -63,6 +74,9 @@ Sitemap: <a href="https://example.com/sitemap.xml" target="_blank" rel="noopener
 - Google Search Console → <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">search.google.com/search-console</a>
 - GSC Robots Tester → <a href="https://search.google.com/search-console/settings/robots-txt" target="_blank" rel="noopener noreferrer">search.google.com/search-console/settings/robots-txt</a>
 - Webflow University: Manage robots.txt → <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>
+
+## Useful Links
+- Webflow robots.txt docs — <a href="https://university.webflow.com/lesson/robots-txt" target="_blank" rel="noopener noreferrer">university.webflow.com/lesson/robots-txt</a>
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <span></span>

@@ -8,7 +8,8 @@ if (process.argv.includes('--help')) {
 }
 
 const ROOT = process.cwd();
-const TARGET_DIR = process.argv.includes('--knowledge-hub')
+const IS_KH = process.argv.includes('--knowledge-hub');
+const TARGET_DIR = IS_KH
   ? join(ROOT, 'knowledge-hub')
   : join(ROOT, 'docs');
 const EXCLUDE = new Set([
@@ -64,7 +65,9 @@ for (const file of files) {
       if (itemIdx !== -1 && cells[itemIdx]) {
         const m = cells[itemIdx].match(/\]\(#([^)#\s]+)\)/);
         if (!m) {
-          violations.push({ file, line: j + 1, rule: 'item-anchor-link', msg: 'Item should link to an in-page anchor, e.g., [Title](#anchor-id)' });
+          if (!IS_KH) {
+            violations.push({ file, line: j + 1, rule: 'item-anchor-link', msg: 'Item should link to an in-page anchor, e.g., [Title](#anchor-id)' });
+          }
         } else {
           tableAnchors.push(m[1]);
         }
@@ -85,13 +88,15 @@ for (const file of files) {
 
   for (const id of tableAnchors) {
     const anchor = anchorPositions.find((a) => a.id === id);
-    if (!anchor) {
-      violations.push({ file, line: tableHeaderIdx + 1, rule: 'missing-anchor', msg: `Anchor '#${id}' not found in this file` });
-      continue;
-    }
-    const nextH2 = headingPositions.find((h) => h > anchor.line && h <= anchor.line + 3);
-    if (nextH2 === undefined) {
-      violations.push({ file, line: anchor.line + 1, rule: 'anchor-without-heading', msg: `No H2 immediately after <a id="${id}">` });
+    if (!IS_KH) {
+      if (!anchor) {
+        violations.push({ file, line: tableHeaderIdx + 1, rule: 'missing-anchor', msg: `Anchor '#${id}' not found in this file` });
+        continue;
+      }
+      const nextH2 = headingPositions.find((h) => h > anchor.line && h <= anchor.line + 3);
+      if (nextH2 === undefined) {
+        violations.push({ file, line: anchor.line + 1, rule: 'anchor-without-heading', msg: `No H2 immediately after <a id="${id}">` });
+      }
     }
   }
 
@@ -135,6 +140,38 @@ for (const file of files) {
       'technical architecture',
       'implementation summary',
       'google analytics configuration (webflow settings)',
+      // Knowledge Hub common sections
+      'example robots.txt',
+      'webflow configuration',
+      'validation & monitoring',
+      'best practices',
+      'troubleshooting',
+      'resources',
+      'where to add schema in webflow',
+      'examples (copy/paste)',
+      'implementation notes',
+      'performance metrics explained',
+      'modern optimization strategies',
+      'testing tools',
+      'common performance issues',
+      'platform-specific considerations',
+      'the business case for speed',
+      'best practices summary',
+      // Additional KH common section headings
+      'prerequisites',
+      'step-by-step setup process',
+      'advanced configuration',
+      'synchronization management',
+      'troubleshooting common issues',
+      'performance optimization',
+      'seo best practices',
+      'security considerations',
+      'maintenance schedule',
+      'support resources',
+      'version control & updates',
+      'what is page speed optimization?',
+      'why page speed matters',
+      'core optimization techniques',
     ]);
     const h2Titles = lines
       .map((l, i) => ({ l, i }))

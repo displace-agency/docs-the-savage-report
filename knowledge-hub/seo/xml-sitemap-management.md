@@ -2,6 +2,17 @@
 
 ## What This Is & Why It Matters
 How to configure and validate an XML sitemap in Webflow so search engines can efficiently discover your public URLs.
+
+## Implementation Summary
+
+| Item | What We Cover | Status |
+|------|----------------|--------|
+| Quick Summary | What to configure and why | Active |
+| Webflow Configuration | Where to set project/page/CMS options | Active |
+| Validation | How to check sitemap and GSC status | Active |
+| Proof in GSC | What the submission screen shows | Active |
+| Best Practices | Do’s and don’ts | Active |
+| Troubleshooting | Common errors | Active |
 An XML sitemap lists important URLs and helps search engines discover and index your site efficiently. Webflow auto‑generates a sitemap that can be configured at project and page levels.
 
 > Tip: Quick access
@@ -81,6 +92,9 @@ Screenshot: GSC → Sitemaps submission view (submit your live sitemap URL)
 - Webflow: SEO & sitemaps → <a href="https://university.webflow.com/lesson/seo-in-webflow#sitemap" target="_blank" rel="noopener noreferrer">university.webflow.com/lesson/seo-in-webflow#sitemap</a>
 - Google: Sitemaps → <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/crawling-indexing/sitemaps/overview</a>
 - GSC Sitemaps → <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">search.google.com/search-console/sitemaps</a>
+
+## Useful Links
+- Webflow sitemap settings — <a href="https://university.webflow.com/lesson/seo-in-webflow#sitemap" target="_blank" rel="noopener noreferrer">Webflow University</a>
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <a href="schema-markup-for-ecommerce.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Schema Markup for E‑Commerce Websites (JSON‑LD)</a>

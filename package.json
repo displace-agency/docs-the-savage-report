@@ -8,8 +8,8 @@
     "lint:tables": "node admin/scripts/table-lint.mjs && node admin/scripts/table-lint.mjs --knowledge-hub",
     "lint:articles": "node admin/scripts/article-structure-lint.mjs && node admin/scripts/article-structure-lint.mjs --knowledge-hub",
     "lint:images": "node admin/scripts/image-lint.mjs",
-    "footer:update": "node admin/scripts/footer-update.mjs",
-    "maintenance": "npm run lint:links && npm run lint:tables && npm run lint:articles && npm run lint:images"
+    "footer:lint": "node admin/scripts/footer-lint.mjs",
+    "maintenance": "npm run lint:links && npm run lint:tables && npm run lint:articles && npm run lint:images && npm run footer:lint"
   }
 }
 

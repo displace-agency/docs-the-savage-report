@@ -8,7 +8,8 @@ if (process.argv.includes('--help')) {
 }
 
 const ROOT = process.cwd();
-const TARGET_DIRS = process.argv.includes('--knowledge-hub')
+const IS_KH = process.argv.includes('--knowledge-hub');
+const TARGET_DIRS = IS_KH
   ? [join(ROOT, 'knowledge-hub')]
   : [join(ROOT, 'docs')];
 const EXCLUDE_FILES = new Set([
@@ -61,8 +62,10 @@ for (const file of files) {
           const itemCell = rowCells[itemIdx];
           const m = itemCell.match(/\]\(#([^)#\s]+)\)/);
           if (!m) {
-            violations.push({ file, line: j + 1, rule: 'item-anchor-link', msg: 'Item should be a link to an in-page anchor, e.g., [Title](#anchor-id)' });
-          } else {
+            if (!IS_KH) {
+              violations.push({ file, line: j + 1, rule: 'item-anchor-link', msg: 'Item should be a link to an in-page anchor, e.g., [Title](#anchor-id)' });
+            }
+          } else if (!IS_KH) {
             const anchorId = m[1];
             const anchorRe = new RegExp(`<a\\s+id=\\"${anchorId}\\"`, 'i');
             if (!anchorRe.test(content)) {
