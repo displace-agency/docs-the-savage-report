@@ -2,6 +2,11 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
+if (process.argv.includes('--help')) {
+  console.log(`Link Linter\n\nChecks under docs/:\n- No ./00-links.md# alias references\n- No '00 — Global Links' mentions\n- No file paths in link labels (e.g., labels like 'docs/05.1-seo-schema.md')\n- External <a> links must include target="_blank" and rel="noopener noreferrer"\n\nUsage:\n  node admin/scripts/link-lint.mjs\n  node admin/scripts/link-lint.mjs --help\n`);
+  process.exit(0);
+}
+
 const ROOT = process.cwd();
 const DOCS_DIR = join(ROOT, 'docs');
 
@@ -22,6 +27,21 @@ for (const file of files) {
   if (/00\s*—\s*Global\s*Links/i.test(content) || /00\s*-+\s*Global\s*Links/i.test(content)) {
     violations.push({ file, rule: 'legacy-global-links', msg: 'Contains "00 — Global Links" mention' });
   }
+  // File paths in link labels (e.g., [docs/05.1-seo-schema.md](...))
+  const labelPathRe = /\[[^\]]*\b(?:docs\/|admin\/|assets\/)[^\]]*\]/g;
+  let m;
+  while ((m = labelPathRe.exec(content))) {
+    violations.push({ file, rule: 'path-in-label', msg: `Link label contains a file path near: '${m[0].slice(0,60)}...'` });
+  }
+  // External anchors missing target or rel
+  const externalAnchorRe = /<a\s+href="https?:\/\/[^\"]+"[^>]*>/gi;
+  let am;
+  while ((am = externalAnchorRe.exec(content))) {
+    const tag = am[0];
+    if (!/target="_blank"/i.test(tag) || !/rel="noopener noreferrer"/i.test(tag)) {
+      violations.push({ file, rule: 'external-anchor-attrs', msg: 'External <a> missing target="_blank" and/or rel="noopener noreferrer"' });
+    }
+  }
 }
 
 if (violations.length) {
@@ -32,4 +52,4 @@ if (violations.length) {
   process.exit(1);
 }
 
-console.log('Link lint passed. No alias references or legacy mentions found.');
+console.log('Link lint passed. No issues found.');
