@@ -52,6 +52,15 @@ How to access:
 
 <img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-add-edit-link.png" alt="Access the Webflow Editor by adding ?edit to your site URL" width="800" />
 
+### What is the Webflow Editor?
+The Webflow Editor is the safest way for non‑technical users to update text, images, rich content, and links directly on the page. After accepting your invitation, open your site and append `?edit` to the URL to sign in and edit inline. You’ll see an editing bar at the bottom of the page where you can publish changes when ready.
+
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-editor-bottom.png" alt="Editor interface visible at the bottom of the page" width="800" />
+
+Editor access methods:
+- From your browser via `?edit`
+- From your Webflow account dashboard
+
 <a id="webflow-hosting"></a>
 ## Webflow Hosting
 Fast, secure, and managed hosting included.
@@ -101,6 +110,20 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 - Save frequently
 
 <img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-designer-text-editing.png" alt="Editing content inline" width="800" />
+
+### What is the Webflow Designer?
+The Webflow Designer provides full control over layout, components, animations, and responsive behavior. It’s powerful and intended for advanced users. During handover we provide a guided tour and recording.
+
+### Editor vs Designer — Purpose, Pros & Cons
+
+| Item | Purpose | Pros | Cons |
+|------|---------|------|------|
+| Editor | Update live content (text, images, links, CMS) | Safe, visual, fast; no layout risk | Limited control over structure and styles |
+| Designer | Create/modify layouts, styles, components, interactions | Full control; design‑system friendly | Powerful but easier to break layouts; requires experience |
+
+Access summary:
+- Editor: `your-site.com?edit` → login → inline editing bar
+- Designer: Webflow dashboard → open project → Designer
 
 ### Step 4: Publish Safely
 1. Click “Preview” to review changes
