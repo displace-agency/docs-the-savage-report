@@ -2,6 +2,11 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
+if (process.argv.includes('--help')) {
+  console.log(`Table Linter\n\nRules enforced:\n- First column must be 'Item'\n- Every Item cell must link to an in-page anchor (e.g., [Title](#anchor))\n- The corresponding <a id="..."> anchor must exist in the file\n- 'Status' column must be text only (no emojis)\n\nUsage:\n  node admin/scripts/table-lint.mjs\n`);
+  process.exit(0);
+}
+
 const ROOT = process.cwd();
 const TARGET_DIRS = [join(ROOT, 'docs')];
 const EXCLUDE_FILES = new Set([
@@ -35,12 +40,10 @@ for (const file of files) {
       const statusIdx = headerCells.findIndex((h) => h.toLowerCase() === 'status');
       const itemIdx = headerCells.findIndex((h) => h.toLowerCase() === 'item');
 
-      // Enforce first column name
       if (firstHeader !== 'item') {
         violations.push({ file, line: i + 1, rule: 'first-column-item', msg: `First column is '${headerCells[0] || ''}', expected 'Item'` });
       }
 
-      // Walk data rows until non-table line
       let j = i + 2;
       while (j < lines.length && /^\|.*\|/.test(lines[j])) {
         const rowCells = lines[j]
@@ -48,12 +51,10 @@ for (const file of files) {
           .slice(1, -1)
           .map((c) => c.trim());
 
-        // Status emoji check
         if (statusIdx !== -1 && rowCells[statusIdx] && EMOJI_PATTERN.test(rowCells[statusIdx])) {
           violations.push({ file, line: j + 1, rule: 'status-no-emoji', msg: 'Status contains emoji; use text only (e.g., Active, Paused)' });
         }
 
-        // Item anchor link check
         if (itemIdx !== -1 && rowCells[itemIdx]) {
           const itemCell = rowCells[itemIdx];
           const m = itemCell.match(/\]\(#([^)#\s]+)\)/);
@@ -71,7 +72,6 @@ for (const file of files) {
         j++;
       }
 
-      // Skip ahead to end of table
       i = j - 1;
     }
   }
