@@ -102,6 +102,10 @@ Mobile optimization showing significant improvements in user experience.
 <a id="technical-configuration"></a>
 ## Technical Configuration
 
+- **Minification & Headers**: Review advanced publishing options for performance.
+
+<img src="../assets/06-page-speed-optimization-advanced-publishing.png" alt="Advanced publishing options in Webflow used for performance" width="70%" style="border-radius:8px" />
+
 ### Webflow Performance Settings
 - **Minify HTML**: ✅ ON
 - **Minify CSS**: ✅ ON

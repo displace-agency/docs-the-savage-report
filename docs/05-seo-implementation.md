@@ -40,7 +40,6 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 - **Live file**: <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a>
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
 
-<a id="xml-sitemap-implementation"></a>
 ## XML Sitemap Implementation
 
 ### Sitemap Summary
@@ -50,15 +49,15 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 
 <img src="../assets/05-seo-implementation-gsc-sitemaps.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
 
+<img src="../assets/05-seo-implementation-xml-sitemap-auto-generate.png" alt="Webflow SEO settings sitemap auto-generate toggle" width="70%" style="border-radius:8px" />
+
+<img src="../assets/05-seo-implementation-xml-sitemap-subdomain-indexing-off.png" alt="Webflow subdomain indexing disabled to prevent duplicate indexing" width="70%" style="border-radius:8px" />
+
 <a id="webflow-seo-settings"></a>
 ## Webflow SEO Settings
 
 ### Canonical URLs
 Set global canonical URL to prevent duplicate content and ensure proper indexing.
-
-<img src="../assets/05-seo-implementation-webflow-advanced-publishing.png" alt="Advanced publishing options in Webflow settings related to SEO and caching" width="70%" style="border-radius:8px" />
-
-<img src="../assets/05-seo-implementation-webflow-advanced-publishing.png" alt="Webflow SEO settings with canonical and robots controls" width="70%" style="border-radius:8px" />
 
 - **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
@@ -79,10 +78,6 @@ Control access for search engine crawlers and AI bots.
 ### Google Site Verification & Indexing Controls
 
 <img src="../assets/05-seo-implementation-google-site-verification.png" alt="Google Site Verification meta in Webflow settings" width="70%" style="border-radius:8px" />
-
-<img src="../assets/05-seo-implementation-sitemap-auto-generate-toggle.png" alt="Sitemap auto-generate toggle in Webflow settings" width="70%" style="border-radius:8px" />
-
-<img src="../assets/05-seo-implementation-indexing-toggle-subdomain-off.png" alt="Indexing toggle off for subdomain in Webflow settings" width="70%" style="border-radius:8px" />
 
 ## Useful Links
 
