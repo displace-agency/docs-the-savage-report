@@ -74,7 +74,7 @@ Webflow provides two layers of configuration: your Workspace (organization level
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <a href="02-how-to-access-your-webflow-site.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: How to Access Your Webflow Site</a>
-  <span></span>
+  <a href="04-domain-configuration.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Connect a Custom Domain in Webflow (Step‑by‑Step) →</a>
 </div>
 
 ---
