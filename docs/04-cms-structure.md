@@ -1,7 +1,10 @@
 # CMS Structure & Content Management - The Savage Report
 
 ## What This Is & Why It Matters
-Your website uses a sophisticated dual-system approach: Webflow for beautiful, custom page designs and Shopify for real-time product data. This is the primary robots.txt that controls crawling for your main website content, products, and collections.
+This article documents the CMS foundations of The Savage Report. It explains each collection's purpose, the key fields you will use, and how the system splits between two sources of truth:
+
+- Webflow-managed collections for publishing new editorial content: Lookbooks, Campaigns, Special Projects
+- Shopify-managed collections synchronized via Smootify: Products, Collections, Vendors (auto-updated; minimal manual editing)
 
 ## CMS Implementation Summary
 
@@ -31,10 +34,15 @@ Your website uses a sophisticated dual-system approach: Webflow for beautiful, c
 
 <a id="products-collection"></a>
 ## Products Collection
-- **Product Variants**: Size, color, and style options
-- **SEO Fields**: Meta titles, descriptions, and structured data
-- **Shopify Integration**: Real-time inventory and pricing
-- **Image Management**: Multiple product photos with zoom functionality
+Managed by Shopify via Smootify sync. Do not edit core product data in Webflow.
+
+Key fields (Webflow):
+- Shopify ID (synced)
+- Name, Slug (synced)
+- Price, Inventory (synced)
+- Image, Secondary Image (custom display images for homepage/carousels – editable in Webflow)
+
+Deep dive: [Smootify Webflow Integration Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
 
 <a id="how-the-system-works"></a>
 ## How the System Works
@@ -59,31 +67,40 @@ Your website uses a sophisticated dual-system approach: Webflow for beautiful, c
 
 <a id="vendors-collection"></a>
 ## Vendors Collection
-- Brand profiles with logos and descriptions
-- Social media integration (Instagram links)
-- Featured vendor highlighting on homepage
-- Builds credibility and allows brand-based shopping
+Synced from Shopify. Note: currently only one brand/vendor (The Savage Report), so changes are rare.
 
 <a id="lookbooks-collection"></a>
 ## Lookbooks Collection
-- Visual inspiration content with product links
-- Seasonal organization for timely relevance
-- Gallery-based layout for maximum visual impact
-- Direct shopping integration to featured products
+Editorial gallery pages you can publish quickly. Upload images to the gallery field to generate visually rich pages immediately.
+
+<img src="../assets/04-lookbook-cms.png" alt="Lookbook CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+
+- Purpose: Publish inspirational visual content with product links
+- Fields: Title, Slug, Hero Image, Gallery (multi-image), Description
+
+Template example:
+<img src="../assets/04-lookbook-template.png" alt="Lookbook template page rendering gallery content" width="70%" style="border-radius:8px" />
 
 <a id="campaigns-collection"></a>
 ## Campaigns Collection
-- Time-based marketing campaigns with launch/end dates
-- Hero visuals and promotional content
-- Active/inactive status control
-- Strategic product highlighting during campaigns
+Time-bound initiatives (launches, promos) with start/end dates and feature visuals.
+
+<img src="../assets/04-campaign-cms.png" alt="Campaign CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+
+- Purpose: Promote seasonal or limited initiatives
+- Fields: Title, Slug, Hero Image, Start/End Date, Description
+
+Template example:
+<img src="../assets/04-campaign-template.png" alt="Campaign template page" width="70%" style="border-radius:8px" />
 
 <a id="special-projects-collection"></a>
 ## Special Projects Collection
-- Limited edition releases and collaborations
-- Scarcity messaging and release dates
-- Exclusive content and product availability
-- Creates buzz and drives urgency
+Limited collaborations and one-offs for buzz and urgency.
+
+<img src="../assets/04-special-projects-cms.png" alt="Special Projects CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+
+- Purpose: Limited edition releases and cultural collaborations
+- Fields: Title, Slug, Hero Image, Release Date, Description
 
 <a id="seo-integration-system"></a>
 ## SEO Integration System
