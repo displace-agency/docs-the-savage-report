@@ -182,7 +182,7 @@ Shopify (Product Data) → Smootify (Integration Layer) → Webflow (Page Displa
 
 ### Platform Integration
 - **Shopify Admin**: <a href="https://the-savage-report.myshopify.com/admin" target="_blank" rel="noopener noreferrer">Product Management</a>
-- **Webflow Designer**: <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Design & Layout</a>
+- **Webflow Designer**: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Design & Layout</a>
 - **Live Website**: <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Customer View</a>
 
 ### Related Documentation

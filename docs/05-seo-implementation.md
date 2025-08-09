@@ -8,7 +8,7 @@ We implemented foundational SEO across The Savage Report to help search engines 
 | Item | What We Delivered | Impact | Status | Reference Link(s) |
 |------|-------------------|--------|--------|-------------------|
 | [Structured Data (Schema Markup)](#structured-data-schema-markup) | JSON-LD for Product, Organization, Local Business, and Website | High | ✅ Active | [Schema Markup Doc](./05.1-seo-schema.md) |
-| [SEO-Optimized Content & Metadata](#seo-optimized-content--metadata) | Brand-consistent titles, descriptions, Open Graph tags, optimized URL slugs | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
+| [SEO-Optimized Content & Metadata](#seo-optimized-content--metadata) | Brand-consistent titles, descriptions, Open Graph tags, optimized URL slugs | High | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 
 | [Robots.txt Configuration](#robots-txt-configuration) | Dual setup: Webflow main site + Shopify subdomain for optimal crawling | High | ✅ Active | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Webflow robots.txt</a> · <a href="https://shop.the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">Shopify robots.txt</a> |
 | [XML Sitemap Implementation](#xml-sitemap-implementation) | Auto-generated sitemap with 61 URLs, verified in Google Search Console | High | ✅ Active | <a href="https://the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a> · <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
@@ -188,7 +188,7 @@ Control access for search engine crawlers and AI bots to manage site traffic and
 
 ### Implementation
 - **Webflow Custom Code**: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Project Head Schema</a>
-- **Webflow Designer**: <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Page-Specific Schema</a>
+- **Webflow Designer**: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Page-Specific Schema</a>
 - **Webflow Site Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
 - **Webflow SEO Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">SEO Configuration</a>
 

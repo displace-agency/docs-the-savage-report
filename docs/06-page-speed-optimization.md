@@ -8,8 +8,8 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 | Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
 |------|-------------------|----------|---------|--------|-------------------|
 | Performance Optimizer Script | Comprehensive performance management system v4.0.0 | High | Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Webflow Custom Code</a> |
-| Smart Image Optimization | 70% smaller images, WebP format, responsive versions | High | Jul 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
-| Lazy Loading System | Images load only when needed, 50% faster initial display | High | Jul 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
+| Smart Image Optimization | 70% smaller images, WebP format, responsive versions | High | Jul 2025 | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
+| Lazy Loading System | Images load only when needed, 50% faster initial display | High | Jul 2025 | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | Video Performance | Optimized homepage video, mobile-friendly playback | Medium | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site</a> |
 | Code Minification | 30% smaller files, optimized HTML/CSS/JS bundles | Medium | Jul 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 | Smart Prefetching | Next page loads instantly when hovered/clicked | Medium | Aug 2025 | ✅ Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site</a> |
@@ -124,7 +124,7 @@ Mobile optimization showing significant improvements in user experience.
 - **Webflow Dashboard**: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Site Management</a>
 
 ### Admin Access
-- **Webflow Designer**: <a href="https://webflow.com/dashboard/sites/savage-report-we/designer" target="_blank" rel="noopener noreferrer">Design & Development</a>
+- **Webflow Designer**: <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Design & Development</a>
 - **Webflow Settings**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Site Configuration</a>
 - **Custom Code**: <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Performance Scripts</a>
 
