@@ -13,23 +13,22 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="analytics"></a> analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
 | <a id="smootify-integration"></a> smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
 
-## Webflow
+## Webflow (most used → less used)
 
 | Alias | URL | Notes |
 |------|-----|------|
 | <a id="webflow-designer"></a> webflow-designer | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">https://webflow.com/design/savage-report-we</a> | Designer UI |
+| <a id="webflow-dashboard"></a> webflow-dashboard | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we</a> | Project dashboard |
 | <a id="webflow-cms"></a> webflow-cms | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/cms</a> | CMS items |
 | <a id="webflow-seo-settings"></a> webflow-seo-settings | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/seo</a> | SEO settings & robots |
-| <a id="webflow-dashboard"></a> webflow-dashboard | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we</a> | Project dashboard |
 | <a id="webflow-general"></a> webflow-general | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/general</a> | General settings |
 | <a id="webflow-custom-code"></a> webflow-custom-code | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/custom-code</a> | Custom code |
 
-## Deep Admin Links
+## Smootify
 
 | Alias | URL | Notes |
 |------|-----|------|
-| <a id="webflow-products-collection"></a> webflow-products-collection | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">https://webflow.com/.../cms/collections/products</a> | Products CMS collection |
-| <a id="webflow-collections-collection"></a> webflow-collections-collection | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">https://webflow.com/.../cms/collections/collections</a> | Collections CMS collection |
+| <a id="smootify-dashboard"></a> smootify-dashboard | <a href="https://app.smootify.io/dashboard" target="_blank" rel="noopener noreferrer">https://app.smootify.io/dashboard</a> | Smootify dashboard |
 
 ## Live Site
 
