@@ -95,9 +95,8 @@ This article documents the six CMS collections powering The Savage Report. It ex
 ## Useful Links
 
 ### Implementation
-- Webflow CMS: [Management](https://webflow.com/dashboard/sites/savage-report-we/cms)
-- Webflow CMS: [Products Collection](https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products)
-- Webflow CMS: [Collections](https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections)
+- Product Template: [CMS Template](https://savage-report-we.design.webflow.com/?mode=edit&locale=en&pageId=6842dbb7fd62fe84163d6089&itemId=6842dc4cc3ac49993227baa9)
+- Collection Template: [CMS Template](https://savage-report-we.design.webflow.com/?mode=edit&locale=en&pageId=6842dbb8024e4a79c2aa0323&itemId=6842dc2afd62fe84163db540)
 
 ### Admin Access
 - Shopify Admin: [Store Management](https://admin.shopify.com/store/thesavagereport)

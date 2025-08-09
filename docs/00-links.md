@@ -34,15 +34,12 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 |------|-----|------|
 | <a id="webflow-designer"></a> webflow-designer | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">https://webflow.com/design/savage-report-we</a> | Designer UI |
 | <a id="webflow-dashboard"></a> webflow-dashboard | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we</a> | Project dashboard |
-| <a id="webflow-cms"></a> webflow-cms | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/cms</a> | CMS items |
 | <a id="webflow-seo-settings"></a> webflow-seo-settings | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/seo</a> | SEO settings & robots |
-| <a id="webflow-general"></a> webflow-general | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/general</a> | General settings |
 | <a id="webflow-custom-code"></a> webflow-custom-code | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/custom-code</a> | Custom code |
 | <a id="webflow-site-access"></a> webflow-site-access | <a href="https://webflow.com/dashboard/sites/savage-report-we/site-access" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/site-access</a> | Site access |
 | <a id="webflow-publishing"></a> webflow-publishing | <a href="https://webflow.com/dashboard/sites/savage-report-we/publishing" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/publishing</a> | Publishing |
 | <a id="webflow-backups"></a> webflow-backups | <a href="https://webflow.com/dashboard/sites/savage-report-we/backups" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/backups</a> | Backups |
 | <a id="webflow-integrations"></a> webflow-integrations | <a href="https://webflow.com/dashboard/sites/savage-report-we/integrations" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/integrations</a> | Integrations |
-| <a id="webflow-live-site"></a> webflow-live-site | <a href="https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com</a> | Quick access to live site |
 
 ## Smootify
 
@@ -74,7 +71,6 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 
 | Alias | URL | Notes |
 |------|-----|------|
-| <a id="shopify-admin"></a> shopify-admin | <a href="https://the-savage-report.myshopify.com/admin" target="_blank" rel="noopener noreferrer">https://the-savage-report.myshopify.com/admin</a> | Store admin (classic) |
 | <a id="shopify-admin-store"></a> shopify-admin-store | <a href="https://admin.shopify.com/store/thesavagereport" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport</a> | Store admin |
 | <a id="shopify-analytics"></a> shopify-analytics | <a href="https://admin.shopify.com/store/thesavagereport/analytics" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport/analytics</a> | Analytics |
 | <a id="shopify-orders"></a> shopify-orders | <a href="https://admin.shopify.com/store/thesavagereport/orders" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport/orders</a> | Orders |
