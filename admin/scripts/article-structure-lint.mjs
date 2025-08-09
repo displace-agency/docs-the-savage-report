@@ -8,15 +8,19 @@ if (process.argv.includes('--help')) {
 }
 
 const ROOT = process.cwd();
-const DOCS_DIR = join(ROOT, 'docs');
-const EXCLUDE = new Set([join(DOCS_DIR, '00-links.md')]);
+const TARGET_DIR = process.argv.includes('--knowledge-hub')
+  ? join(ROOT, 'knowledge-hub')
+  : join(ROOT, 'docs');
+const EXCLUDE = new Set([
+  join(ROOT, 'docs', '00-links.md'),
+]);
 
 const walk = (dir) => {
   const entries = readdirSync(dir, { withFileTypes: true });
   return entries.flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
 };
 
-const files = walk(DOCS_DIR).filter((p) => p.endsWith('.md') && !EXCLUDE.has(p));
+const files = walk(TARGET_DIR).filter((p) => p.endsWith('.md') && !EXCLUDE.has(p));
 
 const violations = [];
 
@@ -155,4 +159,4 @@ if (violations.length) {
   process.exit(1);
 }
 
-console.log('Article structure lint passed.');
+console.log(`Article structure lint passed for ${TARGET_DIR.includes('knowledge-hub') ? 'knowledge-hub' : 'docs'}.`);
