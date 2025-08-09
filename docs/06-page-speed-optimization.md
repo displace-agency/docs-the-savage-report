@@ -16,60 +16,72 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 | [Browser Caching Strategy](#browser-caching-strategy) | 60% faster loads for returning visitors | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 | [Critical CSS Inlining](#critical-css-inlining) | Content appears immediately, no white flash | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Webflow Custom Code</a> |
 | [Load More Functionality](#load-more-functionality) | Collection pages load 3x faster with pagination | Medium | ✅ Active | <a href="https://the-savage-report.com/shop-all" target="_blank" rel="noopener noreferrer">Shop All Page</a> |
+| [Performance Results](#performance-results) | PageSpeed snapshots and measured improvements | Medium | ✅ Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PSI Report</a> |
+| [Technical Configuration](#technical-configuration) | Webflow performance settings and active scripts | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> · <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Custom Code</a> |
 
-## What We Implemented
+<!-- Content sections follow; H2s link back from the summary table. -->
 
 <a id="performance-optimizer-script"></a>
-### 1) Performance Optimizer Script (Version 4.0.0)
+## Performance Optimizer Script (Version 4.0.0)
+---
 - Installed comprehensive performance management system that automatically optimizes every aspect of site loading
 - Continuous monitoring and improvement without manual intervention
 - Real-time performance metrics tracking for consistent speed
 
 <a id="advanced-image-optimization"></a>
-### 2) Advanced Image Optimization System
+## Advanced Image Optimization System
+---
 - Every image automatically compressed to optimal size (max 150KB)
 - Images converted to WebP format (30% smaller than regular JPEGs)
 - Responsive versions: mobile (300px), tablet (600px), desktop (1200px)
 - Automatic lazy loading - images load only when needed
 
 <a id="smart-video-performance"></a>
-### 3) Smart Video Performance
+## Smart Video Performance
+---
 - Homepage video loads only essential frames initially
 - Videos pause automatically when not visible on screen
 - Mobile-optimized playback without autoplay issues
 - Background videos compressed without quality loss
 
 <a id="intelligent-prefetching-system"></a>
-### 4) Intelligent Prefetching System
+## Intelligent Prefetching System
+---
 - When customers hover over a link, that page starts loading in background
 - Popular pages preload automatically
 - Smart detection prevents unnecessary preloading
 
 <a id="code-minification-and-optimization"></a>
-### 5) Code Minification & Optimization
+## Code Minification & Optimization
+---
 - Removed all unnecessary code spacing and comments
 - Combined multiple files into optimized bundles
 - Enabled Webflow's advanced minification for HTML, CSS, and JavaScript
 
 <a id="browser-caching-strategy"></a>
-### 6) Browser Caching Strategy
+## Browser Caching Strategy
+---
 - Configured intelligent caching for all static resources
 - Set up cache versioning to ensure fresh content when updated
 - Implemented service worker for offline capability
 
 <a id="critical-css-inlining"></a>
-### 7) Critical CSS Inlining
+## Critical CSS Inlining
+---
 - Essential styles for above-the-fold content load immediately
 - Non-critical styles load after page is interactive
 - Eliminates "flash of unstyled content"
 
 <a id="load-more-functionality"></a>
-### 8) Load More Functionality
+## Load More Functionality
+---
 - Collection pages initially display 8 products
 - Additional products load on demand with "Load More" button
 - Smooth animation when new products appear
 
+<a id="performance-results"></a>
 ## Performance Results
+---
 
 ### PageSpeed Insights Snapshot
 Current performance standing showing strong optimization results.
@@ -90,27 +102,9 @@ Mobile optimization showing significant improvements in user experience.
 - **Mobile Engagement**: 45% increase
 - **Bounce Rate**: 25% reduction
 
-## Key Performance Metrics
-
-### Speed Improvements
-- **First Content Display**: 3.2s → 1.1s (**-66%**)
-- **Full Page Load**: 5.8s → 2.4s (**-59%**)
-- **Time to Interactive**: 4.5s → 1.9s (**-58%**)
-- **Mobile Load Time**: 6.2s → 2.8s (**-55%**)
-
-### Core Web Vitals (Google's Key Metrics)
-- **LCP** (Largest Content): 1.8s - 🟢 Good
-- **FID** (Interactivity): 45ms - 🟢 Good
-- **CLS** (Visual Stability): 0.05 - 🟢 Good
-
-### Business Impact Achieved
-- **25% reduction in bounce rate** - Customers stay instead of leaving
-- **7% increase in conversion rate** - More visitors become buyers
-- **45% increase in mobile engagement** - Mobile users browse more products
-- **12% increase in pages per session** - Customers explore more of your catalog
-- **Better Google rankings** - Improved visibility in search results
-
+<a id="technical-configuration"></a>
 ## Technical Configuration
+---
 
 ### Webflow Performance Settings
 - **Minify HTML**: ✅ ON
