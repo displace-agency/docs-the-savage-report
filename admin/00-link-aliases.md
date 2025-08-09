@@ -4,7 +4,7 @@ Use alias links in Markdown to reference internal docs and common external URLs.
 
 Authoring examples:
 
-\n[CMS Collections](alias:cms-collections)\n\n[Webflow Designer](alias:webflow-designer)\n
+\n[CMS Collections](./04-cms-collections.md)\n\n<a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a>\n
 
 Automation:
 - Run `npm run fix:aliases` to rewrite aliases to actual links.
