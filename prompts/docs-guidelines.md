@@ -147,6 +147,15 @@ Brief context about what this screenshot demonstrates.
 - Link to internal docs using relative paths
 - Link to knowledge-hub for how-to/education
 
+### Useful Links Section (Standardized)
+- Place at the bottom of each article.
+- Use these subheadings when relevant:
+  - **Implementation**: platform settings, custom code, dashboards (admin links).
+  - **Testing & Validation**: tools/reports (e.g., PSI, validators, GSC testers).
+  - **Admin Access**: designer/dashboard panels for day-to-day operations.
+  - **Related Documentation**: cross-links to other docs in this repo.
+- Keep labels concise; avoid emojis to maintain consistency.
+
 ### Article Numbering Guidelines
 - **Main Articles**: Use sequential numbers for primary topics
   - Example: `01-project-overview.md`, `05-seo-implementation.md`
