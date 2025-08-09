@@ -14,7 +14,6 @@ Webflow is a visual website builder that lets Displace Agency design and ship cu
 | [Webflow Hosting](#webflow-hosting) | Hosting, backups, CDN | Active | — |
 | [Why Webflow](#why-displace-agency-chooses-webflow) | Design control, client UX, performance | Active | — |
 | [Community](#webflow-community) | Made in Webflow showcase and ecosystem | Active | — |
-| [Getting Started](#getting-started-with-your-webflow-site) | Invitation, login, editing, publishing | Active | — |
 
 <a id="webflow-made-simple"></a>
 ## Webflow Made Simple
@@ -46,20 +45,14 @@ Your on‑page, safe‑to‑use content editing dashboard.
 - Create and publish CMS content (e.g., blog posts)
 - Track changes before publishing
 
-How to access:
-1. Visit `https://your-site.com/?edit`
-2. Log in with your Displace Agency credentials
+The Webflow Editor is the safest way for non‑technical users to update text, images, rich content, and links directly on the page. For step‑by‑step access instructions, see “How to Access Your Webflow Site.”
 
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-add-edit-link.png" alt="Access the Webflow Editor by adding ?edit to your site URL" width="800" />
+### Editor vs Designer — Purpose, Pros & Cons
 
-### What is the Webflow Editor?
-The Webflow Editor is the safest way for non‑technical users to update text, images, rich content, and links directly on the page. After accepting your invitation, open your site and append `?edit` to the URL to sign in and edit inline. You’ll see an editing bar at the bottom of the page where you can publish changes when ready.
-
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-editor-bottom.png" alt="Editor interface visible at the bottom of the page" width="800" />
-
-Editor access methods:
-- From your browser via `?edit`
-- From your Webflow account dashboard
+| Item | Purpose | Pros | Cons |
+|------|---------|------|------|
+| Editor | Update live content (text, images, links, CMS) | Safe, visual, fast; no layout risk | Limited control over structure and styles |
+| Designer | Create/modify layouts, styles, components, interactions | Full control; design‑system friendly | Powerful but easier to break layouts; requires experience |
 
 <a id="webflow-hosting"></a>
 ## Webflow Hosting
@@ -91,46 +84,7 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 <img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-made-in-webflow.png" alt="Made in Webflow community showcase" width="800" />
 
 <a id="getting-started-with-your-webflow-site"></a>
-## Getting Started With Your Webflow Site
-### Step 1: Accept Invitation
-1. Look for Displace Agency’s invitation email
-2. Click “Accept Invitation”
-
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-accept-invite.png" alt="Webflow invitation email — Accept invitation" width="800" />
-
-### Step 2: Log In
-1. Visit `https://your-site.com/?edit`
-2. Log in with your Displace Agency credentials
-
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-login-access.png" alt="Login access to Webflow Editor" width="800" />
-
-### Step 3: Edit Content
-- Click any text or image to edit
-- Use the sidebar to upload files
-- Save frequently
-
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-designer-text-editing.png" alt="Editing content inline" width="800" />
-
-### What is the Webflow Designer?
-The Webflow Designer provides full control over layout, components, animations, and responsive behavior. It’s powerful and intended for advanced users. During handover we provide a guided tour and recording.
-
-### Editor vs Designer — Purpose, Pros & Cons
-
-| Item | Purpose | Pros | Cons |
-|------|---------|------|------|
-| Editor | Update live content (text, images, links, CMS) | Safe, visual, fast; no layout risk | Limited control over structure and styles |
-| Designer | Create/modify layouts, styles, components, interactions | Full control; design‑system friendly | Powerful but easier to break layouts; requires experience |
-
-Access summary:
-- Editor: `your-site.com?edit` → login → inline editing bar
-- Designer: Webflow dashboard → open project → Designer
-
-### Step 4: Publish Safely
-1. Click “Preview” to review changes
-2. Select “Publish to Live Site”
-3. Confirm in the pop‑up
-
-<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-publish-flow.png" alt="Publishing in Webflow" width="800" />
+<!-- Removed detailed onboarding/steps to avoid duplication with Article 2. -->
 
 ## Useful Links
 - Webflow University: Getting Started — <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>
