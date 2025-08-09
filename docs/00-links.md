@@ -23,12 +23,27 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="webflow-seo-settings"></a> webflow-seo-settings | <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/seo</a> | SEO settings & robots |
 | <a id="webflow-general"></a> webflow-general | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/general</a> | General settings |
 | <a id="webflow-custom-code"></a> webflow-custom-code | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/custom-code</a> | Custom code |
+| <a id="webflow-site-access"></a> webflow-site-access | <a href="https://webflow.com/dashboard/sites/savage-report-we/site-access" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/site-access</a> | Site access |
+| <a id="webflow-publishing"></a> webflow-publishing | <a href="https://webflow.com/dashboard/sites/savage-report-we/publishing" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/publishing</a> | Publishing |
+| <a id="webflow-backups"></a> webflow-backups | <a href="https://webflow.com/dashboard/sites/savage-report-we/backups" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/backups</a> | Backups |
+| <a id="webflow-integrations"></a> webflow-integrations | <a href="https://webflow.com/dashboard/sites/savage-report-we/integrations" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/integrations</a> | Integrations |
 
 ## Smootify
 
 | Alias | URL | Notes |
 |------|-----|------|
-| <a id="smootify-dashboard"></a> smootify-dashboard | <a href="https://app.smootify.io/dashboard" target="_blank" rel="noopener noreferrer">https://app.smootify.io/dashboard</a> | Smootify dashboard |
+| <a id="smootify-dashboard"></a> smootify-dashboard | <a href="https://dashboard.smootify.io/" target="_blank" rel="noopener noreferrer">https://dashboard.smootify.io/</a> | Smootify dashboard |
+| <a id="smootify-add-ons"></a> smootify-add-ons | <a href="https://www.smootify.io/add-ons" target="_blank" rel="noopener noreferrer">https://www.smootify.io/add-ons</a> | Add‑ons catalog |
+| <a id="smootify-integrations"></a> smootify-integrations | <a href="https://www.smootify.io/integrations" target="_blank" rel="noopener noreferrer">https://www.smootify.io/integrations</a> | Compatible apps |
+| <a id="smootify-docs"></a> smootify-docs | <a href="https://docs.smootify.io/" target="_blank" rel="noopener noreferrer">https://docs.smootify.io/</a> | Smootify documentation |
+| <a id="smootify-discord"></a> smootify-discord | <a href="https://discord.com/invite/MKeQqEZmjd" target="_blank" rel="noopener noreferrer">https://discord.com/invite/MKeQqEZmjd</a> | Community Discord |
+
+## Billing
+
+| Alias | URL | Notes |
+|------|-----|------|
+| <a id="webflow-billing"></a> webflow-billing | <a href="https://webflow.com/dashboard/sites/savage-report-we/billing" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/billing</a> | Webflow billing |
+| <a id="smootify-billing"></a> smootify-billing | <a href="https://dashboard.smootify.io/site/savage-report-w/plans" target="_blank" rel="noopener noreferrer">https://dashboard.smootify.io/site/savage-report-w/plans</a> | Smootify plans |
 
 ## Live Site
 
@@ -70,7 +85,6 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 |------|-----|------|
 | <a id="pagespeed-report"></a> pagespeed-report | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">https://pagespeed.web.dev/report?url=https://the-savage-report.com</a> | PSI report for site |
 | <a id="pagespeed"></a> pagespeed | <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">https://pagespeed.web.dev/</a> | PageSpeed Insights |
-| <a id="smootify-dashboard"></a> smootify-dashboard | <a href="https://app.smootify.io/dashboard" target="_blank" rel="noopener noreferrer">https://app.smootify.io/dashboard</a> | Smootify dashboard |
 
 ---
 
