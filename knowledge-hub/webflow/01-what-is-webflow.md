@@ -114,17 +114,12 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 - Webflow Editor — <a href="https://university.webflow.com/lesson/editor" target="_blank" rel="noopener noreferrer">university.webflow.com/lesson/editor</a>
 - Webflow Hosting — <a href="https://webflow.com/hosting" target="_blank" rel="noopener noreferrer">webflow.com/hosting</a>
 
----
-Category: Webflow  
-Tags: #Webflow #NoCode #CMS #Hosting  
-Last Updated: August 2025  
-Document Version: 1.0  
-Maintained by: Displace Agency
-
-<div style="display:flex;gap:12px;margin-top:12px;">
-  <a href="./02-how-to-access-your-webflow-site.md" style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">Next: How to Access Your Webflow Site ▶</a>
-  <a href="../webflow/" style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">All Webflow Articles</a>
-  <a href="../.." style="padding:10px 14px;border:1px solid #ccc;border-radius:6px;text-decoration:none;">Knowledge Hub Home</a>
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <span></span>
+  <a href="./02-how-to-access-your-webflow-site.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: How to Access Your Webflow Site →</a>
 </div>
+
+---
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>
 
 
