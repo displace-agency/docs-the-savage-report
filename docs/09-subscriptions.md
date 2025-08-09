@@ -13,7 +13,7 @@ Running The Savage Report requires a few paid subscriptions that power design, c
 
 > Note: Access to billing pages requires appropriate workspace/store permissions.
 
-## Webflow Subscription (Monthly)
+## Webflow Subscription (CMS, Monthly)
 The Webflow subscription covers hosting, CMS, backups, SEO settings, and Designer access for ongoing edits.
 
 <img src="../assets/09-subscriptions-webflow-cms-subscription.png" alt="Webflow CMS subscription confirmation for the project" width="70%" style="border-radius:8px" />
