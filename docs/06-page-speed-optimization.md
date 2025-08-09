@@ -9,6 +9,7 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 
 | Item | What We Delivered | Priority | Status | Reference Link(s) |
 |------|-------------------|----------|--------|-------------------|
+| Performance Results (08-09) | Current snapshot: Desktop ~92, Mobile ~85. See full details. | High | Active | [Full results](./06.1-performance-results-08-09.md) |
 | [Advanced Image Optimization System](#advanced-image-optimization) | 70% smaller images, WebP format, responsive versions | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Lazy Loading System](#lazy-loading-system) | Images load only when needed, 50% faster initial display | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Smart Video Performance](#smart-video-performance) | Optimized homepage video, mobile-friendly playback | Medium | Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site</a> |
@@ -70,28 +71,6 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 - Smooth animation when new products appear
 
 <img src="../assets/06-page-speed-optimization-load-more.png" alt="Load more functionality improving page speed on collection pages" width="70%" style="border-radius:8px" />
-
-<a id="performance-results"></a>
-## Performance Results
-
-### PageSpeed Insights Snapshot
-Current performance standing showing strong optimization results.
-
-<img src="../assets/06-page-speed-optimization-psi-desktop.png" alt="PageSpeed Insights Desktop snapshot showing optimized performance scores" width="70%" style="border-radius:8px" />
-
-- **Desktop Performance**: 92/100 score
-- **Mobile Performance**: 85/100 score
-- **Core Web Vitals**: All metrics in "Good" range
-- **Access**: <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PageSpeed Insights Report</a>
-
-### Mobile Performance
-Mobile optimization showing significant improvements in user experience.
-
-<img src="../assets/06-page-speed-optimization-psi-mobile.png" alt="PageSpeed Insights Mobile snapshot showing mobile optimization results" width="70%" style="border-radius:8px" />
-
-- **Mobile Load Time**: 2.8s (55% improvement)
-- **Mobile Engagement**: 45% increase
-- **Bounce Rate**: 25% reduction
 
 <a id="technical-configuration"></a>
 ## Technical Configuration
