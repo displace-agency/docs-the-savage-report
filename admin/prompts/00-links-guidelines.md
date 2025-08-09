@@ -20,11 +20,12 @@ Rules:
 
 Maintenance:
 - When a link changes, update `docs/00-links.md`
-- In articles, reference the alias row using anchors: `./00-links.md#alias-id`
+- In articles, you may reference the alias using `./00-links.md#alias-id`; our build script will expand it to the direct URL with a clean label so readers never see the 00 doc
 - Keep aliases lowercase, hyphen-separated
 - Remove sections that have no real links (avoid placeholders)
 
 Checklist before commit:
 - No dead links
-- All “Useful Links” sections reference 00-links where possible
+- Run `npm run fix:aliases` to refresh all direct URLs from `00-links.md`
+- All “Useful Links” sections use clean labels (no “00 — Global Links → …” labels remain)
 - High-priority links appear first in each table
