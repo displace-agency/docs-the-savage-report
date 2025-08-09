@@ -6,7 +6,8 @@
   "scripts": {
     "expand:aliases": "node admin/scripts/expand-aliases.mjs",
     "fix:aliases": "node admin/scripts/expand-aliases.mjs",
-    "lint:links": "node admin/scripts/link-lint.mjs"
+    "lint:links": "node admin/scripts/link-lint.mjs",
+    "lint:tables": "node admin/scripts/table-lint.mjs"
   }
 }
 

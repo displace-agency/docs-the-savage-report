@@ -44,6 +44,7 @@ Smootify (formerly Multify) bridges Webflow's design flexibility with Shopify's 
 
 The following sections explain exactly how the integration is implemented on the site and key page areas. This is documentation of what exists today, written so non-technical editors can understand or review it.
 
+<a id="installation--page-integration"></a>
 ### Site-Wide Setup (Global)
 Add the Smootify resources once at the site level so every page has product data and cart functionality.
 
@@ -61,6 +62,7 @@ Add the Smootify resources once at the site level so every page has product data
 
 Where this lives: Webflow Project Settings → Custom Code (Head and before </body>).
 
+<a id="product-synchronization"></a>
 ### Product Page – Hero Section
 The product hero shows the key details with real-time price and availability.
 
@@ -73,6 +75,7 @@ The product hero shows the key details with real-time price and availability.
 - Variant/size options: container with `option="title"`, `option="value"` and, where used, `variant="image"`
 - Add to cart button: element with `data-smootify-add-to-cart`
 
+<a id="product-synchronization"></a>
 ### Product Carousels (Homepage/Collections)
 Carousels render product cards from the synchronized CMS list.
 
@@ -83,6 +86,7 @@ Carousels render product cards from the synchronized CMS list.
 
 These lists are standard Webflow Collection Lists bound to the Products collection (kept in sync by Smootify).
 
+<a id="cart-checkout-system"></a>
 ### Add to Cart (Quick Add and PDP)
 
 - PDP add-to-cart: button with `data-smootify-add-to-cart` inside the product context
@@ -126,6 +130,7 @@ Shopify Product Updates → Smootify Sync (15 min) → Webflow CMS → Live Webs
 ### Business Value
 This automation eliminates the need for manual product updates, reducing management time by 15+ hours per week while ensuring customers always see accurate pricing and availability.
 
+<a id="collection-management"></a>
 ## Collection Management
 
 The integration organizes products into 12 strategic collections that automatically update as you add or modify products in Shopify.
@@ -166,6 +171,7 @@ When customers are ready to purchase, they're seamlessly redirected to Shopify's
 ### Security & Reliability
 All payment processing occurs on Shopify's secure servers, ensuring customer data protection and transaction reliability while maintaining the beautiful Webflow design experience.
 
+<a id="customer-account-system"></a>
 ## Customer Account System
 
 The integration provides a unified customer experience with single sign-on capabilities.
@@ -188,6 +194,7 @@ window.SmootifyUserOptions = {
 
 This setup ensures customers experience consistent branding while accessing full account functionality.
 
+<a id="inventory-management"></a>
 ## Inventory Management
 
 Real-time inventory synchronization prevents overselling and provides accurate stock information to customers.
@@ -208,6 +215,7 @@ Products automatically show or hide based on availability:
 ### Business Protection
 This system prevents customer frustration from ordering unavailable items while maximizing sales opportunities for in-stock products.
 
+<a id="custom-attributes-system"></a>
 ## Custom Attributes System
 
 Smootify uses over 50 custom attributes to create dynamic, responsive product displays throughout the website.

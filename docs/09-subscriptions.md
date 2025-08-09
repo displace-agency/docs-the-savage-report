@@ -5,15 +5,16 @@ Running The Savage Report requires a few paid subscriptions that power design, c
 
 ## Subscriptions Overview
 
-| Platform | What It Covers | Why It Matters | Status | Manage |
-|---------|-----------------|----------------|--------|--------|
-| Webflow | Site hosting, Designer, CMS, SEO settings, backups | Hosts the site, enables edits and publishing | Active (Monthly) | [Webflow Billing](https://webflow.com/dashboard/sites/savage-report-we/billing) |
-| Smootify (Lite) | Webflow ↔ Shopify bridge, manual/interval sync, cart & checkout | Enables product sync, cart, and checkout | Active (Monthly) | [Smootify Plans](https://dashboard.smootify.io/site/savage-report-w/plans) |
-| Shopify | Store backend (products, orders, payments) | Secure checkout, order processing, analytics | Active | [Shopify Admin](https://admin.shopify.com/store/thesavagereport) |
+| Item | What It Covers | Why It Matters | Status | Manage |
+|------|-----------------|----------------|--------|--------|
+| [Webflow](#webflow-subscription-monthly-29) | Site hosting, Designer, CMS, SEO settings, backups | Hosts the site, enables edits and publishing | Active (Monthly) | [Webflow Billing](https://webflow.com/dashboard/sites/savage-report-we/billing) |
+| [Smootify (Lite)](#smootify-subscription-lite-monthly) | Webflow ↔ Shopify bridge, manual/interval sync, cart & checkout | Enables product sync, cart, and checkout | Active (Monthly) | [Smootify Plans](https://dashboard.smootify.io/site/savage-report-w/plans) |
+| [Shopify](#shopify-subscription) | Store backend (products, orders, payments) | Secure checkout, order processing, analytics | Active | [Shopify Admin](https://admin.shopify.com/store/thesavagereport) |
 
 > Note: Access to billing pages requires appropriate workspace/store permissions.
 
-## Webflow Subscription (CMS, Monthly)
+<a id="webflow-subscription-monthly-29"></a>
+## Webflow Subscription (Monthly, $29)
 The Webflow subscription covers hosting, CMS, backups, SEO settings, and Designer access for ongoing edits.
 
 <img src="../assets/09-subscriptions-webflow-cms-subscription.png" alt="Webflow CMS subscription confirmation for the project" width="70%" style="border-radius:8px" />
@@ -27,6 +28,7 @@ Included:
 
 Manage: Webflow Billing → [Manage Plan](https://webflow.com/dashboard/sites/savage-report-we/billing)
 
+<a id="smootify-subscription-lite-monthly"></a>
 ## Smootify Subscription (Lite, Monthly)
 Smootify connects Webflow with Shopify for product sync, cart, and checkout integration.
 
@@ -50,6 +52,7 @@ Sync behavior:
 
 Learn more: Smootify Sync & Operations: [Coming soon](./10-smootify-sync-operations.md)
 
+<a id="shopify-subscription"></a>
 ## Shopify Subscription
 Shopify provides the e‑commerce backend for products, orders, and secure payments.
 
