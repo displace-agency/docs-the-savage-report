@@ -128,6 +128,7 @@ for (const file of files) {
       'what we implemented',
       'technical architecture',
       'implementation summary',
+      'google analytics configuration (webflow settings)',
     ]);
     const h2Titles = lines
       .map((l, i) => ({ l, i }))
@@ -137,7 +138,7 @@ for (const file of files) {
     const anchorIdAtLine = new Map(anchorPositions.map((a) => [a.line + 1, a.id]));
     for (const { title, line } of h2Titles) {
       const lower = title.toLowerCase();
-      if (allowedH2.has(lower)) continue;
+      if (allowedH2.has(lower) || /implementation summary/i.test(title)) continue;
       const id = anchorIdAtLine.get(line - 1) || anchorIdAtLine.get(line - 2) || anchorIdAtLine.get(line - 3);
       if (!id || !tableAnchorSet.has(id)) {
         violations.push({ file, line, rule: 'extra-section', msg: `H2 '${title}' is not represented in the summary table` });

@@ -13,6 +13,7 @@ Single source of truth for all links. Use descriptive labels in articles and kee
 | <a id="analytics"></a> analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
 | <a id="smootify-integration"></a> smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
 | <a id="subscriptions"></a> subscriptions | [./09-subscriptions.md](./09-subscriptions.md) | Subscriptions & billing overview |
+| <a id="performance-results-08-09"></a> performance-results-08-09 | [./06.1-performance-results-08-09.md](./06.1-performance-results-08-09.md) | Performance results snapshot 08-09 |
 
 ## Live Site
 

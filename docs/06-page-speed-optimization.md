@@ -1,7 +1,9 @@
 # Page Speed Optimization - The Savage Report
 
 ## What This Is & Why It Matters
-We've transformed The Savage Report into a high-performance e-commerce platform through comprehensive optimization strategies. The site now loads 40% faster, providing customers with an instant, smooth shopping experience that drives conversions and improves search rankings.
+We've transformed The Savage Report into a high-performance e-commerce platform through comprehensive optimization strategies. The site now loads faster, providing customers with an instant, smooth shopping experience that drives conversions and improves search rankings.
+
+> For the latest PageSpeed Insights snapshots, see: [Performance Results — 08-09](./06.1-performance-results-08-09.md)
 
 ## Page Speed Implementation Summary
 

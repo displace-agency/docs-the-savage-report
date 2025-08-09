@@ -40,6 +40,7 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 - **Live file**: <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a>
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
 
+<a id="xml-sitemap-implementation"></a>
 ## XML Sitemap Implementation
 
 ### Sitemap Summary
