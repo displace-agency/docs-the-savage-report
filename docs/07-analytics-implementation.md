@@ -7,9 +7,9 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 
 | Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
 |------|-------------------|----------|---------|--------|-------------------|
-| Google Search Console | Site verification, search performance tracking, sitemap monitoring | High | Aug 2025 | ✅ Active | <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Performance</a> |
-| Webflow Google Search | Integrated GSC data display within Webflow dashboard | Medium | Aug 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
-| Google Analytics | Measurement ID configured in Webflow settings | Medium | Aug 2025 | ⏸️ Paused | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
+| [Google Search Console](#1-google-search-console-integration) | Site verification, search performance tracking, sitemap monitoring | High | Aug 2025 | Active | <a href="https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Performance</a> |
+| [Webflow Google Search](#2-webflow-google-search-integration) | Integrated GSC data display within Webflow dashboard | Medium | Aug 2025 | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
+| [Google Analytics](#3-google-analytics-configuration) | Measurement ID configured in Webflow settings | Medium | Aug 2025 | Paused | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 
 ## What We Implemented
 

@@ -7,10 +7,10 @@ Your website, The Savage Report, is built with simplicity and flexibility in min
 
 | Item | What We Delivered | Priority | Date(s) | Status | Reference Link(s) |
 |------|-------------------|----------|---------|--------|-------------------|
-| Site Architecture | Complete website foundation with 15 pages | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
-| CMS Collections | 6 collections with 46 products and 12 categories | High | Jun 2025 | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">CMS Collections</a> |
-| Component Library | 12 reusable components for consistent design | Medium | Jun 2025 | ✅ Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Components Panel</a> |
-| Navigation System | Intuitive menu structure with 5 main sections | High | Jun 2025 | ✅ Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site Navigation</a> |
+| Site Architecture | Complete website foundation with 15 pages | High | Jun 2025 | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Dashboard</a> |
+| CMS Collections | 6 collections with 46 products and 12 categories | High | Jun 2025 | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">CMS Collections</a> |
+| Component Library | 12 reusable components for consistent design | Medium | Jun 2025 | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Components Panel</a> |
+| Navigation System | Intuitive menu structure with 5 main sections | High | Jun 2025 | Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site Navigation</a> |
 
 ## What We Implemented
 

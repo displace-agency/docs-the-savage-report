@@ -5,9 +5,9 @@
 The Savage Report is a premium streetwear e-commerce platform that bridges urban culture with contemporary fashion. The website showcases collections of street-inspired apparel positioned at the intersection of underground culture and design innovation.
 
 > **Related Documentation:**
-> - 🏗️ [Technical Architecture](./02-technical-architecture.md) - Platform infrastructure and system design
-> - 📁 [CMS Collections](./04-cms-collections.md) - Six collections overview
-> - ⚡ [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance achievements
+> - [Technical Architecture](./02-technical-architecture.md) - Platform infrastructure and system design
+> - [CMS Collections](./04-cms-collections.md) - Six collections overview
+> - [Page Speed Optimizations](./06-page-speed-optimization.md) - Performance achievements
 
 ## Brand Positioning
 

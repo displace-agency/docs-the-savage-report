@@ -7,12 +7,12 @@ This article documents the six CMS collections powering The Savage Report. It ex
 
 | Item | What We Delivered | Impact | Status | Reference Link(s) |
 |------|-------------------|--------|--------|-------------------|
-| [Products](#products) | 46 product pages synced from Shopify via Smootify; custom secondary image field for merchandising | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Webflow → Products</a> |
-| [Collections](#collections) | Category grouping synced from Shopify; clean slugs and descriptions | High | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Webflow → Collections</a> |
-| [Vendors](#vendors) | Brand profiles synced from Shopify (currently one vendor) | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [Lookbooks](#lookbooks) | Visual editorials with gallery field and optional product linking | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [Campaigns](#campaigns) | Time-bound collections with start/end dates and hero creative | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [Special Projects](#special-projects) | Limited releases/collaborations with dedicated templates | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Products](#products) | 46 product pages synced from Shopify via Smootify; custom secondary image field for merchandising | High | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/products" target="_blank" rel="noopener noreferrer">Webflow → Products</a> |
+| [Collections](#collections) | Category grouping synced from Shopify; clean slugs and descriptions | High | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms/collections/collections" target="_blank" rel="noopener noreferrer">Webflow → Collections</a> |
+| [Vendors](#vendors) | Brand profiles synced from Shopify (currently one vendor) | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Lookbooks](#lookbooks) | Visual editorials with gallery field and optional product linking | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Campaigns](#campaigns) | Time-bound collections with start/end dates and hero creative | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
+| [Special Projects](#special-projects) | Limited releases/collaborations with dedicated templates | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
 
 > See also: [Smootify Integration Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
 
