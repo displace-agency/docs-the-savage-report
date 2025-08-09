@@ -73,8 +73,6 @@ Control access for search engine crawlers and AI bots.
 
 ### Advanced Publishing Settings
 
-<img src="../assets/seo-implementation-webflow-advanced-publishing-settings.png" alt="Advanced publishing settings in Webflow" width="70%" style="border-radius:8px" />
-
 - **Purpose**: Configure advanced publishing options for your site
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow → General Configuration</a>
 

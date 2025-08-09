@@ -77,8 +77,6 @@ The main landing page showcases your brand with a prominent hero banner and navi
 ### **Webflow Designer Page Structure**
 All 15 pages are organized in the Webflow designer for easy management and updates.
 
-<img src="../assets/03-platform-details-webflow-cms-subscription.png" alt="Webflow CMS subscription confirmation for the site" width="70%" style="border-radius:8px" />
-
 <img src="../assets/03-website-structure-webflow-designer-pages.png" alt="Pages organized in Webflow designer" width="70%" style="border-radius:8px" />
 
 - **Purpose**: Central hub for managing all website pages and content

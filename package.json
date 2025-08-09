@@ -7,7 +7,8 @@
     "lint:links": "node admin/scripts/link-lint.mjs",
     "lint:tables": "node admin/scripts/table-lint.mjs",
     "lint:articles": "node admin/scripts/article-structure-lint.mjs",
-    "maintenance": "npm run lint:links && npm run lint:tables && npm run lint:articles"
+    "lint:images": "node admin/scripts/image-lint.mjs",
+    "maintenance": "npm run lint:links && npm run lint:tables && npm run lint:articles && npm run lint:images"
   }
 }
 
