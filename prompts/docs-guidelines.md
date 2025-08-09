@@ -53,9 +53,9 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 |------|-------------------|--------|--------|-------------------|
 | [Item Name](#item-name) | What we built/configured | High/Medium/Low | ✅ Active | Deep admin links (e.g., GSC robots tester/sitemaps), live endpoints (robots/sitemap), PSI, admin panels, or internal docs |
 
-## What We Implemented
-- 3–6 concrete bullets (one line each)
-- Include brief config context where relevant (e.g., "Verified robots in GSC")
+## [Item Name]
+- 3–6 concrete bullets (one line each) describing the implementation
+- Each H2 must correspond to a row in the table (no extra summary sections like "What We Implemented")
 
 ## Results & Impact
 - Quantified outcomes (metrics, scores, deltas)
@@ -73,7 +73,7 @@ Create clear, valuable documentation for non-technical clients. Use this as a pr
 ### Content Quality Patterns
 
 #### ✅ Prefer
-- **Table-first structure**: Start with summary table with Impact and Reference Links
+- **Table-first structure**: Start with summary table with Impact and Reference Links. Immediately follow with H2 sections matching each row of the table (no intermediate summary sections).
 - **Anchor links**: `[Item Name](#anchor-id)` in table first column for seamless navigation
 - **Prominent headings**: All table-linked sections use H2 (##) for visibility
 - **Focused sections**: Only include sections that appear in the table
