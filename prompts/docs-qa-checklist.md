@@ -76,9 +76,16 @@ rg -n '^# ' -- **/*.md | cut -d: -f1 | sort | uniq -c | awk '$1 > 1 {print $0}' 
 for f in $(git ls-files "**/*.md"); do rg -q '^## ' "$f" || echo "NO-H2: $f"; done | cat
 ```
 
-### 6) Table link hygiene (quick scan)
+### 6) Table integrity & link hygiene
 ```bash
-# Look for table rows containing bare URLs that may need link formatting
+# A) Detect blank lines splitting a table (common breakage)
+rg -n -U -P '^(\|[^\n]*\n)+\n(\|[^\n]*)' -- **/*.md | cat
+
+# B) Check table column consistency near each header (5 expected for our summary tables)
+rg -n -U -P '^\|[^\n]*\|\n\|[-: ]+\|$' -- **/*.md | while IFS=: read -r f l _; do \
+  awk -v line=$l 'NR>=line-1 && NR<=line+50 && /^\|/ { c=gsub(/\|/,"&")-1; if (c!=5) print FILENAME ":" NR " -> cols=" c }' "$f"; done | cat
+
+# C) Look for table rows containing bare URLs that may need link formatting
 rg -n -P '^\|.*https?://[^| ]+' -- **/*.md | cat
 ```
 Manual review is recommended to confirm whether the link should be an HTML anchor with new-tab behavior.
