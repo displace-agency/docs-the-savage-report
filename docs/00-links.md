@@ -13,7 +13,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="analytics"></a> analytics | [./07-analytics-implementation.md](./07-analytics-implementation.md) | Analytics setup |
 | <a id="smootify-integration"></a> smootify-integration | [./08-smootify-integration.md](./08-smootify-integration.md) | Webflow ↔ Shopify bridge |
 
-## Webflow (most used → less used)
+## Webflow Settings
 
 | Alias | URL | Notes |
 |------|-----|------|
@@ -27,6 +27,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="webflow-publishing"></a> webflow-publishing | <a href="https://webflow.com/dashboard/sites/savage-report-we/publishing" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/publishing</a> | Publishing |
 | <a id="webflow-backups"></a> webflow-backups | <a href="https://webflow.com/dashboard/sites/savage-report-we/backups" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/backups</a> | Backups |
 | <a id="webflow-integrations"></a> webflow-integrations | <a href="https://webflow.com/dashboard/sites/savage-report-we/integrations" target="_blank" rel="noopener noreferrer">https://webflow.com/dashboard/sites/savage-report-we/integrations</a> | Integrations |
+| <a id="webflow-live-site"></a> webflow-live-site | <a href="https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com</a> | Quick access to live site |
 
 ## Smootify
 
@@ -49,16 +50,16 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 
 | Alias | URL | Notes |
 |------|-----|------|
-| <a id="live-site"></a> live-site | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">https://the-savage-report.com</a> | Homepage |
+| <a id="live-site"></a> live-site | <a href="https://www.the-savage-report.com" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com</a> | Homepage |
 | <a id="sitemap"></a> sitemap | <a href="https://www.the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/sitemap.xml</a> | Auto-generated sitemap |
 | <a id="robots"></a> robots | <a href="https://the-savage-report.com/robots.txt" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/robots.txt</a> | Live robots.txt |
-| <a id="live-search"></a> live-search | <a href="https://the-savage-report.com/search" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/search</a> | Site search |
-| <a id="live-policies"></a> live-policies | <a href="https://the-savage-report.com/policies" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/policies</a> | Policy pages |
-| <a id="shop-all"></a> shop-all | <a href="https://the-savage-report.com/shop-all" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/shop-all</a> | Shop all page |
-| <a id="products-page"></a> products-page | <a href="https://the-savage-report.com/products" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/products</a> | Products listing |
-| <a id="collections-page"></a> collections-page | <a href="https://the-savage-report.com/collections" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/collections</a> | Collections listing |
-| <a id="cart"></a> cart | <a href="https://the-savage-report.com/cart" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/cart</a> | Shopping cart |
-| <a id="account"></a> account | <a href="https://the-savage-report.com/account" target="_blank" rel="noopener noreferrer">https://the-savage-report.com/account</a> | Account portal |
+| <a id="newdrops"></a> newdrops | <a href="https://www.the-savage-report.com/newdrops" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/newdrops</a> | New Drops |
+| <a id="about"></a> about | <a href="https://www.the-savage-report.com/about" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/about</a> | About |
+| <a id="contact"></a> contact | <a href="https://www.the-savage-report.com/contact" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/contact</a> | Contact |
+| <a id="refund-policy"></a> refund-policy | <a href="https://www.the-savage-report.com/policies/refund-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/refund-policy</a> | Refund Policy |
+| <a id="terms-of-service"></a> terms-of-service | <a href="https://www.the-savage-report.com/policies/terms-of-service" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/terms-of-service</a> | Terms of Service |
+| <a id="shipping-returns"></a> shipping-returns | <a href="https://www.the-savage-report.com/policies/shipping-returns" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/shipping-returns</a> | Shipping & Returns |
+| <a id="privacy-policy"></a> privacy-policy | <a href="https://www.the-savage-report.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">https://www.the-savage-report.com/policies/privacy-policy</a> | Privacy Policy |
 
 ## Google Search Console
 
@@ -78,6 +79,7 @@ Single source of truth for all links. Use aliases like `[CMS Collections](./04-c
 | <a id="shopify-orders"></a> shopify-orders | <a href="https://admin.shopify.com/store/thesavagereport/orders" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport/orders</a> | Orders |
 | <a id="shopify-products"></a> shopify-products | <a href="https://admin.shopify.com/store/thesavagereport/products" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport/products</a> | Products |
 | <a id="shopify-collections"></a> shopify-collections | <a href="https://admin.shopify.com/store/thesavagereport/collections" target="_blank" rel="noopener noreferrer">https://admin.shopify.com/store/thesavagereport/collections</a> | Collections |
+| <a id="shopify-checkout"></a> shopify-checkout | <a href="https://shop.the-savage-report.com/checkouts" target="_blank" rel="noopener noreferrer">https://shop.the-savage-report.com/checkouts</a> | Checkout |
 
 ## Performance & Tools
 
