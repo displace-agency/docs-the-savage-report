@@ -44,7 +44,7 @@ Not included in Lite (important):
 
 Sync behavior:
 - New products and updates typically appear in Webflow within ~15 minutes
-- For urgent updates, use the Smootify desktop/web app "Live Sync" button
+- For urgent updates, use the Smootify desktop/web app "Sync Now" button
 
 <img src="../assets/09-subscriptions-smootify-app-sync.png" alt="Smootify desktop app sync controls showing Live Sync option" width="70%" style="border-radius:8px" />
 
