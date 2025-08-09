@@ -9,7 +9,6 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 
 | Item | What We Delivered | Priority | Status | Reference Link(s) |
 |------|-------------------|----------|--------|-------------------|
-| [Performance Optimizer Script (Version 4.0.0)](#performance-optimizer-script) | Comprehensive performance management system v4.0.0 | High | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Webflow Custom Code</a> |
 | [Advanced Image Optimization System](#advanced-image-optimization) | 70% smaller images, WebP format, responsive versions | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Lazy Loading System](#lazy-loading-system) | Images load only when needed, 50% faster initial display | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Smart Video Performance](#smart-video-performance) | Optimized homepage video, mobile-friendly playback | Medium | Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site</a> |
@@ -18,16 +17,9 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 | [Browser Caching Strategy](#browser-caching-strategy) | 60% faster loads for returning visitors | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 | [Critical CSS Inlining](#critical-css-inlining) | Content appears immediately, no white flash | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Webflow Custom Code</a> |
 | [Load More Functionality](#load-more-functionality) | Collection pages load 3x faster with pagination | Medium | Active | <a href="https://the-savage-report.com/shop-all" target="_blank" rel="noopener noreferrer">Shop All Page</a> |
-| [Performance Results](#performance-results) | PageSpeed snapshots and measured improvements | Medium | Active | <a href="https://pagespeed.web.dev/report?url=https://the-savage-report.com" target="_blank" rel="noopener noreferrer">PSI Report</a> |
-| [Technical Configuration](#technical-configuration) | Webflow performance settings and active scripts | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> · <a href="https://webflow.com/dashboard/sites/savage-report-we/custom-code" target="_blank" rel="noopener noreferrer">Custom Code</a> |
+| [Technical Configuration](#technical-configuration) | Webflow performance settings | Medium | Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow Settings</a> |
 
 <!-- Content sections follow; H2s link back from the summary table. -->
-
-<a id="performance-optimizer-script"></a>
-## Performance Optimizer Script (Version 4.0.0)
-- Installed comprehensive performance management system that automatically optimizes every aspect of site loading
-- Continuous monitoring and improvement without manual intervention
-- Real-time performance metrics tracking for consistent speed
 
 <a id="advanced-image-optimization"></a>
 ## Advanced Image Optimization System
@@ -115,16 +107,9 @@ Mobile optimization showing significant improvements in user experience.
 - **CDN**: ✅ Active (Fastly network)
 - **SSL**: ✅ Enabled
 
-### Active Performance Scripts
-- **Primary Optimizer**: Performance Optimizer NoSchema v4.0.0
-- **Location**: Header
-- **Status**: Active
-- **Last Updated**: August 7, 2025
-
 ## Useful Links
 
 ### Implementation
-- Webflow Custom Code: [Project Performance Scripts](https://webflow.com/dashboard/sites/savage-report-we/custom-code)
 - Webflow Settings: [Site Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
 
 ### Testing & Validation
