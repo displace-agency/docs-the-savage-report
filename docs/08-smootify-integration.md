@@ -330,20 +330,20 @@ Each collection includes a `shopify-id` field that maintains the connection betw
 ## Useful Links
 
 ### Administration & Monitoring
-- [Shopify Admin: Store Management](https://admin.shopify.com/store/the-savage-report)
-- [Webflow CMS: Management](https://webflow.com/dashboard/sites/savage-report-we/cms)
-- [Smootify: Integration Dashboard](https://app.smootify.io/dashboard)
+- Shopify Admin: [Store Management](https://admin.shopify.com/store/the-savage-report)
+- Webflow CMS: [Management](https://webflow.com/dashboard/sites/savage-report-we/cms)
+- Smootify: [Integration Dashboard](https://app.smootify.io/dashboard)
 
 ### Live Site Testing
-- [Live Site: Products](https://the-savage-report.com/products)
-- [Live Site: Collections](https://the-savage-report.com/collections)
-- [Live Site: Cart](https://the-savage-report.com/cart)
+- Live Site: [Products](https://the-savage-report.com/products)
+- Live Site: [Collections](https://the-savage-report.com/collections)
+- Live Site: [Cart](https://the-savage-report.com/cart)
 
 ### Related Documentation
-- [Technical Architecture](./02-technical-architecture.md)
-- [CMS Collections](./04-cms-collections.md)
-- [Performance Optimization](./06-page-speed-optimization.md)
-- [Analytics Implementation](./07-analytics-implementation.md)
+- Technical Architecture: [System Design](./02-technical-architecture.md)
+- CMS Collections: [Overview](./04-cms-collections.md)
+- Performance Optimization: [Page Speed](./06-page-speed-optimization.md)
+- Analytics Implementation: [Monitoring](./07-analytics-implementation.md)
 
 ### Knowledge Hub Resources
 - [Complete Smootify Setup Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md) - Detailed technical implementation instructions

@@ -155,21 +155,21 @@ Essential legal and policy pages for business compliance and customer trust.
 
 ## Useful Links
 
-### **Webflow Management**
-- [Webflow Dashboard: Site Management](https://webflow.com/dashboard/sites/savage-report-we) - Site settings and overview
-- [Webflow Designer: Page Editing & CMS](https://webflow.com/design/savage-report-we) - Page editing and CMS management
-- [Webflow Settings: General Configuration](https://webflow.com/dashboard/sites/savage-report-we/general) - General site configuration
+### Webflow Management
+- Webflow Dashboard: [Site Management](https://webflow.com/dashboard/sites/savage-report-we)
+- Webflow Designer: [Editing & CMS](https://webflow.com/design/savage-report-we)
+- Webflow Settings: [General Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
 
-### **Live Site Verification**
-- [Live Site: Homepage](https://www.the-savage-report.com) - View current live site
-- [Live Search: Test Search Features](https://www.the-savage-report.com/search) - Test search features
-- [Live Policies: Legal Pages](https://www.the-savage-report.com/policies) - View legal pages
+### Live Site Verification
+- Live Site: [Homepage](https://www.the-savage-report.com)
+- Live Search: [Test Search Features](https://www.the-savage-report.com/search)
+- Live Policies: [Legal Pages](https://www.the-savage-report.com/policies)
 
-### **Related Documentation**
-- [CMS Collections](./04-cms-collections.md) - Six collections overview
-- [Page Speed Optimization](./06-page-speed-optimization.md) - Performance metrics
+### Related Documentation
+- CMS Collections: [Overview](./04-cms-collections.md)
+- Page Speed Optimization: [Performance Metrics](./06-page-speed-optimization.md)
 
-### **Knowledge Hub Resources**
-- [Page Speed Optimization Guide](../knowledge-hub/performance/page-speed-optimization-guide.md) - Performance best practices
-- [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md) - Sitemap optimization
-- [Schema Markup for E-commerce](../knowledge-hub/seo/schema-markup-for-ecommerce.md) - Product schema implementation
+### Knowledge Hub Resources
+- Performance: [Page Speed Optimization Guide](../knowledge-hub/performance/page-speed-optimization-guide.md)
+- SEO: [XML Sitemap Management](../knowledge-hub/seo/xml-sitemap-management.md)
+- SEO: [Schema Markup for E-commerce](../knowledge-hub/seo/schema-markup-for-ecommerce.md)

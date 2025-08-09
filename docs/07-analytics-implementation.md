@@ -96,17 +96,18 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 ## Useful Links
 
 ### Analytics Dashboards
-- [GSC: Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
-- [Webflow Dashboard: Integrated Analytics](https://webflow.com/dashboard/sites/savage-report-we)
+- GSC: [Performance Dashboard](https://search.google.com/u/5/search-console/performance/search-analytics?resource_id=sc-domain%3Athe-savage-report.com)
+- Webflow Dashboard: [Integrated Analytics](https://webflow.com/dashboard/sites/savage-report-we)
 
 ### Admin Access
-- [Shopify Admin: Store Management](https://admin.shopify.com/store/thesavagereport)
-- [Webflow Settings: Analytics Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
+- Shopify Admin: [Store Management](https://admin.shopify.com/store/thesavagereport)
+- Webflow Settings: [Analytics Configuration](https://webflow.com/dashboard/sites/savage-report-we/general)
+- Google Search Console: [Account](https://search.google.com/search-console)
 
 ### Related Documentation
-- [CMS Collections](./04-cms-collections.md)
-- [Schema Markup: Implementation Guide](./05.1-seo-schema.md)
-- [Page Speed Optimization](./06-page-speed-optimization.md)
+- CMS Collections: [Overview](./04-cms-collections.md)
+- Schema Markup: [Implementation Guide](./05.1-seo-schema.md)
+- Page Speed Optimization: [Performance](./06-page-speed-optimization.md)
 
 ---
 *Last Updated: August 2025*  
