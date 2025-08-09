@@ -48,7 +48,7 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 - **Location**: <a href="https://www.the-savage-report.com/sitemap.xml" target="_blank" rel="noopener noreferrer">www.the-savage-report.com/sitemap.xml</a>
 - **Verified in GSC**: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a>
 
-<img src="../assets/05-seo-implementation-gsc-sitemaps-2025-08-08.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
+<img src="../assets/05-seo-implementation-gsc-sitemaps.png" alt="GSC submitted sitemap view" width="70%" style="border-radius:8px" />
 
 <a id="webflow-seo-settings"></a>
 ## Webflow SEO Settings

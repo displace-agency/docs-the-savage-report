@@ -31,10 +31,10 @@ for (const p of assetFiles) {
   const name = basename(p);
   const lower = name === name.toLowerCase();
   const hasSpaces = /\s/.test(name);
-  // Allow optional -YYYY-MM-DD suffix before extension
-  const goodPrefix = /^\d{2}-[a-z0-9][a-z0-9-]*(?:-\d{4}-\d{2}-\d{2})?\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
+  // Disallow date suffix; require strict YY-slug pattern
+  const goodPrefix = /^\d{2}-[a-z0-9][a-z0-9-]*\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
   if (!lower || hasSpaces || !goodPrefix) {
-    violations.push({ file: relative(ROOT, p), rule: 'asset-naming', msg: `Bad asset name '${name}' (require: YY-slug(-keywords)[-YYYY-MM-DD].ext, lowercase, hyphen-separated, no spaces)` });
+    violations.push({ file: relative(ROOT, p), rule: 'asset-naming', msg: `Bad asset name '${name}' (require: YY-slug(-keywords).ext, lowercase, hyphen-separated, no spaces; no dates)` });
   }
 }
 
