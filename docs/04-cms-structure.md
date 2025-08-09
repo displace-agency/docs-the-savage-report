@@ -16,12 +16,7 @@ This article documents the CMS foundations of The Savage Report. It explains eac
 | [Lookbooks Collection](#lookbooks-collection) | Visual guides with product linkage | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
 | [Campaigns Collection](#campaigns-collection) | Time-based initiatives with scheduling | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
 | [Special Projects Collection](#special-projects-collection) | Limited releases and collaborations | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [SEO Integration System](#seo-integration-system) | Meta fields and structured data across CMS | High | ✅ Active | [SEO Implementation](./05-seo-implementation.md) |
-| [How the System Works](#how-the-system-works) | Data flow from Shopify → Smootify → Webflow | Medium | ✅ Active | [Technical Architecture](./02-technical-architecture.md) |
-| [Content Management Workflow](#content-management-workflow) | Daily Shopify ops and Webflow updates | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [CMS Field Structure](#cms-field-structure) | Critical fields for products and collections | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
-| [Performance Optimizations](#performance-optimizations) | Image/WebP, CDN, caching, minification | Medium | ✅ Active | [Page Speed Optimization](./06-page-speed-optimization.md) |
-| [Business Impact](#business-impact) | Efficiency, UX, SEO benefits | Medium | ✅ Active |  |
+| [Updating Static Collections](#updating-static-collections) | How to add/edit Lookbooks, Campaigns, Special Projects | Medium | ✅ Active | <a href="https://webflow.com/dashboard/sites/savage-report-we/cms" target="_blank" rel="noopener noreferrer">Webflow CMS</a> |
 
 <a id="collections-system"></a>
 ## Collections System
@@ -44,26 +39,15 @@ Key fields (Webflow):
 
 Deep dive: [Smootify Webflow Integration Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
 
-<a id="how-the-system-works"></a>
-## How the System Works
+<a id="updating-static-collections"></a>
+## Updating Static Collections
+For Lookbooks, Campaigns, and Special Projects (managed in Webflow):
 
-### Hybrid CMS Architecture
-- Webflow handles page design and structure
-- Shopify manages live product data and inventory
-- Smootify bridges both systems for seamless integration
-- Real-time product updates without manual CMS management
-
-### Products Collection (150+ Items)
-- Each product has unique Shopify ID for live data connection
-- Automatic slug generation for clean URLs
-- SEO fields for search engine optimization
-- Template-based design ensures consistency
-
-### Collections System (12 Groups)
-- Themed product groupings (Summer, Essentials, New Arrivals)
-- Hero images and descriptions for each collection
-- Automatic product updates via Shopify integration
-- Custom ordering for strategic product placement
+1. Open Webflow CMS → select the collection
+2. Click “New” or choose an existing item
+3. Fill in Title, Slug, Description
+4. Upload Hero Image; for Lookbooks also upload multiple images to the Gallery field
+5. Publish — pages render immediately using the template
 
 <a id="vendors-collection"></a>
 ## Vendors Collection
@@ -73,31 +57,31 @@ Synced from Shopify. Note: currently only one brand/vendor (The Savage Report), 
 ## Lookbooks Collection
 Editorial gallery pages you can publish quickly. Upload images to the gallery field to generate visually rich pages immediately.
 
-<img src="../assets/04-lookbook-cms.png" alt="Lookbook CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+<img src="../assets/04-lookbook-cms.png" alt="Lookbook CMS collection fields in Webflow" width="70%" align="left" style="border-radius:8px" />
 
 - Purpose: Publish inspirational visual content with product links
 - Fields: Title, Slug, Hero Image, Gallery (multi-image), Description
 
 Template example:
-<img src="../assets/04-lookbook-template.png" alt="Lookbook template page rendering gallery content" width="70%" style="border-radius:8px" />
+<img src="../assets/04-lookbook-template.png" alt="Lookbook template page rendering gallery content" width="70%" align="left" style="border-radius:8px" />
 
 <a id="campaigns-collection"></a>
 ## Campaigns Collection
 Time-bound initiatives (launches, promos) with start/end dates and feature visuals.
 
-<img src="../assets/04-campaign-cms.png" alt="Campaign CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+<img src="../assets/04-campaign-cms.png" alt="Campaign CMS collection fields in Webflow" width="70%" align="left" style="border-radius:8px" />
 
 - Purpose: Promote seasonal or limited initiatives
 - Fields: Title, Slug, Hero Image, Start/End Date, Description
 
 Template example:
-<img src="../assets/04-campaign-template.png" alt="Campaign template page" width="70%" style="border-radius:8px" />
+<img src="../assets/04-campaign-template.png" alt="Campaign template page" width="70%" align="left" style="border-radius:8px" />
 
 <a id="special-projects-collection"></a>
 ## Special Projects Collection
 Limited collaborations and one-offs for buzz and urgency.
 
-<img src="../assets/04-special-projects-cms.png" alt="Special Projects CMS collection fields in Webflow" width="70%" style="border-radius:8px" />
+<img src="../assets/04-special-projects-cms.png" alt="Special Projects CMS collection fields in Webflow" width="70%" align="left" style="border-radius:8px" />
 
 - Purpose: Limited edition releases and cultural collaborations
 - Fields: Title, Slug, Hero Image, Release Date, Description
