@@ -118,7 +118,10 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - Schema Markup: [Implementation Guide](./05.1-seo-schema.md)
 - Page Speed Optimization: [Performance](./06-page-speed-optimization.md)
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <a href="06.1-performance-results-08-09.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Performance Results — 08-09</a>
+  <a href="08-smootify-integration.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Smootify E-Commerce Integration - The Savage Report →</a>
+</div>
+
 ---
-*Last Updated: August 2025*  
-*Document Version: 1.0*  
-*Maintained by: Displace Agency*
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

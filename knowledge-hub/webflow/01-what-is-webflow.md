@@ -116,10 +116,8 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <span></span>
-  <a href="./02-how-to-access-your-webflow-site.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: How to Access Your Webflow Site →</a>
+  <a href="02-how-to-access-your-webflow-site.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: How to Access Your Webflow Site →</a>
 </div>
 
 ---
 Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>
-
-

@@ -110,7 +110,10 @@ From the streets to your style - where urban beats meet metropolitan vibes throu
 - Page Speed Optimization: [Performance](./06-page-speed-optimization.md)
 - Analytics Implementation: [Monitoring](./07-analytics-implementation.md)
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <span></span>
+  <a href="02-technical-architecture.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Technical Architecture →</a>
+</div>
+
 ---
-*Last Updated: August 2025*  
-*Document Version: 1.0*  
-*Maintained by: Displace Agency*
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

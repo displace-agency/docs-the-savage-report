@@ -108,7 +108,10 @@ For detailed PageSpeed Insights snapshots and methodology, see [Performance Resu
 - Technical Architecture: [System Design](./02-technical-architecture.md)
 - Analytics Implementation: [Monitoring](./07-analytics-implementation.md)
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <a href="05.1-seo-schema.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Schema Markup Implementation - The Savage Report</a>
+  <a href="06.1-performance-results-08-09.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Performance Results — 08-09 →</a>
+</div>
+
 ---
-*Last Updated: August 2025*  
-*Document Version: 3.0*  
-*Maintained by: Displace Agency*
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

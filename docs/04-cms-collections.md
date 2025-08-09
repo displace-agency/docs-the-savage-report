@@ -107,9 +107,10 @@ This article documents the six CMS collections powering The Savage Report. It ex
 - Smootify Integration: [Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md)
 - Page Speed Optimization: [Performance](./06-page-speed-optimization.md)
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <a href="03-platform-details.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Website Content & Static Pages - The Savage Report</a>
+  <a href="05-seo-implementation.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: SEO Implementation & Strategy - The Savage Report →</a>
+</div>
+
 ---
-*Last Updated: August 2025*  
-*Document Version: 2.0*  
-*Maintained by: Displace Agency*
-
-
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

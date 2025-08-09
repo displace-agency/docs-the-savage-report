@@ -1,5 +1,8 @@
 # Understanding Page Speed Optimization
 
+## What This Is & Why It Matters
+This guide explains the core concepts, techniques, and metrics behind making websites load faster. Faster sites improve user experience, SEO rankings, and conversion rates, while reducing infrastructure cost.
+
 ## What is Page Speed Optimization?
 
 Page speed optimization is the process of making websites load faster through various technical improvements. It's like tuning a car engine - many small adjustments work together to create optimal performance.
@@ -203,6 +206,11 @@ Setting limits for:
 
 ## Best Practices Summary
 
+## Useful Links
+- WebPageTest: <a href="https://www.webpagetest.org/" target="_blank" rel="noopener noreferrer">webpagetest.org</a>
+- PageSpeed Insights: <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">pagespeed.web.dev</a>
+- Lighthouse Scoring: <a href="https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/" target="_blank" rel="noopener noreferrer">developer.chrome.com – performance scoring</a>
+
 1. **Measure First**: Establish baseline metrics
 2. **Optimize Images**: Biggest impact for effort
 3. **Enable Caching**: Help returning visitors
@@ -211,6 +219,10 @@ Setting limits for:
 6. **Lazy Load**: Load only what's needed
 7. **Monitor Continuously**: Performance degrades over time
 
----
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <span></span>
+  <span></span>
+</div>
 
-*This is a general knowledge document about page speed optimization principles and techniques. Specific implementation will vary by platform and project requirements.*
+---
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

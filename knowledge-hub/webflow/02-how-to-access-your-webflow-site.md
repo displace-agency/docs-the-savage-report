@@ -95,11 +95,9 @@ Your website includes:
 - Webflow Editor — <a href="https://university.webflow.com/lesson/editor" target="_blank" rel="noopener noreferrer">university.webflow.com/lesson/editor</a>
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
-  <a href="./01-what-is-webflow.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: What is Webflow</a>
-  <a href="./03-managing-content-with-the-editor.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Managing Content with the Editor →</a>
+  <a href="01-what-is-webflow.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: What is Webflow and How Does It Work?</a>
+  <span></span>
 </div>
 
 ---
 Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>
-
-

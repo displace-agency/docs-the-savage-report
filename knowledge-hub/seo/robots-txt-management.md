@@ -1,6 +1,7 @@
 # robots.txt Management for Webflow Sites
 
-## Overview
+## What This Is & Why It Matters
+How to configure a clean robots.txt for Webflow sites to guide search engines, prevent crawl waste, and ensure important pages are accessible.
 robots.txt tells search engines what to crawl (or not). A clean robots file prevents crawl waste, protects private areas, and ensures important pages are accessible.
 
 > Tip: Verify quickly with GSC Robots.txt Tester and PageSpeed Insights
@@ -63,6 +64,10 @@ Sitemap: <a href="https://example.com/sitemap.xml" target="_blank" rel="noopener
 - GSC Robots Tester → <a href="https://search.google.com/search-console/settings/robots-txt" target="_blank" rel="noopener noreferrer">search.google.com/search-console/settings/robots-txt</a>
 - Webflow University: Manage robots.txt → <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <span></span>
+  <a href="schema-markup-for-ecommerce.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Schema Markup for E‑Commerce Websites (JSON‑LD) →</a>
+</div>
+
 ---
-Category: SEO  
-Tags: #SEO #robots #Webflow #GoogleSearchConsole
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

@@ -91,9 +91,10 @@ Control access for search engine crawlers and AI bots.
 - GSC Sitemaps: [Submission & Status](https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com)
 - Robots.txt (Live): [View File](https://the-savage-report.com/robots.txt)
 
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <a href="04-cms-collections.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: CMS Collections - The Savage Report</a>
+  <a href="05.1-seo-schema.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Schema Markup Implementation - The Savage Report →</a>
+</div>
+
 ---
-*Last Updated: August 2025*  
-*Document Version: 1.0*  
-*Maintained by: Displace Agency*
-
-
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>

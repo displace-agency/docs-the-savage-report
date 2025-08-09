@@ -1,8 +1,7 @@
 # Smootify Webflow Integration Guide
 
-## Overview
-
-This guide provides detailed instructions for implementing and maintaining Smootify integrations between Webflow and Shopify, covering technical setup, troubleshooting, and optimization strategies.
+## What This Is & Why It Matters
+This guide provides detailed instructions for implementing and maintaining Smootify integrations between Webflow and Shopify. It covers technical setup, synchronization, troubleshooting, and performance so your storefront remains fast and up‑to‑date.
 
 ## Prerequisites
 
@@ -310,6 +309,11 @@ Implement skeleton loading for better UX:
 - Plan for seasonal traffic changes
 - Update documentation and procedures
 
+## Useful Links
+- Smootify Docs: <a href="https://docs.smootify.io/" target="_blank" rel="noopener noreferrer">docs.smootify.io</a>
+- Shopify API: <a href="https://shopify.dev/docs" target="_blank" rel="noopener noreferrer">shopify.dev/docs</a>
+- Webflow CMS: <a href="https://webflow.com/cms" target="_blank" rel="noopener noreferrer">webflow.com/cms</a>
+
 ## Support Resources
 
 ### Official Documentation
@@ -343,3 +347,11 @@ Implement skeleton loading for better UX:
 5. **Post-Update**: Monitor for issues and performance impact
 
 This guide provides a comprehensive foundation for implementing and maintaining successful Smootify integrations. Regular monitoring and optimization ensure the best possible performance and user experience.
+
+<div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
+  <span></span>
+  <span></span>
+</div>
+
+---
+Updated: August 2025 • <a href="https://github.com/displace-agency" target="_blank" rel="noopener noreferrer">Displace Agency</a>
