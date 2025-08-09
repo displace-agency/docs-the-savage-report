@@ -3,19 +3,23 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 if (process.argv.includes('--help')) {
-  console.log(`Link Linter\n\nChecks under docs/:\n- No ./00-links.md# alias references\n- No '00 — Global Links' mentions\n- No file paths in link labels (e.g., labels like 'docs/05.1-seo-schema.md')\n- External <a> links must include target="_blank" and rel="noopener noreferrer"\n\nUsage:\n  node admin/scripts/link-lint.mjs\n  node admin/scripts/link-lint.mjs --help\n`);
+  console.log(`Link Linter\n\nChecks under docs/ and knowledge-hub/:\n- No ./00-links.md# alias references\n- No '00 — Global Links' mentions\n- No file paths in link labels (e.g., labels like 'docs/05.1-seo-schema.md')\n- External <a> links must include target="_blank" and rel="noopener noreferrer"\n\nUsage:\n  node admin/scripts/link-lint.mjs\n  node admin/scripts/link-lint.mjs --help\n`);
   process.exit(0);
 }
 
 const ROOT = process.cwd();
 const DOCS_DIR = join(ROOT, 'docs');
+const KH_DIR = join(ROOT, 'knowledge-hub');
 
 const walk = (dir) => {
   const entries = readdirSync(dir, { withFileTypes: true });
   return entries.flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
 };
 
-const files = walk(DOCS_DIR).filter((p) => p.endsWith('.md'));
+const files = [
+  ...walk(DOCS_DIR),
+  ...walk(KH_DIR),
+].filter((p) => p.endsWith('.md'));
 
 const violations = [];
 

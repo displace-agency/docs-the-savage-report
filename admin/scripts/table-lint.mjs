@@ -8,7 +8,9 @@ if (process.argv.includes('--help')) {
 }
 
 const ROOT = process.cwd();
-const TARGET_DIRS = [join(ROOT, 'docs')];
+const TARGET_DIRS = process.argv.includes('--knowledge-hub')
+  ? [join(ROOT, 'knowledge-hub')]
+  : [join(ROOT, 'docs')];
 const EXCLUDE_FILES = new Set([
   join(ROOT, 'docs', '00-links.md'),
 ]);
