@@ -313,7 +313,7 @@ Each collection includes a `shopify-id` field that maintains the connection betw
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <a href="07-analytics-implementation.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Analytics Implementation & Monitoring - The Savage Report</a>
-  <a href="09-subscriptions.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Subscriptions & Billing - The Savage Report →</a>
+  <a href="08.1-smootify-add-ons.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Smootify Add‑Ons Implemented (The Savage Report) →</a>
 </div>
 
 ---

@@ -76,7 +76,7 @@ Manage: Shopify Admin → [Store Management](https://admin.shopify.com/store/the
 - Technical Architecture: [System Design](./02-technical-architecture.md)
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
-  <a href="08-smootify-integration.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Smootify E-Commerce Integration - The Savage Report</a>
+  <a href="08.1-smootify-add-ons.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Smootify Add‑Ons Implemented (The Savage Report)</a>
   <span></span>
 </div>
 
