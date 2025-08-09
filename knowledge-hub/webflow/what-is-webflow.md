@@ -20,8 +20,6 @@ Webflow is a visual website builder that lets Displace Agency design and ship cu
 ## Webflow Made Simple
 **Webflow combines professional design freedom with client‑friendly content editing.** We build unique experiences that match your brand precisely. You can edit text, swap images, and publish changes in minutes.
 
-<img src="../../assets/knowledge-hub/webflow/1.1-webflow-editor-overview.png" alt="Webflow Editor overview" width="800" />
-
 <a id="key-features"></a>
 ## Key Features
 - No coding required to create production‑ready sites
@@ -38,7 +36,7 @@ Where we build your site’s structure, style, and interactions.
 - Component‑based design system
 - Animation timeline and scroll interactions
 
-<img src="../../assets/knowledge-hub/webflow/1.2-webflow-designer-ui.png" alt="Webflow Designer UI" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.3-webflow-designer-text-editing.png" alt="Webflow Designer — editing content visually" width="800" />
 
 <a id="webflow-editor"></a>
 ## Webflow Editor (for You)
@@ -52,7 +50,7 @@ How to access:
 1. Visit `https://your-site.com/?edit`
 2. Log in with your Displace Agency credentials
 
-<img src="../../assets/knowledge-hub/webflow/1.1-webflow-editor-overview.png" alt="Webflow Editor access" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.2-webflow-add-%3Fedit-link.png" alt="Access the Webflow Editor by adding ?edit to your site URL" width="800" />
 
 <a id="webflow-hosting"></a>
 ## Webflow Hosting
@@ -62,7 +60,7 @@ Fast, secure, and managed hosting included.
 - Automatic backups and versioning
 - Global CDN for speed and reliability
 
-<img src="../../assets/knowledge-hub/webflow/1.4-webflow-hosting-overview.png" alt="Webflow Hosting overview" width="800" />
+<!-- Hosting section intentionally has no screenshot; covered visually in performance below. -->
 
 <a id="why-displace-agency-chooses-webflow"></a>
 ## Why Displace Agency Chooses Webflow
@@ -75,13 +73,13 @@ Teams can update bios, pricing, promotions, and content safely. The visual edito
 ### 3) Better Performance
 Webflow’s optimized delivery typically results in faster loads vs. generic CMS stacks, improving rankings and UX.
 
-<img src="../../assets/knowledge-hub/webflow/1.5-why-webflow-benefits.png" alt="Reasons to use Webflow" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.4-webflow-speed.png" alt="Webflow performance and speed benefits" width="800" />
 
 <a id="webflow-community"></a>
 ## Webflow Community
 Webflow has a large community and showcase called "Made in Webflow," where designers publish and share cloneable projects. This ecosystem makes it easier to find patterns, inspiration, and solutions.
 
-<img src="../../assets/knowledge-hub/webflow/1.9-made-in-webflow-community.png" alt="Made in Webflow community showcase" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.1-webflow-made-in-webflow.png" alt="Made in Webflow community showcase" width="800" />
 
 <a id="getting-started-with-your-webflow-site"></a>
 ## Getting Started With Your Webflow Site
@@ -89,7 +87,7 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 1. Look for Displace Agency’s invitation email
 2. Click “Accept Invitation”
 
-<img src="../../assets/knowledge-hub/webflow/1.6-webflow-invitation-email.png" alt="Webflow invitation email" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.5-webflow-accept%20invite.png" alt="Webflow invitation email — Accept invitation" width="800" />
 
 ### Step 2: Log In
 1. Visit `https://your-site.com/?edit`
@@ -102,7 +100,7 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 - Use the sidebar to upload files
 - Save frequently
 
-<img src="../../assets/knowledge-hub/webflow/1.3-webflow-editor-inline-editing.png" alt="Editing content inline" width="800" />
+<img src="../../assets/knowledge-hub/webflow/1.3-webflow-designer-text-editing.png" alt="Editing content inline" width="800" />
 
 ### Step 4: Publish Safely
 1. Click “Preview” to review changes
