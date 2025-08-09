@@ -40,7 +40,39 @@ const walk = (dir) => {
 };
 
 const files = walk(join(ROOT, 'docs')).filter((p) => p.endsWith('.md'));
-const refRe = /\]\(\.\/00-links\.md#([a-z0-9-]+)\)/gi;
+const refRe = /\[[^\]]*\]\(\.\/00-links\.md#([a-z0-9-]+)\)/gi;
+
+const toTitle = (alias) => {
+  const custom = {
+    'webflow-cms': 'Webflow CMS',
+    'webflow-seo-settings': 'Webflow SEO Settings',
+    'webflow-general': 'Webflow General',
+    'webflow-dashboard': 'Webflow Dashboard',
+    'webflow-designer': 'Webflow Designer',
+    'webflow-custom-code': 'Webflow Custom Code',
+    'webflow-live-site': 'Live Site',
+    'gsc-sitemaps': 'GSC Sitemaps',
+    'gsc-performance': 'GSC Performance',
+    'gsc-robots-tester': 'GSC Robots Tester',
+    'shopify-admin-store': 'Shopify Admin',
+    'shopify-analytics': 'Shopify Analytics',
+    'shopify-orders': 'Shopify Orders',
+    'shopify-products': 'Shopify Products',
+    'shopify-collections': 'Shopify Collections',
+    'shopify-checkout': 'Shopify Checkout',
+    'live-site': 'Live Site',
+    'sitemap': 'Sitemap',
+    'robots': 'Robots.txt',
+    'cms-collections': 'CMS Collections',
+    'page-speed': 'Page Speed Optimization',
+    'analytics': 'Analytics Implementation',
+  };
+  if (custom[alias]) return custom[alias];
+  return alias
+    .split('-')
+    .map((w) => (w.length ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(' ');
+};
 
 for (const file of files) {
   let content = readFileSync(file, 'utf8');
@@ -50,7 +82,8 @@ for (const file of files) {
     const url = aliasToUrl[key];
     if (!url) return m;
     changed = true;
-    return `](${url})`;
+    const title = toTitle(key);
+    return `[${title}](${url})`;
   });
   if (changed) {
     writeFileSync(file, content);
