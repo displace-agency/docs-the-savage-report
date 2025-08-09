@@ -30,10 +30,10 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 ## Submission Proof (Google Search Console)
 Submitting the sitemap in Google Search Console confirms Google can fetch it and provides ongoing status (Success/Errors), last read time, and discovered URLs. This is a fast way to verify the setup and catch issues.
 
-![GSC Sitemaps submission for the-savage-report.com](../../assets/knowledge-hub/seo/gsc-sitemaps-submission.png)
+Screenshot: GSC → Sitemaps submission view (submit your live sitemap URL)
 
 - Page: <a href="https://search.google.com/search-console/sitemaps?resource_id=sc-domain:the-savage-report.com" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a>
-- If the screenshot doesn’t render, place it at `assets/knowledge-hub/seo/gsc-sitemaps-submission.png` in the repo.
+- Tip: For a visual reference, open GSC → Sitemaps and verify status, discovered URLs, and last read time.
 
 ## When to Resubmit in GSC
 - Major structure changes (navigation, URLs)

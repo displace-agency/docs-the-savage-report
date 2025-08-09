@@ -36,7 +36,7 @@ Where we build your site’s structure, style, and interactions.
 - Component‑based design system
 - Animation timeline and scroll interactions
 
-<img src="../../assets/knowledge-hub/webflow/1.3-webflow-designer-text-editing.png" alt="Webflow Designer — editing content visually" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-designer-text-editing.png" alt="Webflow Designer — editing content visually" width="800" />
 
 <a id="webflow-editor"></a>
 ## Webflow Editor (for You)
@@ -50,7 +50,7 @@ How to access:
 1. Visit `https://your-site.com/?edit`
 2. Log in with your Displace Agency credentials
 
-<img src="../../assets/knowledge-hub/webflow/1.2-webflow-add-%3Fedit-link.png" alt="Access the Webflow Editor by adding ?edit to your site URL" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-add-edit-link.png" alt="Access the Webflow Editor by adding ?edit to your site URL" width="800" />
 
 <a id="webflow-hosting"></a>
 ## Webflow Hosting
@@ -73,13 +73,13 @@ Teams can update bios, pricing, promotions, and content safely. The visual edito
 ### 3) Better Performance
 Webflow’s optimized delivery typically results in faster loads vs. generic CMS stacks, improving rankings and UX.
 
-<img src="../../assets/knowledge-hub/webflow/1.4-webflow-speed.png" alt="Webflow performance and speed benefits" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-speed.png" alt="Webflow performance and speed benefits" width="800" />
 
 <a id="webflow-community"></a>
 ## Webflow Community
 Webflow has a large community and showcase called "Made in Webflow," where designers publish and share cloneable projects. This ecosystem makes it easier to find patterns, inspiration, and solutions.
 
-<img src="../../assets/knowledge-hub/webflow/1.1-webflow-made-in-webflow.png" alt="Made in Webflow community showcase" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-made-in-webflow.png" alt="Made in Webflow community showcase" width="800" />
 
 <a id="getting-started-with-your-webflow-site"></a>
 ## Getting Started With Your Webflow Site
@@ -87,27 +87,27 @@ Webflow has a large community and showcase called "Made in Webflow," where desig
 1. Look for Displace Agency’s invitation email
 2. Click “Accept Invitation”
 
-<img src="../../assets/knowledge-hub/webflow/1.5-webflow-accept%20invite.png" alt="Webflow invitation email — Accept invitation" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-accept-invite.png" alt="Webflow invitation email — Accept invitation" width="800" />
 
 ### Step 2: Log In
 1. Visit `https://your-site.com/?edit`
 2. Log in with your Displace Agency credentials
 
-<img src="../../assets/knowledge-hub/webflow/1.7-webflow-login-access.png" alt="Login access to Webflow Editor" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-login-access.png" alt="Login access to Webflow Editor" width="800" />
 
 ### Step 3: Edit Content
 - Click any text or image to edit
 - Use the sidebar to upload files
 - Save frequently
 
-<img src="../../assets/knowledge-hub/webflow/1.3-webflow-designer-text-editing.png" alt="Editing content inline" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-designer-text-editing.png" alt="Editing content inline" width="800" />
 
 ### Step 4: Publish Safely
 1. Click “Preview” to review changes
 2. Select “Publish to Live Site”
 3. Confirm in the pop‑up
 
-<img src="../../assets/knowledge-hub/webflow/1.8-webflow-publish-flow.png" alt="Publishing in Webflow" width="800" />
+<img src="../../assets/knowledge-hub/webflow/01-what-is-webflow-publish-flow.png" alt="Publishing in Webflow" width="800" />
 
 ## Useful Links
 - Webflow University: Getting Started — <a href="https://university.webflow.com" target="_blank" rel="noopener noreferrer">university.webflow.com</a>

@@ -9,6 +9,7 @@ if (process.argv.includes('--help')) {
 
 const ROOT = process.cwd();
 const DOCS_DIR = join(ROOT, 'docs');
+const KH_DIR = join(ROOT, 'knowledge-hub');
 const ASSETS_DIR = join(ROOT, 'assets');
 
 const walk = (dir) => {
@@ -16,7 +17,10 @@ const walk = (dir) => {
   return entries.flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
 };
 
-const docFiles = walk(DOCS_DIR).filter((p) => p.endsWith('.md'));
+const docFiles = [
+  ...walk(DOCS_DIR).filter((p) => p.endsWith('.md')),
+  ...walk(KH_DIR).filter((p) => p.endsWith('.md')),
+];
 const assetFiles = walk(ASSETS_DIR).filter((p) => /\.(png|jpg|jpeg|gif|svg|webp)$/i.test(p));
 
 const htmlImgRe = /<img[^>]*\ssrc="([^"]+)"[^>]*>/gi;
@@ -31,10 +35,26 @@ for (const p of assetFiles) {
   const name = basename(p);
   const lower = name === name.toLowerCase();
   const hasSpaces = /\s/.test(name);
-  // Disallow date suffix; require strict YY-slug pattern
-  const goodPrefix = /^\d{2}-[a-z0-9][a-z0-9-]*\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
-  if (!lower || hasSpaces || !goodPrefix) {
-    violations.push({ file: relative(ROOT, p), rule: 'asset-naming', msg: `Bad asset name '${name}' (require: YY-slug(-keywords).ext, lowercase, hyphen-separated, no spaces; no dates)` });
+  const isKnowledgeHubAsset = relative(ROOT, p).startsWith('assets/knowledge-hub/');
+  // Disallow special characters that are unsafe in URLs
+  const hasIllegal = /[?%#]/.test(name);
+  let goodPrefix = false;
+  if (isKnowledgeHubAsset) {
+    // Knowledge Hub: allow "1.1-slug(-keywords).ext" pattern
+    goodPrefix = /^\d+(?:\.\d+)?-[a-z0-9][a-z0-9-]*\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
+  } else {
+    // Docs: enforce "YY-slug(-keywords).ext" pattern
+    goodPrefix = /^\d{2}-[a-z0-9][a-z0-9-]*\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
+  }
+  if (!lower || hasSpaces || hasIllegal || !goodPrefix) {
+    const expectation = isKnowledgeHubAsset
+      ? "MAJOR.MINOR-slug(-keywords).ext (e.g., 1.2-webflow-editor.png); lowercase, hyphen-separated, no spaces or ?%#"
+      : "YY-slug(-keywords).ext (e.g., 05-seo-implementation.png); lowercase, hyphen-separated, no spaces";
+    violations.push({
+      file: relative(ROOT, p),
+      rule: 'asset-naming',
+      msg: `Bad asset name '${name}' (expected: ${expectation})`,
+    });
   }
 }
 
@@ -62,7 +82,8 @@ for (const file of docFiles) {
       violations.push({ file, rule: 'missing-alt', msg: `HTML <img> missing meaningful alt: ${src}` });
     }
     const base = basename(full);
-    if (docNum && !(base.startsWith(`${docNum}-`) || base.startsWith(`${docSlug}-`))) {
+    const isKnowledgeHubRef = relative(ROOT, full).startsWith('assets/knowledge-hub/');
+    if (!isKnowledgeHubRef && docNum && !(base.startsWith(`${docNum}-`) || base.startsWith(`${docSlug}-`))) {
       violations.push({ file, rule: 'naming-mismatch', msg: `Asset '${base}' should start with '${docNum}-' or '${docSlug}-'` });
     }
   }
@@ -77,7 +98,8 @@ for (const file of docFiles) {
     }
     usedAssets.add(resolve(full));
     const base = basename(full);
-    if (docNum && !(base.startsWith(`${docNum}-`) || base.startsWith(`${docSlug}-`))) {
+    const isKnowledgeHubRef = relative(ROOT, full).startsWith('assets/knowledge-hub/');
+    if (!isKnowledgeHubRef && docNum && !(base.startsWith(`${docNum}-`) || base.startsWith(`${docSlug}-`))) {
       violations.push({ file, rule: 'naming-mismatch', msg: `Asset '${base}' should start with '${docNum}-' or '${docSlug}-'` });
     }
   }
