@@ -6,7 +6,8 @@
   "scripts": {
     "lint:links": "node admin/scripts/link-lint.mjs",
     "lint:tables": "node admin/scripts/table-lint.mjs",
-    "maintenance": "npm run lint:links && npm run lint:tables"
+    "lint:articles": "node admin/scripts/article-structure-lint.mjs",
+    "maintenance": "npm run lint:links && npm run lint:tables && npm run lint:articles"
   }
 }
 

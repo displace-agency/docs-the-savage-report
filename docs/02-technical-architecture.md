@@ -1,5 +1,20 @@
 # Technical Architecture
 
+## What This Is & Why It Matters
+This document explains the end‑to‑end system design for The Savage Report—how Webflow, Smootify, and Shopify work together; the flows for products, orders, and content; and where core integrations live. It is the source of truth for how the stack operates today.
+
+## Implementation Summary
+
+| Item | What We Delivered | Priority | Status | Reference Link(s) |
+|------|-------------------|----------|--------|-------------------|
+| [Platform Specifications](#platform-specifications) | Site settings, domains, and environment details | Medium | Active | — |
+| [Data Flow](#data-flow) | Product, order, and content flows across systems | High | Active | — |
+| [Integration Points](#integration-points) | Smootify config, custom attributes, and APIs | High | Active | — |
+| [Performance Optimization](#performance-optimization) | Image/code/caching strategies | High | Active | — |
+| [Security Measures](#security-measures) | Auth, data protection, compliance | High | Active | — |
+| [Monitoring & Analytics](#monitoring--analytics) | Perf and business monitoring | Medium | Active | — |
+| [Backup & Recovery](#backup--recovery) | Backup schedule and recovery procedures | Medium | Active | — |
+
 ## System Overview
 
 > **Related Documentation:**
@@ -35,6 +50,7 @@
 └─────────────────────────────────────┘
 ```
 
+<a id="platform-specifications"></a>
 ## Platform Specifications
 
 ### Webflow Site Details
@@ -52,6 +68,7 @@
 - **CDN**: Webflow integrated CDN
 - **DNS**: Managed through Webflow
 
+<a id="data-flow"></a>
 ## Data Flow
 
 ### Product Creation Flow
@@ -78,6 +95,7 @@
 4. Review and approval
 5. Publish to production
 
+<a id="integration-points"></a>
 ## Integration Points
 
 ### Smootify Configuration
@@ -103,6 +121,7 @@ Webflow elements with Smootify attributes:
 - **Google Analytics**: Tracking
 - **Smootify API**: Cart management
 
+<a id="performance-optimization"></a>
 ## Performance Optimization
 
 ### Image Handling
@@ -125,6 +144,7 @@ Webflow elements with Smootify attributes:
 - API response caching: 5 minutes
 - Static assets: 30 days
 
+<a id="security-measures"></a>
 ## Security Measures
 
 ### Authentication
@@ -140,6 +160,7 @@ Webflow elements with Smootify attributes:
 - Regular backups
 - Access logs monitoring
 
+<a id="monitoring--analytics"></a>
 ## Monitoring & Analytics
 
 ### Performance Monitoring
@@ -154,6 +175,7 @@ Webflow elements with Smootify attributes:
 - Klaviyo metrics
 - Custom dashboards
 
+<a id="backup--recovery"></a>
 ## Backup & Recovery
 
 ### Backup Schedule
@@ -167,3 +189,13 @@ Webflow elements with Smootify attributes:
 2. Shopify: Contact support
 3. Smootify: Re-sync data
 4. DNS: Failover ready
+
+## Useful Links
+- CMS Collections: [Overview](./04-cms-collections.md)
+- Page Speed Optimization: [Performance](./06-page-speed-optimization.md)
+- Analytics Implementation: [Monitoring](./07-analytics-implementation.md)
+
+---
+*Last Updated: August 2025*  
+*Document Version: 1.0*  
+*Maintained by: Displace Agency*

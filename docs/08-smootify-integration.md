@@ -40,11 +40,11 @@ Smootify (formerly Multify) bridges Webflow's design flexibility with Shopify's 
 - **Real-time Inventory**: Prevents overselling with live stock status
 - **Cross-platform Accounts**: Unified customer login experience
 
+<a id="installation--page-integration"></a>
 ## Installation & Page Integration
 
 The following sections explain exactly how the integration is implemented on the site and key page areas. This is documentation of what exists today, written so non-technical editors can understand or review it.
 
-<a id="installation--page-integration"></a>
 ### Site-Wide Setup (Global)
 Add the Smootify resources once at the site level so every page has product data and cart functionality.
 
@@ -63,53 +63,6 @@ Add the Smootify resources once at the site level so every page has product data
 Where this lives: Webflow Project Settings → Custom Code (Head and before </body>).
 
 <a id="product-synchronization"></a>
-### Product Page – Hero Section
-The product hero shows the key details with real-time price and availability.
-
-- Title: `<h1 product="title">...</h1>`
-- Price: `<span data-prop="price"></span>` and compare-at: `<span data-prop="compareAtPrice"></span>`
-- Description: `<div product="description"></div>`
-- Primary image: `<img product="specific-image" index="0" alt="...">`
-- Gallery: element with `product="images"`
-- Stock state badges: elements with `condition="in-stock"` and `condition="out-of-stock"`
-- Variant/size options: container with `option="title"`, `option="value"` and, where used, `variant="image"`
-- Add to cart button: element with `data-smootify-add-to-cart`
-
-<a id="product-synchronization"></a>
-### Product Carousels (Homepage/Collections)
-Carousels render product cards from the synchronized CMS list.
-
-- Image: `<img product="specific-image" index="0" alt="...">`
-- Title link: anchor with `product="url"` and inner `product="title"`
-- Price and sale: `data-prop="price"`, `data-prop="compareAtPrice"`, `condition="on-sale"`
-- Badges: optional elements using `condition="in-stock"` / `condition="out-of-stock"`
-
-These lists are standard Webflow Collection Lists bound to the Products collection (kept in sync by Smootify).
-
-<a id="cart-checkout-system"></a>
-### Add to Cart (Quick Add and PDP)
-
-- PDP add-to-cart: button with `data-smootify-add-to-cart` inside the product context
-- Quick add (cards): same attribute on card buttons; quantity defaults to 1 unless a quantity input with `data-smootify-quantity` is present
-- Mini cart totals: `cart="subtotal"`, `cart="total"`
-- Line items: `cart-item="title"`, `cart-item="image"`, `cart-item="quantity"`, `cart-item="price"`, `cart-item="total"`
-
-### Collection/Grid Filters
-
-- Price range: `filter-price="from"` and `filter-price="to"`
-- Active filters label: `filter="active-label"`
-- Swatches (where used): `swatch="image"`, `swatch="title"`
-
-### Sync Verification (What to check)
-
-- Products appear/refresh within 15 minutes of Shopify changes
-- Prices and compare-at values match Shopify
-- Stock badges reflect availability
-- Add to cart works on cards and PDP
-- Checkout redirects to Shopify and completes successfully
-
-If an urgent update is needed before the next interval, a manual sync can be triggered from the Smootify dashboard.
-
 ## Product Synchronization
 
 Our Smootify integration automatically syncs all product data from Shopify to Webflow's CMS every 15 minutes, ensuring your website always displays current information without manual updates.
@@ -130,26 +83,7 @@ Shopify Product Updates → Smootify Sync (15 min) → Webflow CMS → Live Webs
 ### Business Value
 This automation eliminates the need for manual product updates, reducing management time by 15+ hours per week while ensuring customers always see accurate pricing and availability.
 
-<a id="collection-management"></a>
-## Collection Management
-
-The integration organizes products into 12 strategic collections that automatically update as you add or modify products in Shopify.
-
-### Collection Structure
-- **Summer Collection**: Seasonal products with automatic inventory updates
-- **Essentials**: Core product line with priority placement
-- **New Arrivals**: Recently added products with automatic tagging
-- **Sale Items**: Discounted products with promotional highlighting
-
-### Dynamic Features
-- **Automatic Categorization**: Products appear in collections based on Shopify tags
-- **Hero Images**: Each collection includes featured imagery and descriptions
-- **SEO Optimization**: Collection pages include meta titles and descriptions
-- **Smart Filtering**: Customers can filter by price, availability, and product type
-
-### Business Impact
-Collections provide intuitive navigation that helps customers find products faster, improving user experience and increasing average order value through strategic product grouping.
-
+<a id="cart-checkout-system"></a>
 ## Cart & Checkout System
 
 The Smootify cart system provides real-time updates while maintaining Shopify's secure checkout process.
@@ -170,6 +104,26 @@ When customers are ready to purchase, they're seamlessly redirected to Shopify's
 
 ### Security & Reliability
 All payment processing occurs on Shopify's secure servers, ensuring customer data protection and transaction reliability while maintaining the beautiful Webflow design experience.
+
+<a id="collection-management"></a>
+## Collection Management
+
+The integration organizes products into 12 strategic collections that automatically update as you add or modify products in Shopify.
+
+### Collection Structure
+- **Summer Collection**: Seasonal products with automatic inventory updates
+- **Essentials**: Core product line with priority placement
+- **New Arrivals**: Recently added products with automatic tagging
+- **Sale Items**: Discounted products with promotional highlighting
+
+### Dynamic Features
+- **Automatic Categorization**: Products appear in collections based on Shopify tags
+- **Hero Images**: Each collection includes featured imagery and descriptions
+- **SEO Optimization**: Collection pages include meta titles and descriptions
+- **Smart Filtering**: Customers can filter by price, availability, and product type
+
+### Business Impact
+Collections provide intuitive navigation that helps customers find products faster, improving user experience and increasing average order value through strategic product grouping.
 
 <a id="customer-account-system"></a>
 ## Customer Account System
@@ -356,4 +310,9 @@ Each collection includes a `shopify-id` field that maintains the connection betw
 ### Knowledge Hub Resources
 - [Complete Smootify Setup Guide](../knowledge-hub/ecommerce/smootify-webflow-integration-guide.md) - Detailed technical implementation instructions
 - [E-commerce Best Practices](../knowledge-hub/ecommerce/) - Industry standards and optimization strategies
+
+---
+*Last Updated: August 2025*  
+*Document Version: 1.0*  
+*Maintained by: Displace Agency*
 
