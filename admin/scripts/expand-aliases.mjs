@@ -42,7 +42,8 @@ const walk = (dir) => {
 const files = walk(join(ROOT, 'docs')).filter((p) => p.endsWith('.md'));
 const refRe = /\[[^\]]*\]\(\.\/00-links\.md#([a-z0-9-]+)\)/gi;
 // Legacy labels like "See 00 — Global Links → alias" or "00 — Global Links → alias"
-const legacyLabelRe = /\[(?:See\s+)?0{2}\s*[—-]\s*Global\s+Links[^\]]*?([a-z0-9-]+)\]\((https?:[^)]+|\.\/[^)]+)\)/gi;
+// Be permissive with separators and punctuation to catch all variants.
+const legacyLabelRe = /\[(?:See\s+)?0{2}[\s\S]*?Global\s+Links[\s\S]*?([a-z0-9-]+)\]\((https?:[^)]+|\.\/[^)]+)\)/gi;
 
 const toTitle = (alias) => {
   const custom = {
@@ -97,6 +98,7 @@ for (const file of files) {
     const key = alias.toLowerCase();
     const title = toTitle(key);
     const resolved = aliasToUrl[key] || url;
+    changed = true;
     return `[${title}](${resolved})`;
   });
   // Also fix internal docs references for CMS collections, page speed, analytics

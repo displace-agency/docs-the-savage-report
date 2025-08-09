@@ -1,4 +1,4 @@
-# 00 — Global Links Directory
+# Global Links Directory
 
 Single source of truth for all links. Use aliases like `[CMS Collections](./04-cms-collections.md)` in any article; run `npm run fix:aliases` to expand them.
 

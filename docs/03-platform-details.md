@@ -156,14 +156,14 @@ Essential legal and policy pages for business compliance and customer trust.
 ## Useful Links
 
 ### **Webflow Management**
-- [00 — Global Links → webflow-dashboard](https://webflow.com/dashboard/sites/savage-report-we) - Site settings and overview
-- [00 — Global Links → webflow-designer](https://webflow.com/design/savage-report-we) - Page editing and CMS management
-- [00 — Global Links → webflow-general](https://webflow.com/dashboard/sites/savage-report-we/general) - General site configuration
+- [Webflow Dashboard](https://webflow.com/dashboard/sites/savage-report-we) - Site settings and overview
+- [Webflow Designer](https://webflow.com/design/savage-report-we) - Page editing and CMS management
+- [Webflow General](https://webflow.com/dashboard/sites/savage-report-we/general) - General site configuration
 
 ### **Live Site Verification**
-- [00 — Global Links → live-site](https://www.the-savage-report.com) - View current live site
-- [00 — Global Links → live-search](./00-links.md#live-search) - Test search features
-- [00 — Global Links → live-policies](./00-links.md#live-policies) - View legal pages
+- [Live Site](https://www.the-savage-report.com) - View current live site
+- [Live Search](./00-links.md#live-search) - Test search features
+- [Live Policies](./00-links.md#live-policies) - View legal pages
 
 ### **Related Documentation**
 - [CMS Collections](./00-links.md#cms-collections) - Six collections overview

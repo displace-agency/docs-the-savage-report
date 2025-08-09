@@ -123,9 +123,9 @@ Mobile optimization showing significant improvements in user experience.
 - Webflow Dashboard: <a href="https://webflow.com/dashboard/sites/savage-report-we" target="_blank" rel="noopener noreferrer">Site Management</a>
 
 ### Related Documentation
-- CMS Collections: [See 00 — Global Links → cms-collections](./00-links.md#cms-collections)
+- CMS Collections: [CMS Collections](./00-links.md#cms-collections)
 - Technical Architecture: [docs/02-technical-architecture.md](./02-technical-architecture.md)
-- Analytics Implementation: [See 00 — Global Links → analytics](./00-links.md#analytics)
+- Analytics Implementation: [Analytics Implementation](./00-links.md#analytics)
 
 ---
 *Last Updated: August 2025*  
