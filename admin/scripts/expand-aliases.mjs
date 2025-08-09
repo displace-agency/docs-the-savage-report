@@ -41,6 +41,7 @@ const walk = (dir) => {
 
 const files = walk(join(ROOT, 'docs')).filter((p) => p.endsWith('.md'));
 const refRe = /\[[^\]]*\]\(\.\/00-links\.md#([a-z0-9-]+)\)/gi;
+const seeLabelRe = /\[(?:See\s+00\s+—\s+Global\s+Links\s+→\s+)([a-z0-9-]+)\]\((https?:[^)]+)\)/gi;
 
 const toTitle = (alias) => {
   const custom = {
@@ -82,6 +83,12 @@ for (const file of files) {
     const url = aliasToUrl[key];
     if (!url) return m;
     changed = true;
+    const title = toTitle(key);
+    return `[${title}](${url})`;
+  });
+  // Normalize labels like [See 00 — Global Links → alias](direct-url)
+  content = content.replace(seeLabelRe, (m, alias, url) => {
+    const key = alias.toLowerCase();
     const title = toTitle(key);
     return `[${title}](${url})`;
   });
