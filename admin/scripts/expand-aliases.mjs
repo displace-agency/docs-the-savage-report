@@ -41,7 +41,7 @@ const walk = (dir) => {
 
 const files = walk(join(ROOT, 'docs')).filter((p) => p.endsWith('.md'));
 const refRe = /\[[^\]]*\]\(\.\/00-links\.md#([a-z0-9-]+)\)/gi;
-const seeLabelRe = /\[(?:See\s+00\s+—\s+Global\s+Links\s+→\s+)([a-z0-9-]+)\]\((https?:[^)]+)\)/gi;
+const seeLabelRe = /\[(?:See\s+00\s+—\s+Global\s+Links\s+→\s+)([a-z0-9-]+)\]\((https?:[^)]+|\.\/[^)]+)\)/gi;
 
 const toTitle = (alias) => {
   const custom = {
