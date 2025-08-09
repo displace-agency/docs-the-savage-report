@@ -115,7 +115,7 @@ Webflow shows the exact records your registrar needs:
 
 <div style="display:flex;justify-content:space-between;gap:12px;margin:24px 0;">
   <a href="03-webflow-workspace-and-project-settings.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">← Previous: Webflow Workspace and Project Settings</a>
-  <span></span>
+  <a href="05-using-the-webflow-designer.md" style="padding:12px 16px;border:1px solid #d0d7de;border-radius:8px;text-decoration:none;">Next: Using the Webflow Designer (Everyday Updates + Global Components) →</a>
 </div>
 
 ---
