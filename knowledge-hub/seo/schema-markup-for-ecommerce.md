@@ -7,12 +7,12 @@ Schema markup helps search engines understand your content and unlock rich resul
 
 ## Quick Summary
 
-| Type | Where to Use | Why It Matters | Notes |
+| Item | Where to Use | Why It Matters | Notes |
 |------|---------------|----------------|-------|
-| Organization | Site-wide | Brand knowledge panel eligibility; trust | Include name, URL, logo |
-| WebSite | Site-wide | Sitelinks Search Box eligibility | Include potentialAction |
-| BreadcrumbList | Template pages | Clear hierarchy in SERPs | Mirrors site navigation |
-| Product | Product pages | Price/availability/ratings rich results | Pull live data from platform |
+| [Organization](#organization) | Site-wide | Brand knowledge panel eligibility; trust | Include name, URL, logo |
+| [WebSite](#website--searchaction) | Site-wide | Sitelinks Search Box eligibility | Include potentialAction |
+| [BreadcrumbList](#breadcrumblist) | Template pages | Clear hierarchy in SERPs | Mirrors site navigation |
+| [Product](#product-template) | Product pages | Price/availability/ratings rich results | Pull live data from platform |
 
 ## Where to Add Schema in Webflow
 
@@ -30,6 +30,7 @@ Schema markup helps search engines understand your content and unlock rich resul
 
 ## Examples (Copy/Paste)
 
+<a id="organization"></a>
 Organization
 ```html
 <script type="application/ld+json">
@@ -43,6 +44,7 @@ Organization
 </script>
 ```
 
+<a id="website--searchaction"></a>
 WebSite + SearchAction
 ```html
 <script type="application/ld+json">
@@ -62,6 +64,7 @@ WebSite + SearchAction
 </script>
 ```
 
+<a id="breadcrumblist"></a>
 BreadcrumbList
 ```html
 <script type="application/ld+json">
@@ -77,6 +80,7 @@ BreadcrumbList
 </script>
 ```
 
+<a id="product-template"></a>
 Product (template)
 ```html
 <script type="application/ld+json">

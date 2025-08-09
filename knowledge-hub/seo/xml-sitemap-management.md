@@ -10,14 +10,25 @@ An XML sitemap lists important URLs and helps search engines discover and index 
 
 ## Quick Summary
 
-| What | Where to Configure | Why It Matters | Evidence Links |
+| Item | Where to Configure | Why It Matters | Evidence Links |
 |------|---------------------|----------------|----------------|
-| Auto‑generated sitemap | Webflow → Project Settings → SEO → Sitemap | Faster discovery of public URLs | Visit yourdomain.com/sitemap.xml |
-| Page inclusion toggle | Webflow Designer → Page Settings → SEO → Include in sitemap | Control which pages are indexed | Verify presence/absence in sitemap.xml |
-| CMS collection inclusion | Webflow → CMS Collection Settings → SEO | Bulk include/exclude CMS items | Check generated sitemap sections |
-| Submission to Google | Google Search Console → Sitemaps | Tracking, errors, discovered URLs | <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
+| [Auto‑generated sitemap](#auto-generated-sitemap) | Webflow → Project Settings → SEO → Sitemap | Faster discovery of public URLs | Visit yourdomain.com/sitemap.xml |
+| [Page inclusion toggle](#page-inclusion-toggle) | Webflow Designer → Page Settings → SEO → Include in sitemap | Control which pages are indexed | Verify presence/absence in sitemap.xml |
+| [CMS collection inclusion](#cms-collection-inclusion) | Webflow → CMS Collection Settings → SEO | Bulk include/exclude CMS items | Check generated sitemap sections |
+| [Submission to Google](#submission-to-google) | Google Search Console → Sitemaps | Tracking, errors, discovered URLs | <a href="https://search.google.com/search-console/sitemaps" target="_blank" rel="noopener noreferrer">GSC Sitemaps</a> |
 
 ## Webflow Configuration
+<a id="auto-generated-sitemap"></a>
+## Auto-generated sitemap
+
+<a id="page-inclusion-toggle"></a>
+## Page inclusion toggle
+
+<a id="cms-collection-inclusion"></a>
+## CMS collection inclusion
+
+<a id="submission-to-google"></a>
+## Submission to Google
 - Project level: enable auto‑generation; set defaults
 - Page level: toggle inclusion per page
 - CMS level: configure collection‑wide inclusion

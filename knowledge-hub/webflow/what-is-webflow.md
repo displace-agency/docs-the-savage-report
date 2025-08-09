@@ -7,14 +7,14 @@ Webflow is a visual website builder that lets Displace Agency design and ship cu
 
 | Item | What We Cover | Status | Link |
 |------|----------------|--------|------|
-| [Webflow Made Simple](#webflow-made-simple) | Core idea and why it fits our workflow | ✅ | — |
-| [Key Features](#key-features) | Must‑know capabilities for teams | ✅ | — |
-| [Webflow Designer](#webflow-designer) | Structure, style, and animations | ✅ | — |
-| [Webflow Editor](#webflow-editor) | Safe content editing after launch | ✅ | — |
-| [Webflow Hosting](#webflow-hosting) | Hosting, backups, CDN | ✅ | — |
-| [Why Webflow](#why-displace-agency-chooses-webflow) | Design control, client UX, performance | ✅ | — |
-| [Community](#webflow-community) | Made in Webflow showcase and ecosystem | ✅ | — |
-| [Getting Started](#getting-started-with-your-webflow-site) | Invitation, login, editing, publishing | ✅ | — |
+| [Webflow Made Simple](#webflow-made-simple) | Core idea and why it fits our workflow | Active | — |
+| [Key Features](#key-features) | Must‑know capabilities for teams | Active | — |
+| [Webflow Designer](#webflow-designer) | Structure, style, and animations | Active | — |
+| [Webflow Editor](#webflow-editor) | Safe content editing after launch | Active | — |
+| [Webflow Hosting](#webflow-hosting) | Hosting, backups, CDN | Active | — |
+| [Why Webflow](#why-displace-agency-chooses-webflow) | Design control, client UX, performance | Active | — |
+| [Community](#webflow-community) | Made in Webflow showcase and ecosystem | Active | — |
+| [Getting Started](#getting-started-with-your-webflow-site) | Invitation, login, editing, publishing | Active | — |
 
 <a id="webflow-made-simple"></a>
 ## Webflow Made Simple

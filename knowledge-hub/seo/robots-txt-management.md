@@ -10,11 +10,11 @@ robots.txt tells search engines what to crawl (or not). A clean robots file prev
 
 ## Quick Summary
 
-| What | Where to Configure | Why It Matters | Evidence Links |
+| Item | Where to Configure | Why It Matters | Evidence Links |
 |------|---------------------|----------------|----------------|
-| Allow public pages | Webflow → Project Settings → Publishing → Advanced → robots.txt | Ensures Google can crawl key pages | Visit yoursite.com/robots.txt |
-| Disallow utility pages | Same | Avoids indexing of cart, search, auth, 401 pages | Check Page Indexing in Google Search Console |
-| Declare sitemap | Same | Faster discovery of all public URLs | Link to your sitemap.xml |
+| [Allow public pages](#allow-public-pages) | Webflow → Project Settings → Publishing → Advanced → robots.txt | Ensures Google can crawl key pages | Visit yoursite.com/robots.txt |
+| [Disallow utility pages](#disallow-utility-pages) | Same | Avoids indexing of cart, search, auth, 401 pages | Check Page Indexing in Google Search Console |
+| [Declare sitemap](#declare-sitemap) | Same | Faster discovery of all public URLs | Link to your sitemap.xml |
 
 ## Example robots.txt
 ```
@@ -28,6 +28,14 @@ Sitemap: <a href="https://example.com/sitemap.xml" target="_blank" rel="noopener
 ```
 
 ## Webflow Configuration
+<a id="allow-public-pages"></a>
+## Allow public pages
+
+<a id="disallow-utility-pages"></a>
+## Disallow utility pages
+
+<a id="declare-sitemap"></a>
+## Declare sitemap
 1. Go to Project Settings → Publishing → Advanced → robots.txt
 2. Paste your robots rules (see example)
 3. Publish the site (staging + production)

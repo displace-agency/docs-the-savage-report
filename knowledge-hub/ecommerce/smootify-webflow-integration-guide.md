@@ -97,8 +97,8 @@ Required fields:
 <!-- Compare At Price -->
 <span data-prop="compareAtPrice">$0.00</span>
 
-<!-- Product Images -->
-<img product="images" src="placeholder.jpg" alt="Product">
+ <!-- Product Images -->
+ <!-- Screenshot placeholder intentionally omitted. Use real product image bindings in Webflow when documenting a client project. -->
 
 <!-- Stock Status -->
 <div condition="in-stock">In Stock</div>
@@ -138,8 +138,8 @@ For products with multiple options (size, color, etc.):
   <option value="L">Large</option>
 </select>
 
-<!-- Variant Image -->
-<img variant="image" src="variant-image.jpg" alt="Variant">
+ <!-- Variant Image -->
+ <!-- Screenshot placeholder intentionally omitted. Bind the variant image attribute in Webflow to display variant-specific media. -->
 
 <!-- Variant Price -->
 <span variant="price">$0.00</span>

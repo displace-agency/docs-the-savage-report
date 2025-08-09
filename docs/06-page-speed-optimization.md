@@ -9,7 +9,7 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 
 | Item | What We Delivered | Priority | Status | Reference Link(s) |
 |------|-------------------|----------|--------|-------------------|
-| Performance Results (08-09) | Current snapshot: Desktop ~92, Mobile ~85. See full details. | High | Active | [Full results](./06.1-performance-results-08-09.md) |
+| [Performance Results (08-09)](#performance-results) | Current snapshot: Desktop ~92, Mobile ~85. See full details. | High | Active | [Full results](./06.1-performance-results-08-09.md) |
 | [Advanced Image Optimization System](#advanced-image-optimization) | 70% smaller images, WebP format, responsive versions | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Lazy Loading System](#lazy-loading-system) | Images load only when needed, 50% faster initial display | High | Active | <a href="https://webflow.com/design/savage-report-we" target="_blank" rel="noopener noreferrer">Webflow Designer</a> |
 | [Smart Video Performance](#smart-video-performance) | Optimized homepage video, mobile-friendly playback | Medium | Active | <a href="https://the-savage-report.com" target="_blank" rel="noopener noreferrer">Live Site</a> |
@@ -74,6 +74,11 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 
 <a id="technical-configuration"></a>
 ## Technical Configuration
+
+<a id="performance-results"></a>
+## Performance Results (Summary)
+
+For detailed PageSpeed Insights snapshots and methodology, see [Performance Results — 08-09](./06.1-performance-results-08-09.md).
 
 - **Minification & Headers**: Review advanced publishing options for performance.
 
