@@ -27,6 +27,8 @@ We implemented foundational SEO so search engines understand the site quickly, i
 - Open Graph tags for improved social sharing
 - Standardized URL slugs using best practices
 
+<img src="../assets/05-seo-implementation-meta-title-description.png" alt="Meta title and description configuration in Webflow for SEO" width="70%" style="border-radius:8px" />
+
 <a id="robots-txt-configuration"></a>
 ## Robots.txt Configuration
 
@@ -54,6 +56,8 @@ Manage robots.txt in Webflow → SEO Settings. This controls crawling for your m
 ### Canonical URLs
 Set global canonical URL to prevent duplicate content and ensure proper indexing.
 
+<img src="../assets/05-seo-implementation-webflow-advanced-publishing.png" alt="Advanced publishing options in Webflow settings related to SEO and caching" width="70%" style="border-radius:8px" />
+
 <img src="../assets/seo-implementation-webflow-seo-settings-04.png" alt="Webflow SEO settings with canonical and robots controls" width="70%" style="border-radius:8px" />
 
 - **Configuration**: Global canonical URL set to `https://www.the-savage-report.com`
@@ -66,6 +70,13 @@ Control access for search engine crawlers and AI bots.
 
 - **Configuration**: Search engines and AI bots allowed access
 - **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/seo" target="_blank" rel="noopener noreferrer">Webflow → SEO Settings</a>
+
+### Advanced Publishing Settings
+
+<img src="../assets/seo-implementation-webflow-advanced-publishing-settings.png" alt="Advanced publishing settings in Webflow" width="70%" style="border-radius:8px" />
+
+- **Purpose**: Configure advanced publishing options for your site
+- **Location**: <a href="https://webflow.com/dashboard/sites/savage-report-we/general" target="_blank" rel="noopener noreferrer">Webflow → General Configuration</a>
 
 ## Useful Links
 

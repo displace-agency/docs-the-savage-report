@@ -71,6 +71,8 @@ We've transformed The Savage Report into a high-performance e-commerce platform 
 - Additional products load on demand with "Load More" button
 - Smooth animation when new products appear
 
+<img src="../assets/06-page-speed-optimization-load-more.png" alt="Load more functionality improving page speed on collection pages" width="70%" style="border-radius:8px" />
+
 <a id="performance-results"></a>
 ## Performance Results
 

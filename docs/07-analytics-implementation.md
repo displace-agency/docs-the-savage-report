@@ -58,7 +58,9 @@ We've implemented comprehensive analytics tracking across The Savage Report to p
 - **Account Access**: Agency doesn't have access to the GA account
 - **Status**: Paused until account access is provided
 
-<img src="../assets/analytics-implementation-google-analytics-webflow-settings-2025-08-08.png" alt="Google Analytics measurement ID configured in Webflow settings" width="70%" style="border-radius:8px" />
+<img src="../assets/07-analytics-implementation-cookie-banner.png" alt="Cookie banner screenshot related to analytics consent" width="70%" style="border-radius:8px" />
+
+<img src="../assets/07-analytics-implementation-webflow-editor-access.png" alt="Webflow editor access settings screenshot" width="70%" style="border-radius:8px" />
 
 - **Configuration**: Measurement ID properly configured in Webflow project settings
 - **Status**: Tracking code implemented but account access pending
