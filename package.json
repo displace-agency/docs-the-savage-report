@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    
+    "expand:aliases": "node admin/scripts/expand-aliases.mjs"
   }
 }
 
